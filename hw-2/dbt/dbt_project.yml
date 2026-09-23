@@ -1,0 +1,38 @@
+name: football_shots_dwh
+version: "1.0.0"
+config-version: 2
+profile: football_shots_dwh
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+# Срез, для которого строится кандидат витрины. Передаётся из Airflow:
+#   dbt run --vars '{slice_start: "2022-12-03", slice_end: "2024-07-15", run_id: "..."}'
+# slice_end — исключающая граница: [slice_start, slice_end)
+vars:
+  slice_start: "2022-12-03"
+  slice_end: "2024-07-15"
+  run_id: "manual"
+
+models:
+  football_shots_dwh:
+    staging:
+      +schema: stg
+      +materialized: view
+    ods:
+      +schema: ods
+      +materialized: table
+    dds:
+      +schema: dds
+      +materialized: table
+    marts:
+      +schema: mart
+      +materialized: table
+
+data_tests:
+  football_shots_dwh:
+    +store_failures: true
+    +schema: audit

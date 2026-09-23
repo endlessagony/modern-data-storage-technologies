@@ -1,0 +1,18 @@
+Воспроизведённая гонка ДО добавления ops.pipeline_lock (DAG с max_active_runs=1, режим FOOTBALL_DAG_SCHEDULE=daily).
+Одновременно стартовали плановый запуск и backfill — max_active_runs их не сериализовал (у backfill свой лимит).
+
+scheduled__2026-09-22T00:00:00+00:00 success   srez [2026-09-22, 2026-09-23) -> "published slice [2026-09-22, 2026-09-23) ... replaced 0 -> 0 rows, checksum=empty"
+backfill__2022-12-19T00:00:00+00:00  failed    srez [2022-12-18, 2022-12-19)
+
+resolve_slice (оба запуска стартовали в 16:45:44):
+  run_id=backfill__2022-12-19T00:00:00+00:00 logical_date=2022-12-18 00:00:00+00:00 data_interval=[2022-12-18 00:00:00+00:00, 2022-12-19 00:00:00+00:00) run_type=DagRunType.BACKFILL
+  run_id=scheduled__2026-09-22T00:00:00+00:00 logical_date=2026-09-22 00:00:00+00:00 data_interval=[2026-09-22 00:00:00+00:00, 2026-09-23 00:00:00+00:00) run_type=DagRunType.SCHEDULED
+
+dbt_test_candidate (backfill): 8 of 62 FAIL 1 assert_mart_reconciles_with_fact
+diagnose_quality_failure (backfill):
+  FAILED TEST: assert_mart_reconciles_with_fact  status=fail  failures=1
+  fact_shots | mart_shots | fact_goals | mart_goals | fact_xg | mart_xg
+  30 | 0 | 6 | 0 | 5.0309 | 0
+  -> кандидат витрины перезаписал ПЛАНОВЫЙ запуск (пустой срез 2026-09-22), а тест backfill-запуска
+     сверял его со своим срезом 2022-12-18. Публикация backfill заблокирована тестом, опубликованные данные не пострадали.
+Вывод: добавлен замок уровня DWH (setup/teardown acquire_pipeline_lock/release_pipeline_lock), см. parallel_manual_vs_backfill.txt.

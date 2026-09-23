@@ -1,0 +1,26 @@
+{
+  "scenario": "case4_second_source",
+  "description": "ТЕСТ «Второй источник»: СИНТЕТИЧЕСКИЙ фид partner_demo с теми же локальными ID матча, команд, игрока и события.",
+  "files": [
+    {
+      "path": "baseline/matches.jsonl",
+      "entity": "matches",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "baseline/shots.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "scenarios/second_source/partner_matches.jsonl",
+      "entity": "matches",
+      "source_system": "partner_demo"
+    },
+    {
+      "path": "scenarios/second_source/partner_shots.jsonl",
+      "entity": "shots",
+      "source_system": "partner_demo"
+    }
+  ]
+}

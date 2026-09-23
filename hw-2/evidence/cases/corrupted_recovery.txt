@@ -1,0 +1,39 @@
+### Восстановление: 51_recovered_baseline vs 41_restore_baseline
+2026-09-23T17:03:26 info  [skip]  baseline/matches.jsonl sha256=1eb6ff052c95 уже в raw (batch_id=1)
+2026-09-23T17:03:26 info  [skip]  baseline/shots.jsonl sha256=f2404fd3e2bd уже в raw (batch_id=2)
+2026-09-23T17:03:26 info  [drop]  scenarios/corrupted/shots_bad_xg.jsonl: нет в манифесте сценария baseline
+2026-09-23T17:03:26 info  [raw]   matches  statsbomb      rows=31
+2026-09-23T17:03:26 info  [raw]   shots    statsbomb      rows=866
+== 1. Количество строк и контрольные суммы мер
+    obj    |         label         | rows | keys |  sum_xg  | goals |             checksum             
+-----------+-----------------------+------+------+----------+-------+----------------------------------
+ fact_shot | 41_restore_baseline   |  866 |  866 | 128.9421 |   129 | 29dbcd49390fe8efec68ab9220520b32
+ fact_shot | 51_recovered_baseline |  866 |  866 | 128.9421 |   129 | 29dbcd49390fe8efec68ab9220520b32
+ publish   | 41_restore_baseline   |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+ publish   | 51_recovered_baseline |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+(4 rows)
+
+== 2. Ключи факта: есть в A, нет в B / есть в B, нет в A
+   side    | count 
+-----------+-------
+ only_in_A |     0
+ only_in_B |     0
+(2 rows)
+
+== 3. Строки факта, у которых изменились атрибуты/меры
+ event_id | source_system | a_outcome | b_outcome | a_xg | b_xg | a_version | b_version 
+----------+---------------+-----------+-----------+------+------+-----------+-----------
+(0 rows)
+
+== 4. Строки публикации: различия (симметричная разность по всем бизнес-колонкам)
+ side | source_system | team_id | match_date | team_name | manager_name | opponent_name | team_score | shots | shots_on_target | goals | penalty_goals | xg | goals_minus_xg 
+------+---------------+---------+------------+-----------+--------------+---------------+------------+-------+-----------------+-------+---------------+----+----------------
+(0 rows)
+
+ publication_id |         run_id         |      scenario       | rows_published |             checksum             |         published_at          
+----------------+------------------------+---------------------+----------------+----------------------------------+-------------------------------
+             11 | 51_recovered_baseline  | baseline            |             62 | 9f526432967f15866e426135ce7a8314 | 2026-09-23 20:03:40.498685+03
+             10 | 41_restore_baseline    | baseline            |             62 | 9f526432967f15866e426135ce7a8314 | 2026-09-23 20:02:43.957578+03
+              9 | 40_case4_second_source | case4_second_source |             63 | f724a97f3ecbaa550f0d450b6d33a955 | 2026-09-23 20:02:14.881104+03
+(3 rows)
+

@@ -1,0 +1,20 @@
+-- DDS: матч (контекст удара). Одна строка = (source_system, match_id).
+select m.match_key,
+       m.source_system,
+       m.match_id,
+       m.match_date,
+       to_char(m.match_date, 'YYYYMMDD')::int as date_key,
+       m.competition_name,
+       m.season_name,
+       m.stage_name,
+       m.home_team_id,
+       m.home_team_name,
+       m.away_team_id,
+       m.away_team_name,
+       m.home_score,
+       m.away_score,
+       m.stadium_name,
+       m.referee_name,
+       m.kick_off_raw,
+       m.source_last_updated
+from {{ ref('ods_matches') }} m

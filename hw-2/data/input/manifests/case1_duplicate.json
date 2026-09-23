@@ -1,0 +1,21 @@
+{
+  "scenario": "case1_duplicate",
+  "description": "ТЕСТ «Дубликат»: baseline + повторно переданная запись удара ef86f4d9 (содержимое не изменено).",
+  "files": [
+    {
+      "path": "baseline/matches.jsonl",
+      "entity": "matches",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "baseline/shots.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "scenarios/duplicate/shots_resend.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    }
+  ]
+}

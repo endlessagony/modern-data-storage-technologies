@@ -1,0 +1,8 @@
+t+6s: [('60_parallel_B', 'queued', ''), ('60_parallel_A', 'running', '17:03:55')]
+t+12s: [('60_parallel_B', 'running', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]
+t+18s: [('60_parallel_B', 'running', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]
+t+24s: [('60_parallel_B', 'success', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]
+t+30s: [('60_parallel_B', 'success', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]
+t+36s: [('60_parallel_B', 'success', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]
+t+42s: [('60_parallel_B', 'success', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]
+t+48s: [('60_parallel_B', 'success', '17:04:14'), ('60_parallel_A', 'success', '17:03:55')]

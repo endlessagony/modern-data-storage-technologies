@@ -1,0 +1,21 @@
+{
+  "scenario": "case3_late_correction",
+  "description": "ТЕСТ «Позднее исправление»: СИНТЕТИЧЕСКАЯ версия удара ef86f4d9 (xG 0.30340916 -> 0.45), дата матча та же.",
+  "files": [
+    {
+      "path": "baseline/matches.jsonl",
+      "entity": "matches",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "baseline/shots.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "scenarios/late_correction/shots_correction.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    }
+  ]
+}

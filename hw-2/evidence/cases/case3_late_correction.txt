@@ -1,0 +1,83 @@
+### Случай 3. Позднее исправление: 30_case3_late_correction (срез [2022-12-18, 2022-12-19)) vs 21_restore_baseline
+ batch_seq | source_system |                    file_path                     | row_count 
+-----------+---------------+--------------------------------------------------+-----------
+         1 | statsbomb     | baseline/matches.jsonl                           |        31
+         2 | statsbomb     | baseline/shots.jsonl                             |       866
+         3 | statsbomb     | scenarios/late_correction/shots_correction.jsonl |         1
+(3 rows)
+
+               event_id               |       source_version       |     xg     | batch_seq | line_no 
+--------------------------------------+----------------------------+------------+-----------+---------
+ ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe | 2024-12-16 10:15:11.055845 | 0.30340916 |         2 |     396
+ ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe | 2026-09-23 12:00:00        | 0.45000000 |         3 |       1
+(2 rows)
+
+               event_id               |   source_version    |     xg     | raw_copies 
+--------------------------------------+---------------------+------------+------------
+ ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe | 2026-09-23 12:00:00 | 0.45000000 |          2
+(1 row)
+
+== 1. Количество строк и контрольные суммы мер
+    obj    |          label           | rows | keys |  sum_xg  | goals |             checksum             
+-----------+--------------------------+------+------+----------+-------+----------------------------------
+ fact_shot | 21_restore_baseline      |  866 |  866 | 128.9421 |   129 | 29dbcd49390fe8efec68ab9220520b32
+ fact_shot | 30_case3_late_correction |  866 |  866 | 129.0887 |   129 | 45d583e1ef8c249f6e937462979928d3
+ publish   | 21_restore_baseline      |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+ publish   | 30_case3_late_correction |   62 |   62 |  78.1612 |    84 | 0084aa979b999734bb8dad8a4809e745
+(4 rows)
+
+== 2. Ключи факта: есть в A, нет в B / есть в B, нет в A
+   side    | count 
+-----------+-------
+ only_in_A |     0
+ only_in_B |     0
+(2 rows)
+
+== 3. Строки факта, у которых изменились атрибуты/меры
+               event_id               | source_system | a_outcome | b_outcome |    a_xg    |    b_xg    |         a_version          |      b_version      
+--------------------------------------+---------------+-----------+-----------+------------+------------+----------------------------+---------------------
+ ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe | statsbomb     | Goal      | Goal      | 0.30340916 | 0.45000000 | 2024-12-16 10:15:11.055845 | 2026-09-23 12:00:00
+(1 row)
+
+== 4. Строки публикации: различия (симметричная разность по всем бизнес-колонкам)
+   side    | source_system | team_id | match_date | team_name |       manager_name       | opponent_name | team_score | shots | shots_on_target | goals | penalty_goals |   xg   | goals_minus_xg 
+-----------+---------------+---------+------------+-----------+--------------------------+---------------+------------+-------+-----------------+-------+---------------+--------+----------------
+ only_in_A | statsbomb     |     779 | 2022-12-18 | Argentina | Lionel Sebastián Scaloni | France        |          3 |    20 |              10 |     3 |             1 | 2.7583 |         0.2417
+ only_in_B | statsbomb     |     779 | 2022-12-18 | Argentina | Lionel Sebastián Scaloni | France        |          3 |    20 |              10 |     3 |             1 | 2.9049 |         0.0951
+(2 rows)
+
+
+### Повтор на том же входе: 31 vs 30 (исправление не удваивается)
+== 1. Количество строк и контрольные суммы мер
+    obj    |              label              | rows | keys |  sum_xg  | goals |             checksum             
+-----------+---------------------------------+------+------+----------+-------+----------------------------------
+ fact_shot | 30_case3_late_correction        |  866 |  866 | 129.0887 |   129 | 45d583e1ef8c249f6e937462979928d3
+ fact_shot | 31_case3_late_correction_repeat |  866 |  866 | 129.0887 |   129 | 45d583e1ef8c249f6e937462979928d3
+ publish   | 30_case3_late_correction        |   62 |   62 |  78.1612 |    84 | 0084aa979b999734bb8dad8a4809e745
+ publish   | 31_case3_late_correction_repeat |   62 |   62 |  78.1612 |    84 | 0084aa979b999734bb8dad8a4809e745
+(4 rows)
+
+== 2. Ключи факта: есть в A, нет в B / есть в B, нет в A
+   side    | count 
+-----------+-------
+ only_in_A |     0
+ only_in_B |     0
+(2 rows)
+
+== 3. Строки факта, у которых изменились атрибуты/меры
+ event_id | source_system | a_outcome | b_outcome | a_xg | b_xg | a_version | b_version 
+----------+---------------+-----------+-----------+------+------+-----------+-----------
+(0 rows)
+
+== 4. Строки публикации: различия (симметричная разность по всем бизнес-колонкам)
+ side | source_system | team_id | match_date | team_name | manager_name | opponent_name | team_score | shots | shots_on_target | goals | penalty_goals | xg | goals_minus_xg 
+------+---------------+---------+------------+-----------+--------------+---------------+------------+-------+-----------------+-------+---------------+----+----------------
+(0 rows)
+
+ publication_id |             run_id              |       scenario        | slice_start | slice_end  | rows_published |             checksum             
+----------------+---------------------------------+-----------------------+-------------+------------+----------------+----------------------------------
+              7 | 31_case3_late_correction_repeat | case3_late_correction | 2022-12-18  | 2022-12-19 |              2 | 4522be2e720514a0592713eb79cc55d2
+              6 | 30_case3_late_correction        | case3_late_correction | 2022-12-18  | 2022-12-19 |              2 | 4522be2e720514a0592713eb79cc55d2
+              5 | 21_restore_baseline             | baseline              | 2022-12-03  | 2024-07-15 |             62 | 9f526432967f15866e426135ce7a8314
+(3 rows)
+

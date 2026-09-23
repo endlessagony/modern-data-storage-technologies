@@ -1,0 +1,12 @@
+football_shots_dwh:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: "{{ env_var('DWH_HOST', 'localhost') }}"
+      port: "{{ env_var('DWH_PORT', '5432') | as_number }}"
+      user: "{{ env_var('DWH_USER', 'dwh') }}"
+      password: "{{ env_var('DWH_PASSWORD', 'dwh') }}"
+      dbname: "{{ env_var('DWH_DB', 'dwh') }}"
+      schema: dwh
+      threads: 4

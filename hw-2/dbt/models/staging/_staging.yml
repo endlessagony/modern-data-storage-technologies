@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: stg_matches
+    description: "Типизированные записи матчей (одна строка = одна полученная запись, повторы сохранены)."
+    columns:
+      - name: match_id
+        data_tests: [not_null]
+      - name: match_date
+        data_tests: [not_null]
+      - name: source_last_updated
+        data_tests: [not_null]
+  - name: stg_shots
+    description: "Типизированные записи ударов (одна строка = одна полученная запись, повторы сохранены)."
+    columns:
+      - name: event_id
+        data_tests: [not_null]
+      - name: match_id
+        data_tests: [not_null]
+      - name: source_version
+        data_tests: [not_null]
