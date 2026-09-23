@@ -1,0 +1,27 @@
+version: 2
+sources:
+  - name: raw
+    description: "Слой RAW: строки входных файлов как есть (jsonb) + метаданные партии. Заполняется loader/load_raw.py."
+    schema: raw
+    tables:
+      - name: batches
+        description: "Партии загрузки: один файл манифеста = одна партия (sha256, порядок batch_seq)."
+        columns:
+          - name: batch_id
+            data_tests: [unique, not_null]
+      - name: matches
+        description: "Матчи StatsBomb (matches/<competition>/<season>.json), одна строка = одна запись матча."
+        columns:
+          - name: payload
+            data_tests: [not_null]
+          - name: batch_id
+            data_tests:
+              - relationships: {arguments: {to: "source('raw', 'batches')", field: batch_id}}
+      - name: shots
+        description: "События типа Shot из events/<match_id>.json; match_id и версия — в конверте envelope."
+        columns:
+          - name: payload
+            data_tests: [not_null]
+          - name: batch_id
+            data_tests:
+              - relationships: {arguments: {to: "source('raw', 'batches')", field: batch_id}}

@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: mart_team_day_shots
+    description: "Кандидат витрины: команда × день матча в срезе. Меры: удары, в створ, голы, xG, голы − xG."
+    data_tests:
+      - unique_combination: {arguments: {columns: [source_system, team_id, match_date]}}
+    columns:
+      - name: team_id
+        data_tests: [not_null]
+      - name: match_date
+        data_tests: [not_null]
+      - name: shots
+        data_tests:
+          - value_between: {arguments: {min_value: 1, max_value: 100}}
+      - name: xg
+        data_tests: [not_null]

@@ -1,0 +1,62 @@
+### Испорченный вход: 50_corrupted_input vs 41_restore_baseline
+2026-09-23T17:03:14 info  FAILED TEST: value_between_fact_shot_xg__1__0  status=fail  failures=1
+2026-09-23T17:03:14 info  --- строки-нарушители из "dwh"."audit"."value_between_fact_shot_xg__1__0" (1 rows)
+2026-09-23T17:03:14 info  shot_key | source_system | event_id | match_key | date_key | match_date | team_version_key | team_nk | team_id | opponent_team_id | player_key | period | minute | second | is_shootout | shot_type | is_penalty | play_pattern | body_part | outcome | is_on_target | is_goal | xg | location_x | location_y | source_version
+2026-09-23T17:03:14 info  9155639ebe66a8294338741fdb17d1f3 | statsbomb | 6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd | f051eea4984c10972b76962d5a5757c4 | 20221218 | 2022-12-18 | 80815a2bf7668533da67d573c2dbcc6b | a2e547cf02dca7d0e34fddfc8dc47a5c | 771 | 779 | 6e8bff47ce285159eb2619a203e13402 | 2 | 79 | 24 | False | Penalty | True | Other | Right Foot | Goal | True | True | 7.83500000 | 108.00 | 40.00 | 2026-09-23 12:00:00
+2026-09-23T17:03:14 info  --- ПОСЛЕДНЯЯ УСПЕШНАЯ ПУБЛИКАЦИЯ (не изменилась) (1 rows)
+2026-09-23T17:03:14 info  publication_id | run_id | scenario | rows_published | checksum | published_at
+2026-09-23T17:03:14 info  10 | 41_restore_baseline | baseline | 62 | 9f526432967f15866e426135ce7a8314 | 2026-09-23 20:02:43.957578+03:00
+===== release_pipeline_lock
+-- трассировка ошибочной строки: ODS -> staging -> raw-партия
+               event_id               | match_id | team_name |     player_name      | minute | shot_type | outcome |     xg     |   source_version    | batch_id 
+--------------------------------------+----------+-----------+----------------------+--------+-----------+---------+------------+---------------------+----------
+ 6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd |  3869685 | France    | Kylian Mbappé Lottin |     79 | Penalty   | Goal    | 7.83500000 | 2026-09-23 12:00:00 |        8
+(1 row)
+
+               event_id               |     xg     |       source_version       |               file_path                |     sha      | line_no |                   test_case                   
+--------------------------------------+------------+----------------------------+----------------------------------------+--------------+---------+-----------------------------------------------
+ 6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd | 0.78350000 | 2024-12-16 10:15:11.055845 | baseline/shots.jsonl                   | f2404fd3e2bd |     403 | 
+ 6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd | 7.83500000 | 2026-09-23 12:00:00        | scenarios/corrupted/shots_bad_xg.jsonl | 816944a810b2 |       1 | corrupted: xG 0.7835 -> 7.835 (сдвиг запятой)
+(2 rows)
+
+-- кандидат витрины (испорчен, т.к. dbt не откатывает таблицы):
+ match_date | team_name | shots | goals |   xg   | goals_minus_xg |       run_id       
+------------+-----------+-------+-------+--------+----------------+--------------------
+ 2022-12-18 | Argentina |    20 |     3 | 2.7583 |         0.2417 | 50_corrupted_input
+ 2022-12-18 | France    |    10 |     3 | 9.3241 |        -6.3241 | 50_corrupted_input
+(2 rows)
+
+-- публикация (без изменений):
+ match_date | team_name | shots | goals |   xg   | goals_minus_xg |  published_run_id   |  last_successful_publication  
+------------+-----------+-------+-------+--------+----------------+---------------------+-------------------------------
+ 2022-12-18 | Argentina |    20 |     3 | 2.7583 |         0.2417 | 41_restore_baseline | 2026-09-23 20:02:43.957578+03
+ 2022-12-18 | France    |    10 |     3 | 2.2726 |         0.7274 | 41_restore_baseline | 2026-09-23 20:02:43.957578+03
+(2 rows)
+
+== 1. Количество строк и контрольные суммы мер
+    obj    |        label        | rows | keys |  sum_xg  | goals |             checksum             
+-----------+---------------------+------+------+----------+-------+----------------------------------
+ fact_shot | 41_restore_baseline |  866 |  866 | 128.9421 |   129 | 29dbcd49390fe8efec68ab9220520b32
+ fact_shot | 50_corrupted_input  |  866 |  866 | 135.9936 |   129 | c36df551dd523bffc47ad186b73fbe80
+ publish   | 41_restore_baseline |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+ publish   | 50_corrupted_input  |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+(4 rows)
+
+== 2. Ключи факта: есть в A, нет в B / есть в B, нет в A
+   side    | count 
+-----------+-------
+ only_in_A |     0
+ only_in_B |     0
+(2 rows)
+
+== 3. Строки факта, у которых изменились атрибуты/меры
+               event_id               | source_system | a_outcome | b_outcome |    a_xg    |    b_xg    |         a_version          |      b_version      
+--------------------------------------+---------------+-----------+-----------+------------+------------+----------------------------+---------------------
+ 6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd | statsbomb     | Goal      | Goal      | 0.78350000 | 7.83500000 | 2024-12-16 10:15:11.055845 | 2026-09-23 12:00:00
+(1 row)
+
+== 4. Строки публикации: различия (симметричная разность по всем бизнес-колонкам)
+ side | source_system | team_id | match_date | team_name | manager_name | opponent_name | team_score | shots | shots_on_target | goals | penalty_goals | xg | goals_minus_xg 
+------+---------------+---------+------------+-----------+--------------+---------------+------------+-------+-----------------+-------+---------------+----+----------------
+(0 rows)
+

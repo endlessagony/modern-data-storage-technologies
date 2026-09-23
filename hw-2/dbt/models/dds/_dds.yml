@@ -1,0 +1,75 @@
+version: 2
+models:
+  - name: dim_date
+    description: "Календарь; ключ date_key = YYYYMMDD."
+    columns:
+      - name: date_key
+        data_tests: [unique, not_null]
+  - name: dim_team
+    description: "Команда, SCD2 по главному тренеру. Ключ версии team_version_key; натуральный ключ (source_system, team_id)."
+    data_tests:
+      - unique_combination: {arguments: {columns: [source_system, team_id, valid_from, manager_id]}}
+    columns:
+      - name: team_version_key
+        data_tests: [unique, not_null]
+      - name: team_id
+        data_tests: [not_null]
+      - name: valid_from
+        data_tests: [not_null]
+      - name: valid_to
+        data_tests: [not_null]
+  - name: dim_player
+    description: "Игрок, SCD1."
+    columns:
+      - name: player_key
+        data_tests: [unique, not_null]
+  - name: dim_match
+    description: "Матч: турнир, стадия, стадион, счёт."
+    columns:
+      - name: match_key
+        data_tests: [unique, not_null]
+      - name: date_key
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: "ref('dim_date')", field: date_key}}
+      - name: stage_name
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Round of 16', 'Quarter-finals', 'Semi-finals', '3rd Place Final', 'Final']
+  - name: fact_shot
+    description: "Факт: один удар в актуальной версии. Ключ shot_key = md5(source_system|event_id)."
+    columns:
+      - name: shot_key
+        data_tests: [unique, not_null]
+      - name: match_key
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: "ref('dim_match')", field: match_key}}
+      - name: date_key
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: "ref('dim_date')", field: date_key}}
+      - name: team_version_key
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: "ref('dim_team')", field: team_version_key}}
+      - name: player_key
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: "ref('dim_player')", field: player_key}}
+      - name: period
+        data_tests:
+          - accepted_values: {arguments: {values: [1, 2, 3, 4, 5], quote: false}}
+      - name: outcome
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Goal', 'Saved', 'Saved to Post', 'Saved Off Target', 'Off T', 'Wayward', 'Post', 'Blocked']
+      - name: shot_type
+        data_tests:
+          - accepted_values: {arguments: {values: ['Open Play', 'Penalty', 'Free Kick', 'Corner', 'Kick Off']}}
+      - name: xg
+        data_tests:
+          - not_null
+          - value_between: {arguments: {min_value: 0, max_value: 1}}

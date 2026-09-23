@@ -1,0 +1,56 @@
+# Локальный стенд: PostgreSQL 16 (DWH + метаданные Airflow) и Airflow 3.1.8 (standalone: api-server,
+# scheduler, dag-processor, triggerer в одном контейнере) с dbt 1.10 в отдельном venv.
+# Пароли ниже — только для локального учебного стенда.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"          # DataGrip / psql с хоста: localhost:5433, db=dwh, user=dwh, password=dwh
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 20
+
+  airflow:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.airflow
+    command: standalone
+    depends_on:
+      postgres:
+        condition: service_healthy
+    user: "${AIRFLOW_UID:-50000}:0"
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/project/airflow/dags
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: utc
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "True"   # учебный стенд: вход без пароля
+      AIRFLOW__DAG_PROCESSOR__REFRESH_INTERVAL: "15"
+      PROJECT_ROOT: /opt/project
+      DBT_BIN: /opt/dbt-venv/bin/dbt
+      PYTHON_BIN: python
+      FOOTBALL_DAG_SCHEDULE: ${FOOTBALL_DAG_SCHEDULE:-}          # daily = ежедневный режим
+      DWH_HOST: postgres
+      DWH_PORT: "5432"
+      DWH_DB: dwh
+      DWH_USER: dwh
+      DWH_PASSWORD: dwh
+      PGHOST: postgres
+      PGUSER: dwh
+      PGDATABASE: dwh
+      PGPASSWORD: dwh
+    volumes:
+      - ./:/opt/project
+
+volumes:
+  pgdata:

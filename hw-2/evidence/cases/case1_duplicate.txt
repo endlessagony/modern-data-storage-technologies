@@ -1,0 +1,44 @@
+### Случай 1. Дубликат: 10_case1_duplicate vs 02_baseline_repeat
+ batch_seq | source_system |               file_path                | row_count 
+-----------+---------------+----------------------------------------+-----------
+         1 | statsbomb     | baseline/matches.jsonl                 |        31
+         2 | statsbomb     | baseline/shots.jsonl                   |       866
+         3 | statsbomb     | scenarios/duplicate/shots_resend.jsonl |         1
+(3 rows)
+
+ raw_shots | stg_shots | ods_shots | fact_shots 
+-----------+-----------+-----------+------------
+       867 |       867 |       866 |        866
+(1 row)
+
+ source_system |               event_id               | raw_copies | variants_same_version |     xg     | outcome 
+---------------+--------------------------------------+------------+-----------------------+------------+---------
+ statsbomb     | ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe |          2 |                     1 | 0.30340916 | Goal
+(1 row)
+
+== 1. Количество строк и контрольные суммы мер
+    obj    |       label        | rows | keys |  sum_xg  | goals |             checksum             
+-----------+--------------------+------+------+----------+-------+----------------------------------
+ fact_shot | 02_baseline_repeat |  866 |  866 | 128.9421 |   129 | 29dbcd49390fe8efec68ab9220520b32
+ fact_shot | 10_case1_duplicate |  866 |  866 | 128.9421 |   129 | 29dbcd49390fe8efec68ab9220520b32
+ publish   | 02_baseline_repeat |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+ publish   | 10_case1_duplicate |   62 |   62 |  78.0146 |    84 | 18d545846cf8723784e03846185dcd22
+(4 rows)
+
+== 2. Ключи факта: есть в A, нет в B / есть в B, нет в A
+   side    | count 
+-----------+-------
+ only_in_A |     0
+ only_in_B |     0
+(2 rows)
+
+== 3. Строки факта, у которых изменились атрибуты/меры
+ event_id | source_system | a_outcome | b_outcome | a_xg | b_xg | a_version | b_version 
+----------+---------------+-----------+-----------+------+------+-----------+-----------
+(0 rows)
+
+== 4. Строки публикации: различия (симметричная разность по всем бизнес-колонкам)
+ side | source_system | team_id | match_date | team_name | manager_name | opponent_name | team_score | shots | shots_on_target | goals | penalty_goals | xg | goals_minus_xg 
+------+---------------+---------+------------+-----------+--------------+---------------+------------+-------+-----------------+-------+---------------+----+----------------
+(0 rows)
+

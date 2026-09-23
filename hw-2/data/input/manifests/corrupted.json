@@ -1,0 +1,21 @@
+{
+  "scenario": "corrupted",
+  "description": "ТЕСТ «Испорченный вход»: СИНТЕТИЧЕСКАЯ версия удара 6cc0d5e2 с xG = 7.835 (вне [0;1]).",
+  "files": [
+    {
+      "path": "baseline/matches.jsonl",
+      "entity": "matches",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "baseline/shots.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    },
+    {
+      "path": "scenarios/corrupted/shots_bad_xg.jsonl",
+      "entity": "shots",
+      "source_system": "statsbomb"
+    }
+  ]
+}

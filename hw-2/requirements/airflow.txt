@@ -1,0 +1,1 @@
+apache-airflow[postgres]==3.1.8  # ставить с --constraint https://raw.githubusercontent.com/apache/airflow/constraints-3.1.8/constraints-3.11.txt

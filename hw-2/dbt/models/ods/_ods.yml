@@ -1,0 +1,26 @@
+version: 2
+models:
+  - name: ods_matches
+    description: "Актуальная версия матча; ключ (source_system, match_id)."
+    data_tests:
+      - unique_combination: {arguments: {columns: [source_system, match_id]}}
+    columns:
+      - name: match_key
+        data_tests: [unique, not_null]
+      - name: home_score
+        data_tests: [not_null]
+      - name: away_score
+        data_tests: [not_null]
+  - name: ods_shots
+    description: "Актуальная версия удара; ключ (source_system, event_id)."
+    data_tests:
+      - unique_combination: {arguments: {columns: [source_system, event_id]}}
+    columns:
+      - name: shot_key
+        data_tests: [unique, not_null]
+      - name: variants_same_version
+        description: "Сколько РАЗНЫХ содержимых пришло для одного ключа и одной версии (конфликт повторов)."
+        data_tests:
+          - accepted_values: {arguments: {values: [1], quote: false}, config: {severity: warn}}
+  - name: ods_team_manager_obs
+    description: "Наблюдения тренера команды на дату матча."

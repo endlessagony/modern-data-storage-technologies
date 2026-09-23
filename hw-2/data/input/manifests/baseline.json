@@ -1,0 +1,8 @@
+{
+  "scenario": "baseline",
+  "description": "Контрольный срез: плей-офф ЧМ-2022 и Евро-2024, реальные данные StatsBomb Open Data (commit 4b73468f).",
+  "files": [
+    {"path": "baseline/matches.jsonl", "entity": "matches", "source_system": "statsbomb"},
+    {"path": "baseline/shots.jsonl",   "entity": "shots",   "source_system": "statsbomb"}
+  ]
+}
