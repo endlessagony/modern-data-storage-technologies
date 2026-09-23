@@ -1,6 +1,3 @@
-# Локальный стенд: PostgreSQL 16 (DWH + метаданные Airflow) и Airflow 3.1.8 (standalone: api-server,
-# scheduler, dag-processor, triggerer в одном контейнере) с dbt 1.10 в отдельном venv.
-# Пароли ниже — только для локального учебного стенда.
 services:
   postgres:
     image: postgres:16
@@ -34,12 +31,12 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
       AIRFLOW__CORE__DAGS_FOLDER: /opt/project/airflow/dags
       AIRFLOW__CORE__DEFAULT_TIMEZONE: utc
-      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "True"   # учебный стенд: вход без пароля
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "True"
       AIRFLOW__DAG_PROCESSOR__REFRESH_INTERVAL: "15"
       PROJECT_ROOT: /opt/project
       DBT_BIN: /opt/dbt-venv/bin/dbt
       PYTHON_BIN: python
-      FOOTBALL_DAG_SCHEDULE: ${FOOTBALL_DAG_SCHEDULE:-}          # daily = ежедневный режим
+      FOOTBALL_DAG_SCHEDULE: ${FOOTBALL_DAG_SCHEDULE:-}
       DWH_HOST: postgres
       DWH_PORT: "5432"
       DWH_DB: dwh
