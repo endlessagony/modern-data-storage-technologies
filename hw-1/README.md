@@ -78,30 +78,3 @@ docker compose exec spark spark-submit /scripts/hw01/pipeline.py
 по `city`) → сравнение CSV/Parquet на одном запросе, 3 замера → создание
 `lakehouse.naermishov.weather` двумя порциями (2023 год, потом 2024) →
 история snapshots. Весь вывод сохранить в `evidence/spark-result.txt`.
-
-## 4. SQL в Trino
-
-CLI:
-
-```bash
-docker compose exec -T trino trino < trino/scripts/hw01_queries.sql
-```
-
-Или в DataGrip (см. `setup_datagrip.md`): открыть тот же файл, назначить
-подключение Trino (`localhost:8088`, user `teacher`, каталог `lakehouse`,
-схема `naermishov`) и выполнять блоки по порядку. Вывод/скриншот с
-результатами сохранить в `evidence/trino-result.txt`.
-
-## Что не входит в сдачу
-
-Сам CSV/JSON с данными и Docker volumes не входят в сдачу — они
-воспроизводятся командами выше. Учебный `events_demo.csv` тоже не
-сдаётся, он нужен только для этапа 0.
-
-## Остановка
-
-```bash
-docker compose down
-```
-
-Без `-v` — данные MinIO/PostgreSQL сохранятся для повторного запуска.
