@@ -1,0 +1,95 @@
+$ docker compose exec spark spark-submit /scripts/hw01/pipeline.py
+26/09/27 14:32:18 INFO SparkContext: Running Spark version 3.5.9
+26/09/27 14:32:18 INFO SparkContext: OS info Linux, 6.18.33.1-microsoft-standard-WSL2, amd64
+26/09/27 14:32:18 INFO SparkContext: Java version 17.0.20.1
+26/09/27 14:32:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/27 14:32:19 INFO SparkContext: Submitted application: hw01-weather
+== 1. Чтение CSV по явной схеме ==
+26/09/27 14:32:20 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+root
+ |-- city: string (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- event_ts: timestamp (nullable = true)
+ |-- event_date: date (nullable = true)
+ |-- temperature_2m: decimal(5,2) (nullable = true)
+ |-- relative_humidity_2m: decimal(5,2) (nullable = true)
+ |-- precipitation_mm: decimal(6,2) (nullable = true)
+ |-- wind_speed_10m: decimal(6,2) (nullable = true)
+
+Строк в CSV: 140,352
+Доля NULL в temperature_2m: 0.0000%
+
+== 2. Проверки качества, accepted/rejected ==
+accepted: 140,352; rejected: 0
+Отклонённых строк нет: проверка воспроизводима, файл rejected не пишем
+Уникальность (city, event_ts) в accepted подтверждена
+
+== 3. Parquet: партиции по city ==
+Строки accepted = Parquet: 140,352
+Размер CSV: 11.38 МиБ; Parquet: 1.35 МиБ
+Отношение CSV/Parquet: 8.41
+
+== 4. Один запрос на CSV и на Parquet, 3 замера ==
+
+    SELECT count(*) AS n_rows,
+           avg(CAST(temperature_2m AS DECIMAL(18,6))) AS avg_temp_c
+    FROM weather_csv
+    WHERE city = 'Москва'
+      AND event_date >= DATE '2023-01-01'
+      AND event_date < DATE '2023-02-01'
+
+CSV, первый замер: 0.225 с; {'n_rows': 744, 'avg_temp_c': Decimal('-6.0923387097')}
+PARQUET, первый замер: 0.158 с; {'n_rows': 744, 'avg_temp_c': Decimal('-6.0923387097')}
+PARQUET, повтор 2: 0.102 с; {'n_rows': 744, 'avg_temp_c': Decimal('-6.0923387097')}
+CSV, повтор 2: 0.077 с; {'n_rows': 744, 'avg_temp_c': Decimal('-6.0923387097')}
+CSV, повтор 3: 0.073 с; {'n_rows': 744, 'avg_temp_c': Decimal('-6.0923387097')}
+PARQUET, повтор 3: 0.083 с; {'n_rows': 744, 'avg_temp_c': Decimal('-6.0923387097')}
+Результаты запроса совпали на CSV и Parquet.
+Время зависит от кэшей и среды ноутбука, ускорение не обещается.
+
+== 5. Iceberg: две непересекающиеся порции (2023 и 2024) ==
+26/09/27 14:32:29 WARN JdbcCatalog: JDBC catalog is initialized without view support. To auto-migrate the database's schema and enable view support, set jdbc.schema-version=V1
+Первая порция (< 2024-01-01, 2023 год): 70,080 строк
+Вторая порция (>= 2024-01-01, 2024 год): 70,272 строк
+Сумма порций: 140,352, accepted: 140,352
+
+-- запись 1: CTAS, 2023 год --
+После записи 1: 70,080 строк; новые snapshots: [4754232942338482482]
+
+-- запись 2: INSERT, 2024 год --
+После записи 2: 140,352 строк; новые snapshots: [6052017463174122792]
+Все строки Parquet сохранены в Iceberg без дублей ключа (city, event_ts).
+
+== История snapshots ==
++-------------------+-----------------------+---------+-------------+
+|snapshot_id        |committed_at           |operation|total_records|
++-------------------+-----------------------+---------+-------------+
+|4754232942338482482|2026-09-27 14:32:31.419|overwrite|70080        |
+|6052017463174122792|2026-09-27 14:32:32.354|append   |140352       |
++-------------------+-----------------------+---------+-------------+
+
+== Тот же запрос уже на Iceberg-таблице ==
++------+-------------+
+|n_rows|avg_temp_c   |
++------+-------------+
+|744   |-6.0923387097|
++------+-------------+
+
+== Схема Iceberg-таблицы ==
++--------------------+----------------+-------+
+|col_name            |data_type       |comment|
++--------------------+----------------+-------+
+|latitude            |double          |NULL   |
+|longitude           |double          |NULL   |
+|event_ts            |timestamp       |NULL   |
+|event_date          |date            |NULL   |
+|temperature_2m      |decimal(5,2)    |NULL   |
+|relative_humidity_2m|decimal(5,2)    |NULL   |
+|precipitation_mm    |decimal(6,2)    |NULL   |
+|wind_speed_10m      |decimal(6,2)    |NULL   |
+|city                |string          |NULL   |
+|                    |                |       |
+|# Partitioning      |                |       |
+|Part 0              |months(event_ts)|       |
++--------------------+----------------+-------+

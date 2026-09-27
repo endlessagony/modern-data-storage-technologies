@@ -1,0 +1,21 @@
+$ docker compose exec spark spark-submit /scripts/hw01/upload_raw.py
+/data/hw01/raw_json/ekaterinburg.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/ekaterinburg.json
+/data/hw01/raw_json/kazan.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/kazan.json
+/data/hw01/raw_json/krasnodar.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/krasnodar.json
+/data/hw01/raw_json/moscow.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/moscow.json
+/data/hw01/raw_json/murmansk.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/murmansk.json
+/data/hw01/raw_json/novosibirsk.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/novosibirsk.json
+/data/hw01/raw_json/spb.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/spb.json
+/data/hw01/raw_json/vladivostok.json (0.61 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/vladivostok.json
+/data/hw01/weather.csv (11.38 МиБ) -> s3://raw/naermishov/weather/ingestion_date=2026-09-27/weather.csv
+
+Объекты по префиксу:
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/ekaterinburg.json  0.613 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/kazan.json  0.613 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/krasnodar.json  0.608 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/moscow.json  0.611 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/murmansk.json  0.611 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/novosibirsk.json  0.612 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/spb.json  0.609 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/raw_json/vladivostok.json  0.612 МиБ
+  s3://raw/naermishov/weather/ingestion_date=2026-09-27/weather.csv  11.377 МиБ
