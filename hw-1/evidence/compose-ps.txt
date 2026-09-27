@@ -1,0 +1,13 @@
+$ docker compose ps --all
+NAME                                 IMAGE                              COMMAND                  SERVICE      CREATED         STATUS                                     PORTS
+hse-lakehouse-student-minio-1        bitnamilegacy/minio:latest         "/opt/bitnami/script…"   minio        7 seconds ago   Up 6 seconds (healthy)                     127.0.0.1:9000-9001->9000-9001/tcp
+hse-lakehouse-student-minio-init-1   hse-lakehouse-student-minio-init   "python3 /scripts/in…"   minio-init   7 seconds ago   Exited (0) Less than a second ago
+hse-lakehouse-student-postgres-1     postgres:16-alpine                 "docker-entrypoint.s…"   postgres     7 seconds ago   Up 6 seconds (healthy)                     5432/tcp
+hse-lakehouse-student-spark-1        hse-lakehouse-student-spark        "sleep infinity"         spark        7 seconds ago   Up Less than a second                      127.0.0.1:4040->4040/tcp
+hse-lakehouse-student-trino-1        hse-lakehouse-student-trino        "/usr/lib/trino/bin/…"   trino        7 seconds ago   Up Less than a second (health: starting)   127.0.0.1:8088->8080/tcp
+
+Примечание: снимок сделан сразу после `docker compose up -d`, поэтому trino
+ещё в состоянии "health: starting" — на момент запуска spark-submit и SQL
+(см. spark-result.txt, trino-result.txt) сервис уже отвечал на запросы.
+minio-init штатно завершился с кодом 0 (создал бакеты raw и datalake
+через MINIO_DEFAULT_BUCKETS + подстраховочный скрипт scripts/init_buckets.py).

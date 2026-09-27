@@ -1,0 +1,85 @@
+name: hse-lakehouse-student
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: iceberg_catalog
+      POSTGRES_USER: iceberg
+      POSTGRES_PASSWORD: iceberg
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iceberg -d iceberg_catalog"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: "no"
+
+  # Официальные образы minio/minio и minio/mc пропали и с Docker Hub, и с
+  # Quay.io (сентябрь 2026, закрытие бесплатной раздачи MinIO Inc), поэтому
+  # используется независимо поддерживаемая заморозка Bitnami. mc внутри
+  # больше не нужен: бакеты создаёт сам образ через MINIO_DEFAULT_BUCKETS,
+  # а minio-init ниже подстраховывает это через boto3.
+  minio:
+    image: bitnamilegacy/minio:latest
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: hse2026minio
+      MINIO_DEFAULT_BUCKETS: raw,datalake
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio_data:/bitnami/minio/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: "no"
+
+  minio-init:
+    build: ./spark
+    depends_on:
+      minio:
+        condition: service_healthy
+    volumes:
+      - ./scripts:/scripts
+    command: ["python3", "/scripts/init_buckets.py"]
+    restart: "no"
+
+  trino:
+    build: ./trino
+    # JVM image uses 80% of container RAM; bound it for the local teaching stand.
+    mem_limit: 2g
+    ports:
+      - "127.0.0.1:8088:8080"
+    volumes:
+      - ./trino/catalog/lakehouse.properties:/etc/trino/catalog/lakehouse.properties:ro
+      - ./trino/catalog/memory.properties:/etc/trino/catalog/memory.properties:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  spark:
+    build: ./spark
+    ports:
+      - "127.0.0.1:4040:4040"
+    environment:
+      SPARK_CONF_DIR: /opt/spark-conf
+      AWS_REGION: us-east-1
+    volumes:
+      - ./spark/spark-defaults.conf:/opt/spark-conf/spark-defaults.conf:ro
+      - ./scripts:/scripts
+      - ./data:/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: sleep infinity
+    restart: "no"
+
+volumes:
+  postgres_data:
+  minio_data:
