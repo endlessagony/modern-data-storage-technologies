@@ -1,0 +1,7 @@
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+PostgreSQL: postgres (PostgreSQL) 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)
+etcd:       etcd Version: 3.5.17
+Patroni:    patroni 4.1.5
+Python:     Python 3.11.15

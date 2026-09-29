@@ -1,0 +1,867 @@
+source_system,event_id,match_id,match_date,team_id,team_name,player_id,player_name,period,minute,second,shot_type,outcome,body_part,xg
+statsbomb,7320c2cf-86b3-40f2-a3a7-ff0a4b95a712,3869117,2022-12-03,1839,United States,8246,Christian Pulisic,1,2,10,Open Play,Saved,Left Foot,0.3196895
+statsbomb,05907c05-0a6c-4aa7-a62a-1f1a70bebba7,3869117,2022-12-03,941,Netherlands,2988,Memphis Depay,1,9,31,Open Play,Goal,Right Foot,0.16183718
+statsbomb,1661bfea-a0ca-487c-90c5-a6cccc12dfde,3869117,2022-12-03,941,Netherlands,3311,Daley Blind,1,17,4,Open Play,Off T,Left Foot,0.07337185
+statsbomb,a2da4447-6ffd-458f-8921-05c19d401904,3869117,2022-12-03,941,Netherlands,2988,Memphis Depay,1,20,20,Open Play,Off T,Right Foot,0.008920797
+statsbomb,f23c54d4-ea5f-427b-8c32-704a95e25dac,3869117,2022-12-03,1839,United States,3377,Timothy Weah,1,42,7,Open Play,Saved,Right Foot,0.028368456
+statsbomb,317f2710-2fd6-4c1f-8a57-cdef4724252c,3869117,2022-12-03,1839,United States,21881,Sergino Dest,1,43,58,Open Play,Blocked,Right Foot,0.07418261
+statsbomb,5566d71a-983c-4f30-9ddb-85d7b8815ba1,3869117,2022-12-03,941,Netherlands,3311,Daley Blind,1,45,36,Open Play,Goal,Right Foot,0.2502288
+statsbomb,eb91d23f-4d01-43a8-96d3-52827bf9909d,3869117,2022-12-03,1839,United States,8526,Weston McKennie,2,48,45,Open Play,Wayward,Head,0.03899759
+statsbomb,f66c01cb-afab-4614-9ab0-849827654257,3869117,2022-12-03,1839,United States,18242,Tim Ream,2,48,46,Open Play,Saved,Left Foot,0.2582279
+statsbomb,bde8a681-2dfa-431a-9637-223cc85dfd10,3869117,2022-12-03,1839,United States,8526,Weston McKennie,2,48,55,Open Play,Wayward,Head,0.06857926
+statsbomb,ca601f63-190e-473c-9a0e-e40451f4ad17,3869117,2022-12-03,1839,United States,21881,Sergino Dest,2,50,49,Open Play,Wayward,Left Foot,0.01609117
+statsbomb,d9a576ef-06ad-4b8e-b19b-579c5da93422,3869117,2022-12-03,1839,United States,8246,Christian Pulisic,2,52,0,Open Play,Saved,Right Foot,0.040512722
+statsbomb,7c9f51b5-7c05-4ba0-ae27-d0c4639b0709,3869117,2022-12-03,1839,United States,8526,Weston McKennie,2,53,0,Open Play,Off T,Left Foot,0.053084504
+statsbomb,51847ed7-8369-40a5-a442-862b9063b95f,3869117,2022-12-03,941,Netherlands,20750,Cody Mathès Gakpo,2,60,39,Open Play,Blocked,Left Foot,0.053106464
+statsbomb,a1545633-330a-4c29-bdc4-e7a8d2720acc,3869117,2022-12-03,941,Netherlands,2988,Memphis Depay,2,60,42,Open Play,Saved,Right Foot,0.046333984
+statsbomb,d415f694-86d8-436d-a82c-7c16076856ff,3869117,2022-12-03,1839,United States,3377,Timothy Weah,2,62,41,Open Play,Blocked,Left Foot,0.04334448
+statsbomb,ef5c7933-4077-49df-9152-d32b29d5bb12,3869117,2022-12-03,941,Netherlands,3669,Virgil van Dijk,2,70,10,Open Play,Off T,Head,0.08036702
+statsbomb,44a6397c-cfd0-4cf2-9c47-95f359b3f407,3869117,2022-12-03,941,Netherlands,7891,Teun Koopmeiners,2,70,52,Open Play,Saved,Left Foot,0.04472613
+statsbomb,c6711069-7423-4428-a2b8-beff1ad14b24,3869117,2022-12-03,941,Netherlands,2988,Memphis Depay,2,70,54,Open Play,Saved,Head,0.27671057
+statsbomb,f8946626-b0a1-496c-aabd-a8671df0b23b,3869117,2022-12-03,1839,United States,34339,Giovanni Reyna,2,73,13,Open Play,Off T,Left Foot,0.042619057
+statsbomb,b3f6d8e7-d124-4d9b-8b69-096b7958f406,3869117,2022-12-03,1839,United States,22008,Haji Wright,2,74,14,Open Play,Blocked,Right Foot,0.046546377
+statsbomb,ca879c6e-6742-4d2b-8b98-5e9b726ee77e,3869117,2022-12-03,1839,United States,22008,Haji Wright,2,75,20,Open Play,Goal,Right Foot,0.3636808
+statsbomb,bdba3968-9315-4a2c-b26a-fa83134c1f6b,3869117,2022-12-03,941,Netherlands,8259,Steven Bergwijn,2,77,21,Open Play,Off T,Right Foot,0.25042096
+statsbomb,e534d589-ffb5-42c2-a449-541547acec89,3869117,2022-12-03,1839,United States,8246,Christian Pulisic,2,78,7,Open Play,Saved,Left Foot,0.031073315
+statsbomb,4a9d3012-73c3-4a0f-a16c-831cb874e455,3869117,2022-12-03,941,Netherlands,8125,Denzel Dumfries,2,80,28,Open Play,Goal,Left Foot,0.23592436
+statsbomb,228c6b1b-5058-4b75-b47e-e5d961102ba9,3869117,2022-12-03,1839,United States,12524,Walker Zimmerman,2,85,25,Open Play,Off T,Right Foot,0.05674074
+statsbomb,67f52955-48b3-418c-976f-a34575324c1d,3869117,2022-12-03,1839,United States,34339,Giovanni Reyna,2,88,48,Open Play,Blocked,Left Foot,0.043403003
+statsbomb,ca8ff3c0-c049-435d-830a-3979bf1181e5,3869117,2022-12-03,1839,United States,38792,Yunus Dimoara Musah,2,93,29,Open Play,Blocked,Right Foot,0.054460905
+statsbomb,1bb42f2e-3d37-4dfc-834a-ad4bce817151,3869117,2022-12-03,1839,United States,22008,Haji Wright,2,94,7,Open Play,Wayward,Head,0.072495155
+statsbomb,eca22731-e62f-4c63-98c5-55f4f5357216,3869118,2022-12-04,768,England,3244,John Stones,1,20,25,Open Play,Off T,Other,0.08366814
+statsbomb,b1746c86-d6a4-4310-bdf8-bb5e795948c2,3869118,2022-12-04,787,Senegal,20611,Boulaye Dia,1,21,59,Open Play,Blocked,Right Foot,0.05336251
+statsbomb,aa2725c3-bc6b-4f5b-9865-2cd84124cb40,3869118,2022-12-04,787,Senegal,2941,Ismaïla Sarr,1,22,0,Open Play,Off T,Right Foot,0.629174
+statsbomb,21b0a72e-9edd-405b-a6aa-edf3c20ff8e3,3869118,2022-12-04,787,Senegal,20611,Boulaye Dia,1,31,1,Open Play,Saved,Left Foot,0.0358749
+statsbomb,8dd1ce3c-8097-412a-9951-4939e15903f3,3869118,2022-12-04,768,England,3532,Jordan Brian Henderson,1,38,0,Open Play,Goal,Left Foot,0.13174866
+statsbomb,95d72a08-3916-4d54-85b4-e3777d7f9163,3869118,2022-12-04,768,England,10955,Harry Kane,1,40,39,Open Play,Off T,Right Foot,0.18422936
+statsbomb,4d429090-9143-4daa-ac16-ed3c8963ad7b,3869118,2022-12-04,768,England,10955,Harry Kane,1,47,17,Open Play,Goal,Right Foot,0.20664306
+statsbomb,2c5975d3-1c82-4dd5-9645-651ae8eb5b8f,3869118,2022-12-04,787,Senegal,50498,Pape Matar Sarr,2,49,10,Open Play,Off T,Left Foot,0.018660808
+statsbomb,3ad6ec4f-2f39-41df-ade5-a91827872206,3869118,2022-12-04,768,England,22084,Bukayo Saka,2,53,40,Open Play,Off T,Right Foot,0.03518777
+statsbomb,60b34d82-7a7b-4b3a-ba28-7ec704a0941a,3869118,2022-12-04,768,England,10955,Harry Kane,2,55,45,Open Play,Saved,Right Foot,0.015214441
+statsbomb,541395bf-9398-4670-887e-e79c1a8ba223,3869118,2022-12-04,768,England,22084,Bukayo Saka,2,56,43,Open Play,Goal,Left Foot,0.21738943
+statsbomb,acf5fa91-3fee-4042-85a7-97dfc596d6d9,3869118,2022-12-04,787,Senegal,50498,Pape Matar Sarr,2,68,25,Open Play,Blocked,Right Foot,0.013223637
+statsbomb,64294436-c0e0-4e75-a6de-abd93a212c4e,3869118,2022-12-04,787,Senegal,50498,Pape Matar Sarr,2,73,18,Free Kick,Off T,Right Foot,0.021199826
+statsbomb,f04052f9-712a-4992-a561-b3a46bb0d53b,3869118,2022-12-04,787,Senegal,2941,Ismaïla Sarr,2,83,38,Open Play,Off T,Head,0.107544675
+statsbomb,1cf6fa6b-f9f5-46ae-af7f-af287afdfdcd,3869118,2022-12-04,787,Senegal,21026,Pape Gueye,2,86,12,Open Play,Blocked,Left Foot,0.027956013
+statsbomb,eea1e7de-b4fb-4e1a-81bf-43a79ad5d467,3869118,2022-12-04,787,Senegal,50498,Pape Matar Sarr,2,88,51,Open Play,Off T,Right Foot,0.032847784
+statsbomb,9c16738b-cf6c-4669-a694-276a322ff6d8,3869118,2022-12-04,768,England,3318,Marcus Rashford,2,90,23,Open Play,Off T,Right Foot,0.1459426
+statsbomb,8ea7d7fe-7f86-4c68-be76-1dbe52730c60,3869118,2022-12-04,787,Senegal,88123,Cheikh Ahmadou Bamba Mbacke Dieng,2,92,22,Free Kick,Blocked,Right Foot,0.03296228
+statsbomb,9fd07a9a-2de2-4ba5-b400-6a2264835ba2,3869151,2022-12-03,779,Argentina,7006,Alejandro Darío Gómez,1,16,29,Open Play,Off T,Right Foot,0.011147299
+statsbomb,b70841d8-d3d3-40de-a009-58a8309e3ba2,3869151,2022-12-03,792,Australia,22293,Harry Souttar,1,28,9,Open Play,Blocked,Head,0.06809473
+statsbomb,53d825ac-a98d-41ca-b81f-1015dee17376,3869151,2022-12-03,779,Argentina,5503,Lionel Andrés Messi Cuccittini,1,34,35,Open Play,Goal,Left Foot,0.06663833
+statsbomb,9fa41c60-ab9c-4fcb-8d5c-39a781e7a9c0,3869151,2022-12-03,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,49,59,Open Play,Saved,Left Foot,0.04517154
+statsbomb,a7ce988c-2d9b-4d78-8b34-95e4d2774ae0,3869151,2022-12-03,779,Argentina,29560,Julián Álvarez,2,56,41,Open Play,Goal,Right Foot,0.28060678
+statsbomb,5f1b13a1-f49c-41a6-9040-2c7db303d427,3869151,2022-12-03,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,65,50,Open Play,Off T,Left Foot,0.032841697
+statsbomb,060deabd-8fca-4998-b49c-bf4dee752a0e,3869151,2022-12-03,779,Argentina,5507,Nicolás Alejandro Tagliafico,2,74,43,Open Play,Off T,Left Foot,0.05181273
+statsbomb,5d585edf-d8ab-469c-b9ca-a6253faaa793,3869151,2022-12-03,792,Australia,8346,Craig Goodwin,2,76,9,Open Play,Blocked,Left Foot,0.013616442
+statsbomb,2f0bd31e-adca-4b9e-96ea-5a64e1d9ce2e,3869151,2022-12-03,792,Australia,5479,Aziz Eraltay Behich,2,80,8,Open Play,Blocked,Right Foot,0.07721693
+statsbomb,0b0970d0-4cfa-4f0c-aff3-210cb296226a,3869151,2022-12-03,792,Australia,8859,Ajdin Hrustic,2,80,41,Open Play,Off T,Left Foot,0.033247408
+statsbomb,fbbcbd30-78e7-4627-9714-bdf463a6c12e,3869151,2022-12-03,779,Argentina,11456,Lautaro Javier Martínez,2,87,15,Open Play,Off T,Right Foot,0.051439364
+statsbomb,e48ce4af-0f98-4004-b235-e115cefa6bac,3869151,2022-12-03,779,Argentina,11456,Lautaro Javier Martínez,2,88,11,Open Play,Off T,Right Foot,0.24890411
+statsbomb,8779a120-92be-4bef-b143-a0e91aa68bfb,3869151,2022-12-03,779,Argentina,11456,Lautaro Javier Martínez,2,92,10,Open Play,Saved,Left Foot,0.37209997
+statsbomb,36dc8c71-010d-4cfb-8427-774a6e556620,3869151,2022-12-03,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,92,50,Open Play,Off T,Left Foot,0.055600196
+statsbomb,1ec1a0e0-f57f-4390-879a-872cdc7be137,3869151,2022-12-03,779,Argentina,28268,Exequiel Alejandro Palacios,2,93,43,Open Play,Blocked,Right Foot,0.046685893
+statsbomb,015c52d6-b1c1-45c2-b450-75238519b983,3869151,2022-12-03,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,93,54,Open Play,Blocked,Left Foot,0.032042325
+statsbomb,6c7be4e1-edc2-4255-951e-1b21ee426a72,3869151,2022-12-03,779,Argentina,11456,Lautaro Javier Martínez,2,93,59,Open Play,Saved,Left Foot,0.076142184
+statsbomb,9fddcb1c-e704-48ad-a1e4-1bd6318e9cd0,3869151,2022-12-03,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,94,0,Open Play,Wayward,Left Foot,0.110446885
+statsbomb,e0cbd7b9-8daf-45c3-8d36-967f5ff74080,3869151,2022-12-03,792,Australia,227697,Garang Kuol,2,96,36,Open Play,Saved,Right Foot,0.23394231
+statsbomb,31fad68d-426e-4288-89c0-71ba4c143506,3869152,2022-12-04,771,France,5485,Raphaël Varane,1,3,12,Open Play,Off T,Head,0.1462742
+statsbomb,7cd0dae7-40fb-46a6-95f2-a3969d1cc578,3869152,2022-12-04,771,France,5477,Ousmane Dembélé,1,10,1,Open Play,Blocked,Right Foot,0.040392082
+statsbomb,69bb74b1-68af-4b20-a197-0c46604b417b,3869152,2022-12-04,771,France,10481,Aurélien Djani Tchouaméni,1,12,5,Open Play,Saved,Right Foot,0.017185243
+statsbomb,bffd8808-bde3-4471-b4ec-a2f2d980107b,3869152,2022-12-04,771,France,5477,Ousmane Dembélé,1,16,5,Open Play,Saved,Left Foot,0.07651916
+statsbomb,189cd753-a975-4179-b545-89a4e9fc2e38,3869152,2022-12-04,789,Poland,5668,Robert Lewandowski,1,20,9,Open Play,Off T,Left Foot,0.03323787
+statsbomb,aaa15453-3b82-4a91-9257-54793d844cb1,3869152,2022-12-04,771,France,4445,Jules Koundé,1,21,22,Open Play,Saved,Right Foot,0.01624438
+statsbomb,87b6c4e5-8879-49ac-bb0d-d732354d78e0,3869152,2022-12-04,789,Poland,7979,Przemysław Frankowski,1,24,4,Open Play,Blocked,Right Foot,0.043646414
+statsbomb,03ad5797-0787-4b37-9f9e-9c91d1d19bf0,3869152,2022-12-04,789,Poland,5668,Robert Lewandowski,1,32,21,Free Kick,Blocked,Right Foot,0.042642463
+statsbomb,44377d04-8e4c-4a86-8fa7-02f89b98ad81,3869152,2022-12-04,789,Poland,4734,Matty Cash,1,33,57,Open Play,Wayward,Right Foot,0.023505978
+statsbomb,982df7d3-5406-4586-bedd-ce5132be5608,3869152,2022-12-04,771,France,3009,Kylian Mbappé Lottin,1,34,52,Open Play,Saved,Left Foot,0.047962468
+statsbomb,e042d4ce-1bdb-44d2-a0db-36924a2cec20,3869152,2022-12-04,771,France,3604,Olivier Giroud,1,35,31,Open Play,Wayward,Left Foot,0.046657436
+statsbomb,cd7ccad2-865a-456d-b56b-e0150001b529,3869152,2022-12-04,789,Poland,5660,Piotr Zieliński,1,37,8,Open Play,Saved,Right Foot,0.13905574
+statsbomb,61add723-da40-461f-b9a1-d8d4878c2f61,3869152,2022-12-04,789,Poland,5660,Piotr Zieliński,1,37,9,Open Play,Blocked,Left Foot,0.2098723
+statsbomb,8d35767c-57ec-4a24-81c1-3f2a3f3dcc78,3869152,2022-12-04,789,Poland,31955,Jakub Kamiński,1,37,10,Open Play,Blocked,Right Foot,0.07224382
+statsbomb,3dfb5a79-95c5-4e66-88fb-ddf16a823d7b,3869152,2022-12-04,771,France,3604,Olivier Giroud,1,43,28,Open Play,Goal,Left Foot,0.28635955
+statsbomb,a3db0203-805f-47e3-a481-cc660770e431,3869152,2022-12-04,789,Poland,31955,Jakub Kamiński,1,45,24,Open Play,Blocked,Right Foot,0.03898995
+statsbomb,527eca36-6d4e-43e0-ba5a-ab3313ad6128,3869152,2022-12-04,771,France,5487,Antoine Griezmann,2,47,38,Free Kick,Saved,Left Foot,0.008752431
+statsbomb,9caab947-e53e-460b-84d5-a5b7f974f3e7,3869152,2022-12-04,771,France,6704,Theo Bernard François Hernández,2,47,41,Open Play,Off T,Right Foot,0.032634486
+statsbomb,f814b114-cf7e-454e-8c60-8d301b5a49c9,3869152,2022-12-04,771,France,3009,Kylian Mbappé Lottin,2,55,53,Open Play,Blocked,Right Foot,0.02943752
+statsbomb,6501acc8-ffc7-4246-82e8-43e7a8cf7c47,3869152,2022-12-04,771,France,3009,Kylian Mbappé Lottin,2,62,41,Open Play,Wayward,Right Foot,0.054253228
+statsbomb,7591bf5f-3557-4f9a-b967-485aebef76d4,3869152,2022-12-04,771,France,3604,Olivier Giroud,2,65,8,Open Play,Off T,Left Foot,0.12365263
+statsbomb,510bb5aa-f782-4a22-be23-8274be45b104,3869152,2022-12-04,789,Poland,3034,Kamil Glik,2,70,58,Open Play,Off T,Head,0.041239407
+statsbomb,c5b96634-9e00-4135-a499-bdfc1c58b06a,3869152,2022-12-04,771,France,3009,Kylian Mbappé Lottin,2,73,56,Open Play,Goal,Right Foot,0.08738103
+statsbomb,3b650254-e765-40a1-819e-9b67473829f3,3869152,2022-12-04,771,France,6704,Theo Bernard François Hernández,2,80,58,Open Play,Off T,Right Foot,0.069959894
+statsbomb,2d38130f-3d62-4369-8a2b-ec7866353b92,3869152,2022-12-04,771,France,3009,Kylian Mbappé Lottin,2,90,5,Open Play,Goal,Right Foot,0.042708755
+statsbomb,5dc61ca6-7468-40cf-b756-0517d2693285,3869152,2022-12-04,789,Poland,5668,Robert Lewandowski,2,91,50,Open Play,Wayward,Right Foot,0.061160102
+statsbomb,bbc46428-10c1-4bec-8eef-51410db15dba,3869152,2022-12-04,789,Poland,5668,Robert Lewandowski,2,93,41,Open Play,Blocked,Head,0.10443308
+statsbomb,36c25c99-7fd8-41f4-9467-18c23d474d37,3869152,2022-12-04,789,Poland,5668,Robert Lewandowski,2,98,36,Penalty,Goal,Right Foot,0.7835
+statsbomb,3e282518-80cc-4cba-a8bf-f978a3bdc68b,3869219,2022-12-05,778,Japan,37215,Shogo Taniguchi,1,2,9,Open Play,Off T,Head,0.11361285
+statsbomb,d2902ca7-330f-40ca-bdcc-80ebce314510,3869219,2022-12-05,785,Croatia,5474,Ivan Perišić,1,7,31,Open Play,Saved,Right Foot,0.05943511
+statsbomb,05b85723-782e-406a-8111-015340f46439,3869219,2022-12-05,785,Croatia,5460,Andrej Kramarić,1,7,34,Open Play,Blocked,Left Foot,0.17775308
+statsbomb,84a3ecd6-bec2-4e73-96a2-682de9882869,3869219,2022-12-05,785,Croatia,33018,Joško Gvardiol,1,23,47,Open Play,Off T,Left Foot,0.061746918
+statsbomb,edc46c5b-cc9d-4a0d-b880-d880335d6f27,3869219,2022-12-05,778,Japan,9411,Daichi Kamada,1,40,7,Open Play,Wayward,Right Foot,0.08994952
+statsbomb,a17c568a-4df5-4c2f-81e2-4cc89d924ae8,3869219,2022-12-05,778,Japan,30628,Daizen Maeda,1,42,54,Open Play,Goal,Left Foot,0.45874894
+statsbomb,97734f34-6e02-4e86-b03d-c9d858dd8c92,3869219,2022-12-05,778,Japan,9411,Daichi Kamada,2,45,27,Open Play,Off T,Right Foot,0.03904812
+statsbomb,f37a0c66-833e-4fe3-ac62-b3841656a294,3869219,2022-12-05,785,Croatia,5456,Mateo Kovačić,2,48,13,Open Play,Off T,Right Foot,0.02993381
+statsbomb,5552d4ee-1ebc-4ec4-9f36-6a0524b2cb44,3869219,2022-12-05,778,Japan,37221,Hidemasa Morita,2,49,22,Open Play,Wayward,Right Foot,0.041140273
+statsbomb,5ce4d362-ebd6-4ea8-8544-e47d5f5f2454,3869219,2022-12-05,785,Croatia,5474,Ivan Perišić,2,54,54,Open Play,Goal,Head,0.02684295
+statsbomb,74935b33-b8d3-4ab4-919d-9a9ed80a3bcd,3869219,2022-12-05,778,Japan,23721,Wataru Endo,2,56,56,Open Play,Saved,Right Foot,0.019910807
+statsbomb,ddddef93-1105-425d-99f4-011605e72ad4,3869219,2022-12-05,778,Japan,23721,Wataru Endo,2,59,48,Open Play,Blocked,Right Foot,0.020528734
+statsbomb,cda7fa73-f09c-46df-8e56-f4b6baa17185,3869219,2022-12-05,778,Japan,37221,Hidemasa Morita,2,59,49,Open Play,Blocked,Right Foot,0.052081473
+statsbomb,bb569056-5824-4a84-9bf7-098df409c1fb,3869219,2022-12-05,778,Japan,8361,Ritsu Doan,2,59,52,Open Play,Saved,Left Foot,0.056113943
+statsbomb,45501bff-d6b1-4cb6-a6b3-458e422a236a,3869219,2022-12-05,785,Croatia,5463,Luka Modrić,2,62,13,Open Play,Saved,Right Foot,0.031055314
+statsbomb,31749268-4467-46db-b470-7e9125d6d734,3869219,2022-12-05,785,Croatia,5474,Ivan Perišić,2,65,32,Open Play,Blocked,Left Foot,0.018378427
+statsbomb,c0055f4a-4e53-4244-a1b0-af09963873fd,3869219,2022-12-05,785,Croatia,5460,Andrej Kramarić,2,65,52,Open Play,Blocked,Right Foot,0.018472007
+statsbomb,605589a6-a83f-4533-b88f-a8e775efa581,3869219,2022-12-05,785,Croatia,8654,Ante Budimir,2,65,53,Open Play,Off T,Head,0.10111922
+statsbomb,3e14ff6c-b675-4433-b70b-f1362675d101,3869219,2022-12-05,785,Croatia,11603,Mario Pašalić,2,73,43,Open Play,Off T,Head,0.035465226
+statsbomb,a99de16f-d5a2-4386-82e7-51dca208bd8c,3869219,2022-12-05,785,Croatia,5474,Ivan Perišić,2,76,37,Open Play,Blocked,Left Foot,0.030077945
+statsbomb,78a794a1-c48c-4699-904a-5ca28cb9cc15,3869219,2022-12-05,785,Croatia,11603,Mario Pašalić,2,85,42,Open Play,Off T,Head,0.052599985
+statsbomb,0ac4b920-e24a-478f-902c-d3793cf26db0,3869219,2022-12-05,778,Japan,37215,Shogo Taniguchi,3,91,35,Open Play,Off T,Head,0.0608747
+statsbomb,23c0f102-912d-4b11-93b7-08f61a961924,3869219,2022-12-05,785,Croatia,5474,Ivan Perišić,3,100,24,Open Play,Blocked,Right Foot,0.07439702
+statsbomb,9373957f-01f1-44d3-a2af-6a412ae43caf,3869219,2022-12-05,785,Croatia,11127,Borna Barišić,3,100,26,Open Play,Blocked,Left Foot,0.015196718
+statsbomb,e1912d47-5dce-4b37-8d31-b6e9482be999,3869219,2022-12-05,778,Japan,37211,Kaoru Mitoma,3,104,5,Open Play,Saved,Right Foot,0.054134306
+statsbomb,142a9ff0-352e-46d8-9bef-e8c1372b8f37,3869219,2022-12-05,778,Japan,23721,Wataru Endo,3,104,9,Open Play,Blocked,Right Foot,0.02615668
+statsbomb,f68691b4-7768-4512-9505-335fcb58785c,3869219,2022-12-05,778,Japan,8776,Takumi Minamino,3,104,20,Open Play,Blocked,Right Foot,0.03667642
+statsbomb,8aafb6ab-26fa-4ccb-87b7-a9c4e9aae35b,3869219,2022-12-05,785,Croatia,22041,Marko Livaja,4,113,42,Open Play,Saved,Head,0.047236525
+statsbomb,69de8840-7050-44c6-a13a-aac71b5f6cef,3869219,2022-12-05,785,Croatia,16527,Mislav Oršić,4,120,10,Open Play,Blocked,Right Foot,0.009676031
+statsbomb,5e58555c-4442-4907-8029-0dbd3d58d2a3,3869219,2022-12-05,785,Croatia,28914,Lovro Majer,4,120,18,Open Play,Off T,Right Foot,0.06501122
+statsbomb,7e8a4838-4396-44cb-af8e-51df3abdd7b8,3869219,2022-12-05,778,Japan,8776,Takumi Minamino,5,120,4,Penalty,Saved,Right Foot,0.7835
+statsbomb,a082197d-6235-4da0-92fc-a1aa9379bc0d,3869219,2022-12-05,785,Croatia,3441,Nikola Vlašić,5,120,43,Penalty,Goal,Right Foot,0.7835
+statsbomb,bccd6f5b-3d78-448c-bde8-793467426a12,3869219,2022-12-05,778,Japan,37211,Kaoru Mitoma,5,121,13,Penalty,Saved,Right Foot,0.7835
+statsbomb,54be1e85-59c1-43cd-8da4-26db10dcd2b7,3869219,2022-12-05,785,Croatia,5469,Marcelo Brozović,5,121,52,Penalty,Goal,Right Foot,0.7835
+statsbomb,2e48e56e-491c-4194-865d-be0b40fafb69,3869219,2022-12-05,778,Japan,8949,Takuma Asano,5,122,33,Penalty,Goal,Right Foot,0.7835
+statsbomb,f33dea9d-c828-4298-9983-d63a2db7557b,3869219,2022-12-05,785,Croatia,22041,Marko Livaja,5,123,13,Penalty,Post,Right Foot,0.7835
+statsbomb,2cdf3402-4fcf-45ef-9d91-8474453e45ad,3869219,2022-12-05,778,Japan,3300,Maya Yoshida,5,123,50,Penalty,Saved,Right Foot,0.7835
+statsbomb,d38acc97-e85e-43e6-9798-dac321842497,3869219,2022-12-05,785,Croatia,11603,Mario Pašalić,5,124,28,Penalty,Goal,Right Foot,0.7835
+statsbomb,c18b1cdc-ca6e-484b-9ad3-ae2bc7cc6dff,3869220,2022-12-06,788,Morocco,5245,Achraf Hakimi Mouh,1,11,4,Free Kick,Off T,Right Foot,0.041958537
+statsbomb,b7fc04f3-2906-42ab-926a-b63ea28d71cf,3869220,2022-12-06,772,Spain,5719,Marco Asensio Willemsen,1,25,57,Open Play,Off T,Left Foot,0.025564773
+statsbomb,9c4da7a8-5924-4b37-8764-59b14fbbf2db,3869220,2022-12-06,788,Morocco,15890,Noussair Mazraoui,1,32,18,Open Play,Saved,Left Foot,0.023416335
+statsbomb,0c769fb4-29c5-40a3-9727-14c52f352640,3869220,2022-12-06,788,Morocco,12149,Nayef Aguerd,1,41,52,Open Play,Off T,Head,0.25141555
+statsbomb,a588c52c-2204-412b-8ca7-5f9a5d06b218,3869220,2022-12-06,772,Spain,16532,Daniel Olmo Carvajal,2,54,0,Open Play,Saved,Right Foot,0.0073576192
+statsbomb,f33a5a8d-7585-4055-8d75-a6c8a4b5dfec,3869220,2022-12-06,772,Spain,16532,Daniel Olmo Carvajal,2,77,37,Open Play,Off T,Right Foot,0.031760626
+statsbomb,58d48914-c17f-454c-a663-8fb983b47949,3869220,2022-12-06,772,Spain,3477,Álvaro Borja Morata Martín,2,81,0,Open Play,Wayward,Right Foot,0.017266534
+statsbomb,ed193a27-8e08-4224-8608-0818f2c4c558,3869220,2022-12-06,788,Morocco,296254,Walid Cheddira,2,85,5,Open Play,Saved Off Target,Right Foot,0.119254045
+statsbomb,6907dd5a-f968-44ed-be9e-fa0dce83d74d,3869220,2022-12-06,772,Spain,3477,Álvaro Borja Morata Martín,2,90,20,Open Play,Off T,Head,0.049165204
+statsbomb,d07f9ed6-ff50-4f64-8a79-4702889c0d40,3869220,2022-12-06,772,Spain,4353,Aymeric Laporte,2,95,0,Open Play,Blocked,Head,0.04145577
+statsbomb,966b275d-bde3-4aea-8b11-412b60a91021,3869220,2022-12-06,772,Spain,39161,Alejandro Balde Martínez,3,99,56,Open Play,Blocked,Left Foot,0.077706024
+statsbomb,405b81d7-6eec-43ca-91b2-a06f2e2dd008,3869220,2022-12-06,772,Spain,6765,Rodrigo Hernández Cascante,3,102,51,Open Play,Off T,Right Foot,0.0056476467
+statsbomb,6ece6c28-0fbd-48c5-9e57-5136be5695ec,3869220,2022-12-06,788,Morocco,296254,Walid Cheddira,3,103,35,Open Play,Saved,Left Foot,0.1301347
+statsbomb,487e6618-8287-4346-9221-ec6bd1666314,3869220,2022-12-06,772,Spain,6840,Marcos Llorente Moreno,3,106,9,Open Play,Blocked,Right Foot,0.024551911
+statsbomb,e7a34ed0-521e-4440-9ee5-a8134e0f7dd0,3869220,2022-12-06,788,Morocco,3634,Abdelhamid Sabiri,4,105,1,Open Play,Off T,Right Foot,0.004195439
+statsbomb,990bd967-1e5e-4380-baf7-13af7ddde792,3869220,2022-12-06,772,Spain,5203,Sergio Busquets i Burgos,4,120,46,Open Play,Blocked,Left Foot,0.0709334
+statsbomb,b3de284b-d1cf-4fed-970c-400550d89daa,3869220,2022-12-06,772,Spain,6583,Carlos Soler Barragán,4,121,22,Open Play,Blocked,Head,0.039505202
+statsbomb,79542497-53b6-4d25-8a88-d0c18a6d453a,3869220,2022-12-06,772,Spain,6720,Pablo Sarabia García,4,122,22,Open Play,Post,Right Foot,0.10407615
+statsbomb,07875275-5ae1-4193-a471-8f88db7f9887,3869220,2022-12-06,788,Morocco,3634,Abdelhamid Sabiri,5,120,7,Penalty,Goal,Right Foot,0.7835
+statsbomb,f8d211fa-5374-4310-a982-8699c7335255,3869220,2022-12-06,772,Spain,6720,Pablo Sarabia García,5,121,0,Penalty,Post,Left Foot,0.7835
+statsbomb,f6e7d4d9-0029-4c12-adb3-0a4805479609,3869220,2022-12-06,788,Morocco,5237,Hakim Ziyech,5,121,51,Penalty,Goal,Left Foot,0.7835
+statsbomb,243c4452-6d54-401b-a681-4449fd9da7c6,3869220,2022-12-06,772,Spain,6583,Carlos Soler Barragán,5,122,44,Penalty,Saved,Right Foot,0.7835
+statsbomb,1ca8275a-6f22-45e8-802a-445717e96337,3869220,2022-12-06,788,Morocco,67700,Badr Banoun,5,123,36,Penalty,Saved,Right Foot,0.7835
+statsbomb,2dbf7685-1e38-42ea-9033-edf9f79d57f1,3869220,2022-12-06,772,Spain,5203,Sergio Busquets i Burgos,5,124,31,Penalty,Saved,Right Foot,0.7835
+statsbomb,08590ee6-ef11-4025-8648-2a8496c30c1f,3869220,2022-12-06,788,Morocco,5245,Achraf Hakimi Mouh,5,125,36,Penalty,Goal,Right Foot,0.7835
+statsbomb,d1ec79ed-46cc-4c51-8fac-aeb33943dc28,3869253,2022-12-05,781,Brazil,4320,Neymar da Silva Santos Junior,1,6,39,Open Play,Wayward,Right Foot,0.083826184
+statsbomb,44854e05-f6c8-4c2a-a7ef-9dc2ae4c7f09,3869253,2022-12-05,781,Brazil,18395,Vinícius José Paixão de Oliveira Júnior,1,6,41,Open Play,Goal,Right Foot,0.13057186
+statsbomb,ba9547df-81eb-4cc8-acc3-63ebec6f2c39,3869253,2022-12-05,781,Brazil,4320,Neymar da Silva Santos Junior,1,12,18,Penalty,Goal,Right Foot,0.7835
+statsbomb,a19eb2c7-c412-4481-bf03-a3080127d8d1,3869253,2022-12-05,791,South Korea,5620,Hee-Chan Hwang,1,16,15,Open Play,Saved,Right Foot,0.016991004
+statsbomb,ad60d052-a0ce-4bfe-8290-d557e0cb3a11,3869253,2022-12-05,791,South Korea,23763,In-Beom Hwang,1,16,40,Open Play,Off T,Left Foot,0.026666574
+statsbomb,7f42485f-775b-45fb-932e-39c8eb885b90,3869253,2022-12-05,791,South Korea,5620,Hee-Chan Hwang,1,24,57,Open Play,Saved,Right Foot,0.0058221314
+statsbomb,35028f1d-c785-47f4-88d5-a82cc91ceb62,3869253,2022-12-05,781,Brazil,3280,Richarlison de Andrade,1,28,13,Open Play,Goal,Left Foot,0.5379008
+statsbomb,bc4fd99a-0a91-4d45-b46d-10786f668f0a,3869253,2022-12-05,781,Brazil,10595,Raphael Dias Belloli,1,30,19,Open Play,Off T,Left Foot,0.02589997
+statsbomb,95582d85-7eed-4aeb-bbe6-2b1a429b6295,3869253,2022-12-05,791,South Korea,5620,Hee-Chan Hwang,1,31,37,Open Play,Saved,Right Foot,0.017834108
+statsbomb,d2740e3a-0982-4c1f-81ec-54f12ed1bcd4,3869253,2022-12-05,781,Brazil,5539,Carlos Henrique Casimiro,1,33,37,Open Play,Off T,Right Foot,0.029429397
+statsbomb,75e1dbd2-f601-4261-992d-106488c7219b,3869253,2022-12-05,781,Brazil,22600,Lucas Tolentino Coelho de Lima,1,35,45,Open Play,Goal,Right Foot,0.08633457
+statsbomb,afbe9884-329f-4721-a822-ccba6d081310,3869253,2022-12-05,781,Brazil,22600,Lucas Tolentino Coelho de Lima,1,45,14,Open Play,Saved,Left Foot,0.2577265
+statsbomb,08678f16-67ff-4ff5-905e-d9cc75db1d2d,3869253,2022-12-05,781,Brazil,3280,Richarlison de Andrade,1,48,8,Open Play,Saved,Right Foot,0.2681848
+statsbomb,b2459e0f-b8bd-4069-a41c-daf9dc5b3f8f,3869253,2022-12-05,781,Brazil,4320,Neymar da Silva Santos Junior,1,48,9,Open Play,Off T,Other,0.26870713
+statsbomb,40ede36e-9124-4cb3-9065-f0a66eb450dd,3869253,2022-12-05,781,Brazil,10595,Raphael Dias Belloli,2,45,23,Open Play,Saved,Left Foot,0.04634087
+statsbomb,34f546bf-8be7-4a35-9e42-bfd908c2f766,3869253,2022-12-05,791,South Korea,3083,Heung-Min Son,2,46,16,Open Play,Saved,Right Foot,0.1490943
+statsbomb,087430be-d99a-4344-b82c-58aeae623cf1,3869253,2022-12-05,781,Brazil,10595,Raphael Dias Belloli,2,53,52,Open Play,Saved,Left Foot,0.080992505
+statsbomb,c1a1f95e-48fa-4cf7-af57-c2bbb640af4c,3869253,2022-12-05,781,Brazil,18395,Vinícius José Paixão de Oliveira Júnior,2,53,59,Open Play,Off T,Right Foot,0.05640157
+statsbomb,2679ed63-ee3c-478e-b615-367b96b18164,3869253,2022-12-05,781,Brazil,10595,Raphael Dias Belloli,2,57,0,Free Kick,Blocked,Left Foot,0.04321825
+statsbomb,51025cec-c9df-439b-9017-d52381d11adc,3869253,2022-12-05,781,Brazil,10595,Raphael Dias Belloli,2,61,39,Open Play,Saved,Right Foot,0.16284284
+statsbomb,1e78d87e-7adf-4d14-8311-7ce4b0f783ed,3869253,2022-12-05,791,South Korea,5620,Hee-Chan Hwang,2,67,34,Open Play,Saved,Right Foot,0.04724954
+statsbomb,92e9b5f4-c7e1-4758-91bb-ee3ed2fd7c3c,3869253,2022-12-05,791,South Korea,23264,Seung-Ho Paik,2,75,47,Open Play,Goal,Left Foot,0.023081098
+statsbomb,1ea14c9e-dd01-4af6-868c-584633f0088c,3869253,2022-12-05,781,Brazil,4324,Daniel Alves da Silva,2,88,28,Open Play,Blocked,Right Foot,0.027839905
+statsbomb,3b3d795f-7050-4264-8752-0722213c0713,3869253,2022-12-05,781,Brazil,11493,Gleison Bremer Silva Nascimento,2,89,3,Open Play,Saved,Head,0.34439024
+statsbomb,6e8aca58-362d-4573-b02c-809f8438cacb,3869253,2022-12-05,791,South Korea,5620,Hee-Chan Hwang,2,89,49,Open Play,Off T,Right Foot,0.058088522
+statsbomb,f592c88a-4f84-4c9e-9bfb-da5bef69f00c,3869253,2022-12-05,781,Brazil,4324,Daniel Alves da Silva,2,92,41,Open Play,Off T,Right Foot,0.027316706
+statsbomb,da4dd724-c729-4200-935c-84741b3d8d1b,3869254,2022-12-06,773,Switzerland,5545,Breel-Donald Embolo,1,4,56,Open Play,Blocked,Left Foot,0.06137733
+statsbomb,4702956b-c7d2-4b36-848c-4057f688bba0,3869254,2022-12-06,780,Portugal,38803,Gonçalo Matias Ramos,1,16,43,Open Play,Goal,Left Foot,0.10102074
+statsbomb,3e9b1782-21f4-4684-a2b4-7fcb434e81d2,3869254,2022-12-06,780,Portugal,11184,Otávio Edmilson da Silva Monteiro,1,21,3,Open Play,Saved,Right Foot,0.032515083
+statsbomb,d3210de8-2efb-482c-b44b-f983e5cdf53b,3869254,2022-12-06,780,Portugal,38803,Gonçalo Matias Ramos,1,21,54,Open Play,Saved,Right Foot,0.072023906
+statsbomb,171eaf4b-d43f-41e0-bdcd-599702a496ec,3869254,2022-12-06,773,Switzerland,3533,Xherdan Shaqiri,1,29,38,Free Kick,Saved,Left Foot,0.023890225
+statsbomb,92f8ddc9-eb11-486b-b917-e6adc5ddcb84,3869254,2022-12-06,780,Portugal,20016,Kléper Laveran Lima Ferreira,1,32,35,Open Play,Goal,Head,0.12779379
+statsbomb,5ffa5b27-1e0e-410e-8950-32d831432910,3869254,2022-12-06,773,Switzerland,6983,Remo Freuler,1,37,32,Open Play,Saved,Head,0.2948616
+statsbomb,c46ab3f1-2c95-44e7-80d3-a63693f56e70,3869254,2022-12-06,773,Switzerland,5537,Fabian Lukas Schär,1,37,36,Open Play,Off T,Right Foot,0.024413843
+statsbomb,6e8ce1fe-2cc7-499d-a137-df556d0ce758,3869254,2022-12-06,780,Portugal,38803,Gonçalo Matias Ramos,1,42,11,Open Play,Saved,Left Foot,0.31703457
+statsbomb,73b29321-0a25-4f7f-b226-23cc581db422,3869254,2022-12-06,780,Portugal,5209,Raphaël Adelino José Guerreiro,1,47,18,Open Play,Off T,Left Foot,0.021823613
+statsbomb,4232fdf4-5a2b-47bf-ae3b-0f5fdeea3684,3869254,2022-12-06,780,Portugal,38803,Gonçalo Matias Ramos,2,48,11,Open Play,Wayward,Head,0.09938955
+statsbomb,37c91977-3d8e-42a7-8368-806c40c8e9fc,3869254,2022-12-06,780,Portugal,38803,Gonçalo Matias Ramos,2,50,5,Open Play,Goal,Left Foot,0.5086819
+statsbomb,86b9f4b6-512c-426b-aa0a-9d2295994d50,3869254,2022-12-06,780,Portugal,12041,João Félix Sequeira,2,52,32,Open Play,Blocked,Left Foot,0.043932665
+statsbomb,0fccbaee-00d4-4124-af20-9740849940b4,3869254,2022-12-06,780,Portugal,20016,Kléper Laveran Lima Ferreira,2,53,20,Open Play,Wayward,Head,0.05800441
+statsbomb,4ed9fca8-dccc-4c44-ba66-76783239ad29,3869254,2022-12-06,780,Portugal,5209,Raphaël Adelino José Guerreiro,2,54,55,Open Play,Goal,Left Foot,0.35848966
+statsbomb,2b86a444-5696-4c2d-ba7f-837ec9756684,3869254,2022-12-06,773,Switzerland,5549,Manuel Obafemi Akanji,2,57,5,Open Play,Goal,Right Foot,0.6688656
+statsbomb,9cc86132-6a78-440a-b926-2926ddd6946f,3869254,2022-12-06,773,Switzerland,3533,Xherdan Shaqiri,2,65,21,Open Play,Wayward,Left Foot,0.007870479
+statsbomb,ec8bd928-b9e8-44ae-b2a1-3e12b7d38a87,3869254,2022-12-06,780,Portugal,38803,Gonçalo Matias Ramos,2,66,12,Open Play,Goal,Right Foot,0.46699882
+statsbomb,624cffee-e13c-4020-8af2-efcf3760783c,3869254,2022-12-06,773,Switzerland,5538,Denis Lemi Zakaria Lako Lado,2,70,10,Open Play,Blocked,Right Foot,0.04188712
+statsbomb,a05207c2-0497-47a5-8b62-242766a4266d,3869254,2022-12-06,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,75,51,Free Kick,Blocked,Right Foot,0.028790973
+statsbomb,8a9e1974-0ef0-4911-b167-4dd9d77bdc8d,3869254,2022-12-06,773,Switzerland,5545,Breel-Donald Embolo,2,79,35,Open Play,Blocked,Right Foot,0.032889098
+statsbomb,47d48ad1-0bec-4db0-89fa-69f2064e2eee,3869254,2022-12-06,773,Switzerland,3500,Granit Xhaka,2,80,12,Open Play,Off T,Head,0.0836758
+statsbomb,5df2ae77-2cbb-4d69-8bb4-36c4f4d8aea5,3869254,2022-12-06,773,Switzerland,29006,Noah Okafor,2,84,57,Open Play,Blocked,Right Foot,0.032096077
+statsbomb,b454f46a-01f5-4f67-9b6b-994573c64ca9,3869254,2022-12-06,780,Portugal,18360,Rafael Alexandre Conceição Leão,2,91,12,Open Play,Goal,Right Foot,0.010257767
+statsbomb,3d1a05c1-c580-458e-bbce-636412e359fb,3869254,2022-12-06,780,Portugal,5206,Rúben Santos Gato Alves Dias,2,93,45,Open Play,Blocked,Head,0.03750256
+statsbomb,642515e1-293b-497f-bfbb-3546264f1b33,3869321,2022-12-09,779,Argentina,7797,Rodrigo Javier De Paul,1,4,33,Open Play,Blocked,Right Foot,0.02377054
+statsbomb,52c4e934-0c99-4c5c-93db-b538bc800e9b,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,1,21,36,Open Play,Off T,Left Foot,0.037832856
+statsbomb,2a672651-8c7c-4ac7-b16c-711fa08790df,3869321,2022-12-09,941,Netherlands,8259,Steven Bergwijn,1,23,42,Open Play,Off T,Left Foot,0.089517
+statsbomb,e6038dbd-a8c4-427f-9663-54654cde0b0b,3869321,2022-12-09,779,Argentina,7797,Rodrigo Javier De Paul,1,32,39,Open Play,Saved,Right Foot,0.049762752
+statsbomb,ba0291a6-1cd3-43f0-8394-b91c7cd6d4e2,3869321,2022-12-09,779,Argentina,29201,Nahuel Molina Lucero,1,34,4,Open Play,Goal,Right Foot,0.43442267
+statsbomb,8d04b410-694a-4eb3-8354-d8e67249dfb3,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,1,39,9,Open Play,Saved,Right Foot,0.03387043
+statsbomb,94fd7830-c3a3-4f62-ab45-ae7bcc688e86,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,62,29,Free Kick,Off T,Left Foot,0.07608311
+statsbomb,dc11fa36-49c6-41db-a883-9991c8711696,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,72,39,Penalty,Goal,Left Foot,0.7835
+statsbomb,758f3a76-791e-4a71-8cb4-d776a6bd293d,3869321,2022-12-09,941,Netherlands,7829,Wout Weghorst,2,82,17,Open Play,Goal,Head,0.047416847
+statsbomb,0a4a1e56-5881-463d-a37e-b97aa49cdc29,3869321,2022-12-09,941,Netherlands,7745,Steven Berghuis,2,84,33,Open Play,Blocked,Left Foot,0.032538008
+statsbomb,0ada085b-8d72-4c54-8b6c-db3349ad0c84,3869321,2022-12-09,941,Netherlands,8125,Denzel Dumfries,2,89,35,Open Play,Off T,Right Foot,0.047394842
+statsbomb,0766e986-a1be-4f02-b176-8ae4b7ed309e,3869321,2022-12-09,941,Netherlands,7745,Steven Berghuis,2,92,12,Free Kick,Blocked,Left Foot,0.08017064
+statsbomb,1a46edaa-ca09-435a-b841-aa201d1f0e14,3869321,2022-12-09,941,Netherlands,7829,Wout Weghorst,2,100,32,Open Play,Goal,Left Foot,0.21959315
+statsbomb,28811240-5987-468a-87d6-c237987e22d2,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,4,109,18,Open Play,Off T,Left Foot,0.035418287
+statsbomb,500f07f5-8b73-4da3-a208-ae5c9806f7b3,3869321,2022-12-09,941,Netherlands,20033,Luuk de Jong,4,112,14,Open Play,Blocked,Left Foot,0.05290734
+statsbomb,2704ab9f-8047-4d97-b1d5-d91b82af0418,3869321,2022-12-09,779,Argentina,11456,Lautaro Javier Martínez,4,113,47,Open Play,Blocked,Right Foot,0.2245604
+statsbomb,9445b26d-f734-4701-a757-7c83e51c906e,3869321,2022-12-09,779,Argentina,38718,Enzo Fernandez,4,114,54,Open Play,Blocked,Left Foot,0.032085553
+statsbomb,74848b41-3f98-4b47-9d9f-661ee7cf5285,3869321,2022-12-09,779,Argentina,7161,Germán Alejandro Pezzella,4,115,53,Open Play,Off T,Head,0.04452438
+statsbomb,4960eb06-e30b-485b-a653-edd092335439,3869321,2022-12-09,779,Argentina,11456,Lautaro Javier Martínez,4,118,36,Open Play,Saved,Left Foot,0.08241133
+statsbomb,2e20bbdd-74b0-4840-bf7c-fc460cdecad2,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,4,119,27,Open Play,Blocked,Left Foot,0.04201436
+statsbomb,bc9e059b-1507-48a8-bf8e-15130d04b9ee,3869321,2022-12-09,779,Argentina,38718,Enzo Fernandez,4,120,9,Open Play,Post,Right Foot,0.038940463
+statsbomb,506ef1d2-b8f7-4c3a-b8a6-ccde3026c580,3869321,2022-12-09,941,Netherlands,3669,Virgil van Dijk,5,120,5,Penalty,Saved,Right Foot,0.7835
+statsbomb,256dea09-d28e-452b-81e7-1aaf72ffc7d7,3869321,2022-12-09,779,Argentina,5503,Lionel Andrés Messi Cuccittini,5,121,3,Penalty,Goal,Left Foot,0.7835
+statsbomb,9e0ea28e-8c8b-4409-bd0c-322a2243a80a,3869321,2022-12-09,941,Netherlands,7745,Steven Berghuis,5,121,45,Penalty,Saved,Left Foot,0.7835
+statsbomb,9ee52d5d-3516-4720-8ad1-72c14f59f0f5,3869321,2022-12-09,779,Argentina,16308,Leandro Daniel Paredes,5,122,39,Penalty,Goal,Right Foot,0.7835
+statsbomb,21824c95-b910-490c-9f3d-2b89f189114e,3869321,2022-12-09,941,Netherlands,7891,Teun Koopmeiners,5,123,31,Penalty,Goal,Left Foot,0.7835
+statsbomb,40db7b36-6e61-4096-b3fb-4d6501e460e0,3869321,2022-12-09,779,Argentina,28263,Gonzalo Ariel Montiel,5,124,15,Penalty,Goal,Right Foot,0.7835
+statsbomb,60f391e2-074e-452e-878c-3f7fa487e97c,3869321,2022-12-09,941,Netherlands,7829,Wout Weghorst,5,124,59,Penalty,Goal,Right Foot,0.7835
+statsbomb,af507344-33bf-4736-b45a-0f0684361a10,3869321,2022-12-09,779,Argentina,38718,Enzo Fernandez,5,126,0,Penalty,Off T,Right Foot,0.7835
+statsbomb,84485632-c230-49b7-b046-0d18a486d54e,3869321,2022-12-09,941,Netherlands,20033,Luuk de Jong,5,126,40,Penalty,Goal,Right Foot,0.7835
+statsbomb,799dfa0e-f471-459a-9dea-b5379e8150a7,3869321,2022-12-09,779,Argentina,11456,Lautaro Javier Martínez,5,127,42,Penalty,Goal,Right Foot,0.7835
+statsbomb,18d5acc3-d2c4-4a3f-b3de-3d8714000f03,3869354,2022-12-10,768,England,4354,Philip Foden,1,3,17,Open Play,Blocked,Left Foot,0.022691524
+statsbomb,76a926ab-d769-4f19-97da-d7d329d90325,3869354,2022-12-10,771,France,3604,Olivier Giroud,1,10,35,Open Play,Saved,Head,0.21537142
+statsbomb,392c7c17-aff2-48c8-becc-d23b5bf60640,3869354,2022-12-10,771,France,10481,Aurélien Djani Tchouaméni,1,16,22,Open Play,Goal,Right Foot,0.027870113
+statsbomb,7bc4f065-24a9-4401-ac37-90aedc8f7b86,3869354,2022-12-10,768,England,3382,Luke Shaw,1,20,8,Free Kick,Saved,Left Foot,0.05589417
+statsbomb,c60b4259-2ba3-4496-927f-331d9c2ec9d1,3869354,2022-12-10,768,England,10955,Harry Kane,1,21,29,Open Play,Saved,Right Foot,0.07522586
+statsbomb,7698af86-50b1-41d3-a751-88cbb32b875d,3869354,2022-12-10,768,England,30714,Jude Bellingham,1,21,33,Open Play,Blocked,Head,0.21807538
+statsbomb,f7fdf23a-a5e9-4e7f-ba8d-40bc6379b9b0,3869354,2022-12-10,768,England,10955,Harry Kane,1,28,30,Open Play,Saved,Right Foot,0.018916143
+statsbomb,b9ca208b-744a-482c-acbb-a25025ebb258,3869354,2022-12-10,771,France,3009,Kylian Mbappé Lottin,1,38,45,Open Play,Off T,Left Foot,0.06798863
+statsbomb,1005a0cd-efda-4b12-92a0-edec3f740581,3869354,2022-12-10,768,England,30714,Jude Bellingham,2,46,36,Open Play,Saved,Right Foot,0.046397094
+statsbomb,faf2becb-95e5-4cc5-b77e-208679268e05,3869354,2022-12-10,768,England,3336,Harry Maguire,2,47,13,Open Play,Blocked,Head,0.048588943
+statsbomb,974d20e3-92b3-4061-9d97-e56ced377069,3869354,2022-12-10,768,England,3532,Jordan Brian Henderson,2,51,1,Open Play,Blocked,Right Foot,0.017202334
+statsbomb,b740db70-9fad-40ed-8069-5e3d26521a44,3869354,2022-12-10,768,England,10955,Harry Kane,2,53,27,Penalty,Goal,Right Foot,0.7835
+statsbomb,ec185754-71a2-488f-8471-b5f591b88c6e,3869354,2022-12-10,771,France,3026,Adrien Rabiot,2,54,44,Open Play,Saved,Left Foot,0.06667264
+statsbomb,0f19d3a0-282b-4673-9ecc-d23599dd565e,3869354,2022-12-10,768,England,22084,Bukayo Saka,2,59,35,Open Play,Saved,Right Foot,0.07073746
+statsbomb,9747c65f-740c-42bb-87a9-a309a35acf08,3869354,2022-12-10,771,France,5477,Ousmane Dembélé,2,60,8,Open Play,Blocked,Left Foot,0.030820057
+statsbomb,c53fbe0a-5479-4e5a-8637-6c83b7e68786,3869354,2022-12-10,768,England,10955,Harry Kane,2,61,6,Open Play,Saved,Left Foot,0.029508974
+statsbomb,4bba88e2-fa9e-4890-ae65-0fbbd71e2932,3869354,2022-12-10,768,England,3336,Harry Maguire,2,69,23,Open Play,Post,Head,0.07199757
+statsbomb,e61a35ea-0d71-406b-8c76-afbc917d2053,3869354,2022-12-10,768,England,3382,Luke Shaw,2,70,31,Open Play,Blocked,Left Foot,0.006951497
+statsbomb,5d1c07dc-1575-42b8-9181-03137e531a0c,3869354,2022-12-10,771,France,3604,Olivier Giroud,2,74,53,Open Play,Off T,Head,0.075690374
+statsbomb,9f12f011-03e2-4c02-b566-28808c4dbaba,3869354,2022-12-10,771,France,3604,Olivier Giroud,2,76,23,Open Play,Saved,Left Foot,0.20829616
+statsbomb,2effbf64-b445-4aa5-a87e-7ff2f38c90ee,3869354,2022-12-10,771,France,3604,Olivier Giroud,2,77,10,Open Play,Goal,Head,0.14665264
+statsbomb,7559464d-104b-4f53-b4f6-1f71e069fb0d,3869354,2022-12-10,768,England,10955,Harry Kane,2,83,35,Penalty,Off T,Right Foot,0.7835
+statsbomb,800fd9ae-eb95-4060-8058-645983307dfa,3869354,2022-12-10,768,England,7843,Mason Mount,2,88,0,Open Play,Off T,Right Foot,0.024138648
+statsbomb,6887a63b-4883-47d6-b1b5-d978edfda31e,3869354,2022-12-10,768,England,3318,Marcus Rashford,2,100,5,Free Kick,Off T,Right Foot,0.07922588
+statsbomb,91d32b30-deb2-4808-b61a-9e5b3cf011e0,3869420,2022-12-09,781,Brazil,18395,Vinícius José Paixão de Oliveira Júnior,1,4,6,Open Play,Saved,Right Foot,0.008460451
+statsbomb,ed5123ad-72ae-4ad6-856b-8dcb64c0d111,3869420,2022-12-09,785,Croatia,5474,Ivan Perišić,1,12,4,Open Play,Off T,Right Foot,0.19016835
+statsbomb,55011084-7b91-4c32-82e1-5fc3c5b3bbf0,3869420,2022-12-09,785,Croatia,5460,Andrej Kramarić,1,18,26,Open Play,Blocked,Right Foot,0.026674595
+statsbomb,cf483844-b37b-4523-a73a-2524f994aabd,3869420,2022-12-09,781,Brazil,18395,Vinícius José Paixão de Oliveira Júnior,1,19,51,Open Play,Blocked,Right Foot,0.06970771
+statsbomb,c8c7ae41-22c0-4874-8528-8881dd62272d,3869420,2022-12-09,781,Brazil,4320,Neymar da Silva Santos Junior,1,20,4,Open Play,Saved,Right Foot,0.025347186
+statsbomb,cc0a9f11-c3bd-4c0a-9228-6f2969228b9b,3869420,2022-12-09,781,Brazil,5539,Carlos Henrique Casimiro,1,22,37,Open Play,Blocked,Right Foot,0.030699778
+statsbomb,a2ed5d94-16b5-4f43-b74f-00e91c2c87b6,3869420,2022-12-09,785,Croatia,5474,Ivan Perišić,1,29,27,Open Play,Off T,Right Foot,0.012010745
+statsbomb,8a499618-5f13-46f2-b31a-2844c2731c1b,3869420,2022-12-09,781,Brazil,4320,Neymar da Silva Santos Junior,1,41,33,Free Kick,Saved,Right Foot,0.008240742
+statsbomb,aaad1164-4276-46de-9312-bb3a537ba954,3869420,2022-12-09,785,Croatia,5474,Ivan Perišić,2,50,3,Open Play,Wayward,Head,0.11005159
+statsbomb,b65e77c7-0984-4355-8249-7b3f4fd4ef90,3869420,2022-12-09,781,Brazil,4320,Neymar da Silva Santos Junior,2,54,19,Open Play,Saved,Left Foot,0.16692519
+statsbomb,d87edf8c-6487-45f5-b61b-01a8501ffbe3,3869420,2022-12-09,781,Brazil,5539,Carlos Henrique Casimiro,2,65,8,Free Kick,Blocked,Right Foot,0.026057322
+statsbomb,c3bbb04a-8355-4957-b170-cb044732cba6,3869420,2022-12-09,781,Brazil,22600,Lucas Tolentino Coelho de Lima,2,65,31,Open Play,Saved,Left Foot,0.26807922
+statsbomb,c88153f6-df99-4728-9cd7-143f8f1767fe,3869420,2022-12-09,781,Brazil,13620,Éder Gabriel Militão,2,66,7,Open Play,Blocked,Right Foot,0.04353941
+statsbomb,7714adc2-7d48-488c-a24e-3c3d42000383,3869420,2022-12-09,785,Croatia,5460,Andrej Kramarić,2,70,58,Open Play,Blocked,Left Foot,0.030721588
+statsbomb,954528be-3534-4e74-a39a-2bb679489f01,3869420,2022-12-09,781,Brazil,4320,Neymar da Silva Santos Junior,2,75,47,Open Play,Saved,Left Foot,0.12963046
+statsbomb,b53fd07e-2317-4726-809e-3624bfdb518c,3869420,2022-12-09,781,Brazil,22600,Lucas Tolentino Coelho de Lima,2,79,47,Open Play,Saved,Left Foot,0.092192985
+statsbomb,0bb6e24e-6f18-49af-ac19-ff2d55ac0fc7,3869420,2022-12-09,781,Brazil,3280,Richarlison de Andrade,2,81,53,Open Play,Off T,Head,0.067200735
+statsbomb,c1af8308-ebe0-4d70-8f7a-16874cf0268f,3869420,2022-12-09,785,Croatia,3441,Nikola Vlašić,2,84,20,Open Play,Blocked,Right Foot,0.026884926
+statsbomb,e0c9f75d-bd01-45b2-bbe4-00c26aeafa20,3869420,2022-12-09,781,Brazil,13620,Éder Gabriel Militão,2,85,22,Open Play,Blocked,Right Foot,0.04975106
+statsbomb,b43d9cd5-f92f-448e-9fc1-967b658adfda,3869420,2022-12-09,781,Brazil,13620,Éder Gabriel Militão,2,85,24,Open Play,Blocked,Left Foot,0.06132018
+statsbomb,112b45ad-b869-4eb6-a4b8-a6c45cd44514,3869420,2022-12-09,781,Brazil,25363,Antony Matheus dos Santos,2,93,36,Open Play,Saved,Left Foot,0.013999131
+statsbomb,b85a7aad-d825-414a-bc3b-836ff6fbff82,3869420,2022-12-09,781,Brazil,25305,Pedro Guilherme Abreu dos Santos,3,91,16,Open Play,Wayward,Head,0.057022728
+statsbomb,a94997f3-a132-441d-89ec-527bca207787,3869420,2022-12-09,781,Brazil,25305,Pedro Guilherme Abreu dos Santos,3,100,41,Open Play,Saved,Right Foot,0.113875866
+statsbomb,2000e5bd-3c2d-43cf-a845-1761b52b4e82,3869420,2022-12-09,785,Croatia,5469,Marcelo Brozović,3,102,19,Open Play,Off T,Right Foot,0.12467693
+statsbomb,2c539757-15dd-44cc-a405-90f69b10bb5a,3869420,2022-12-09,781,Brazil,3063,Danilo Luiz da Silva,3,104,8,Open Play,Off T,Right Foot,0.0154907415
+statsbomb,657ac0ef-2a18-4f8b-8515-604fc2b75326,3869420,2022-12-09,781,Brazil,4320,Neymar da Silva Santos Junior,3,105,35,Open Play,Goal,Right Foot,0.4674385
+statsbomb,52e701c5-1af2-4efb-a1ef-9c46652472d7,3869420,2022-12-09,785,Croatia,7693,Bruno Petković,4,116,2,Open Play,Goal,Left Foot,0.09977819
+statsbomb,35169461-baba-4e96-9af0-7be390f73bc0,3869420,2022-12-09,785,Croatia,28914,Lovro Majer,4,119,45,Open Play,Off T,Left Foot,0.01192189
+statsbomb,3dd7d256-6e97-47b6-a7bf-ce13448396cf,3869420,2022-12-09,781,Brazil,5539,Carlos Henrique Casimiro,4,121,19,Open Play,Saved,Left Foot,0.10135116
+statsbomb,fa03f25f-dc8f-4856-a012-e9cf31849764,3869420,2022-12-09,785,Croatia,3441,Nikola Vlašić,5,120,3,Penalty,Goal,Right Foot,0.7835
+statsbomb,1a8b0d93-8f46-429b-8ea1-7b3f13022d9d,3869420,2022-12-09,781,Brazil,25104,Rodrygo Silva de Goes,5,120,47,Penalty,Saved,Right Foot,0.7835
+statsbomb,4a430e36-8be9-4094-9013-735af6467c0e,3869420,2022-12-09,785,Croatia,28914,Lovro Majer,5,121,38,Penalty,Goal,Left Foot,0.7835
+statsbomb,500ba99c-981c-4a0e-bec4-344b2155097c,3869420,2022-12-09,781,Brazil,5539,Carlos Henrique Casimiro,5,122,17,Penalty,Goal,Right Foot,0.7835
+statsbomb,cddfb07e-935a-4003-8ff0-418c07b68f41,3869420,2022-12-09,785,Croatia,5463,Luka Modrić,5,123,6,Penalty,Goal,Right Foot,0.7835
+statsbomb,3c1331c5-42da-4d2b-b84a-b2491a65cced,3869420,2022-12-09,781,Brazil,25305,Pedro Guilherme Abreu dos Santos,5,123,49,Penalty,Goal,Right Foot,0.7835
+statsbomb,ae27b88d-c7af-4e24-aca8-86dc9d87604a,3869420,2022-12-09,785,Croatia,16527,Mislav Oršić,5,124,34,Penalty,Goal,Right Foot,0.7835
+statsbomb,6aedc217-7451-4396-8020-13fd92494c3b,3869420,2022-12-09,781,Brazil,4372,Marcos Aoás Corrêa,5,125,22,Penalty,Post,Right Foot,0.7835
+statsbomb,dd62c1c2-00a9-4b33-a516-6094ca80e218,3869486,2022-12-10,780,Portugal,12041,João Félix Sequeira,1,3,59,Open Play,Saved,Head,0.0989785
+statsbomb,9f344f5d-4d72-4cf2-8eac-ed7c83a87f65,3869486,2022-12-10,788,Morocco,6301,Youssef En-Nesyri,1,5,56,Open Play,Off T,Head,0.117904566
+statsbomb,acc5950a-c4d0-4ca7-8f0d-61a7de6ac0e8,3869486,2022-12-10,780,Portugal,5209,Raphaël Adelino José Guerreiro,1,12,26,Open Play,Blocked,Left Foot,0.019215545
+statsbomb,9cf778f8-eb3d-4bc5-ab35-0f3a147db977,3869486,2022-12-10,788,Morocco,5237,Hakim Ziyech,1,17,49,Open Play,Off T,Left Foot,0.008206696
+statsbomb,9e674fd1-9541-42e1-921f-a8ccbed1d7c6,3869486,2022-12-10,788,Morocco,6301,Youssef En-Nesyri,1,25,21,Open Play,Off T,Head,0.043849364
+statsbomb,646d8725-6259-4863-92b3-0ea602d4bdd4,3869486,2022-12-10,780,Portugal,12041,João Félix Sequeira,1,30,9,Open Play,Blocked,Right Foot,0.027014187
+statsbomb,971e3e9c-a536-4987-be86-fed114271c3e,3869486,2022-12-10,788,Morocco,23774,Selim Amallah,1,34,2,Open Play,Off T,Left Foot,0.06053267
+statsbomb,9000f0f2-73ed-4a71-917d-2d525af7ba80,3869486,2022-12-10,788,Morocco,3625,Sofiane Boufal,1,34,56,Open Play,Saved,Right Foot,0.03503226
+statsbomb,60fd64f6-2fc4-4e42-8df5-c9e199fa7690,3869486,2022-12-10,780,Portugal,12041,João Félix Sequeira,1,38,46,Open Play,Off T,Right Foot,0.060545366
+statsbomb,b5cf82d9-5c1a-49ac-af0d-2fada2d6f0e5,3869486,2022-12-10,788,Morocco,6301,Youssef En-Nesyri,1,41,36,Open Play,Goal,Head,0.20030825
+statsbomb,7c951da3-8d74-432e-8fd4-2a6807a7ff24,3869486,2022-12-10,780,Portugal,5204,Bruno Miguel Borges Fernandes,1,44,23,Open Play,Post,Right Foot,0.0067060287
+statsbomb,1b7f0b8c-83a1-4f81-a6d2-469a14a2beda,3869486,2022-12-10,788,Morocco,31295,Yahia Attiyat allah,1,46,58,Open Play,Off T,Left Foot,0.082217455
+statsbomb,3b8ce4f0-d61d-4dda-9c67-8c240bdbbc47,3869486,2022-12-10,788,Morocco,46258,Azzedine Ounahi,2,55,0,Open Play,Off T,Right Foot,0.032880384
+statsbomb,4d09313e-118e-459a-9ee8-01dc7a56f08f,3869486,2022-12-10,780,Portugal,38803,Gonçalo Matias Ramos,2,57,28,Open Play,Off T,Head,0.10594022
+statsbomb,13d33a38-98fb-4bd9-8a7f-c77928e25cba,3869486,2022-12-10,780,Portugal,12041,João Félix Sequeira,2,60,14,Open Play,Blocked,Head,0.026895314
+statsbomb,8fd3af63-509c-463b-88d2-fa1c6eabb793,3869486,2022-12-10,780,Portugal,5204,Bruno Miguel Borges Fernandes,2,63,4,Open Play,Off T,Right Foot,0.057325892
+statsbomb,66863928-254c-403c-8dc7-ffbd0b98fce5,3869486,2022-12-10,780,Portugal,3193,Bernardo Mota Veiga de Carvalho e Silva,2,70,44,Open Play,Wayward,Right Foot,0.10927713
+statsbomb,d3101e93-d011-401a-af9c-5a1c560c72ec,3869486,2022-12-10,780,Portugal,12041,João Félix Sequeira,2,81,59,Open Play,Saved,Left Foot,0.025960794
+statsbomb,d4278a80-ee3d-4ef1-9255-cf9dc4ce1580,3869486,2022-12-10,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,90,24,Open Play,Saved,Right Foot,0.05699573
+statsbomb,69bc4e3c-2854-42c1-89ba-e159f7515567,3869486,2022-12-10,788,Morocco,21736,Zakaria Aboukhlal,2,95,20,Open Play,Saved,Right Foot,0.39109123
+statsbomb,d7d80857-d613-45c5-8c49-59d19af73f1d,3869486,2022-12-10,780,Portugal,20016,Kléper Laveran Lima Ferreira,2,96,40,Open Play,Off T,Head,0.14926605
+statsbomb,50d88cc2-208f-4272-9156-ea9f0049c8bc,3869519,2022-12-13,785,Croatia,3471,Dejan Lovren,1,15,52,Open Play,Off T,Head,0.014029023
+statsbomb,e0e3e4da-8a23-4e2c-b4d2-b7bef8feb9fe,3869519,2022-12-13,779,Argentina,38718,Enzo Fernandez,1,24,35,Open Play,Saved,Right Foot,0.027808638
+statsbomb,7c8c6f80-da85-4be8-a5cf-34f58c51a82e,3869519,2022-12-13,785,Croatia,5474,Ivan Perišić,1,30,33,Open Play,Off T,Right Foot,0.034139045
+statsbomb,09340406-31db-4236-8bf0-11900a1f269b,3869519,2022-12-13,779,Argentina,5503,Lionel Andrés Messi Cuccittini,1,33,27,Penalty,Goal,Left Foot,0.7835
+statsbomb,dcc38d2c-1610-4362-bb0c-2fd6aa28c5bf,3869519,2022-12-13,779,Argentina,29560,Julián Álvarez,1,38,26,Open Play,Goal,Right Foot,0.36172354
+statsbomb,0c16abd3-e136-40dd-8dd5-37d9587c4f41,3869519,2022-12-13,779,Argentina,7797,Rodrigo Javier De Paul,1,40,49,Open Play,Blocked,Right Foot,0.027667157
+statsbomb,bd13c135-d873-447b-9433-76e78e8f0bf4,3869519,2022-12-13,779,Argentina,27886,Alexis Mac Allister,1,41,53,Open Play,Saved,Head,0.0684051
+statsbomb,3ad82358-d787-4d98-b0e2-0e349b05e17b,3869519,2022-12-13,785,Croatia,5463,Luka Modrić,1,44,48,Open Play,Blocked,Right Foot,0.026162526
+statsbomb,ac624dbe-5398-41b5-98c7-1fafe57fde8c,3869519,2022-12-13,785,Croatia,11603,Mario Pašalić,1,44,53,Open Play,Off T,Right Foot,0.07864248
+statsbomb,c9b5444c-548d-4936-af96-3f376dc1cdc6,3869519,2022-12-13,779,Argentina,16308,Leandro Daniel Paredes,2,48,26,Open Play,Saved,Right Foot,0.014370957
+statsbomb,a78187f3-3fb7-4c35-9d65-aef9e119c5b2,3869519,2022-12-13,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,57,5,Open Play,Saved,Left Foot,0.10581502
+statsbomb,9129598e-2e12-425b-b2df-d1a8842360a9,3869519,2022-12-13,785,Croatia,16527,Mislav Oršić,2,57,35,Open Play,Blocked,Right Foot,0.021008598
+statsbomb,a45cedf5-7079-4551-b949-3c2fb3e87ced,3869519,2022-12-13,785,Croatia,3471,Dejan Lovren,2,61,47,Open Play,Blocked,Head,0.09374543
+statsbomb,60dc7f46-0b61-4198-ae9d-c11c096367dc,3869519,2022-12-13,779,Argentina,29560,Julián Álvarez,2,68,46,Open Play,Goal,Right Foot,0.33366448
+statsbomb,a6005746-15eb-4174-8219-636c9527c20a,3869519,2022-12-13,785,Croatia,5474,Ivan Perišić,2,72,14,Free Kick,Saved,Left Foot,0.00752127
+statsbomb,0b6069ca-0918-46e8-a488-4352f631492c,3869519,2022-12-13,785,Croatia,5474,Ivan Perišić,2,74,54,Open Play,Off T,Left Foot,0.0058680973
+statsbomb,01404c8b-76a5-4187-907c-eef491c0f621,3869519,2022-12-13,785,Croatia,16527,Mislav Oršić,2,77,39,Open Play,Off T,Right Foot,0.011610668
+statsbomb,7eb91d56-2d0f-48ba-8df3-e418d4b13f34,3869519,2022-12-13,779,Argentina,27886,Alexis Mac Allister,2,82,12,Open Play,Off T,Right Foot,0.14140838
+statsbomb,94203fde-cbb9-49b4-962f-3181068dd3c5,3869519,2022-12-13,785,Croatia,28914,Lovro Majer,2,88,23,Open Play,Saved,Left Foot,0.044770177
+statsbomb,eaa7a5c6-53c3-4da4-bc61-fea93e29c0d9,3869519,2022-12-13,785,Croatia,3441,Nikola Vlašić,2,92,51,Open Play,Off T,Left Foot,0.049129687
+statsbomb,3dabf30e-401c-49ad-8976-4b124b1b7a6c,3869519,2022-12-13,785,Croatia,3471,Dejan Lovren,2,94,53,Open Play,Off T,Left Foot,0.02342664
+statsbomb,763a44ab-1e89-44d5-bf6f-ce1831d8823d,3869552,2022-12-14,771,France,3009,Kylian Mbappé Lottin,1,4,37,Open Play,Blocked,Left Foot,0.09459595
+statsbomb,f4d06d6c-d7fb-41e4-b25e-1cb9a106f88b,3869552,2022-12-14,771,France,6704,Theo Bernard François Hernández,1,4,40,Open Play,Goal,Left Foot,0.0979349
+statsbomb,b4b2bbe9-bd6b-4445-b010-245913557fde,3869552,2022-12-14,788,Morocco,46258,Azzedine Ounahi,1,9,38,Open Play,Saved,Right Foot,0.01924696
+statsbomb,b235bbd6-6653-40c2-83d3-296d8d5326ce,3869552,2022-12-14,788,Morocco,5237,Hakim Ziyech,1,16,1,Open Play,Off T,Right Foot,0.06111174
+statsbomb,5e15d155-92bc-4aa6-8a04-66314d372114,3869552,2022-12-14,771,France,3604,Olivier Giroud,1,16,32,Open Play,Post,Left Foot,0.09802507
+statsbomb,1c9d37cc-5b3a-4acc-9ef9-2ed4adad4eb7,3869552,2022-12-14,788,Morocco,5245,Achraf Hakimi Mouh,1,25,27,Open Play,Blocked,Right Foot,0.020597277
+statsbomb,feec1a47-a09f-40a8-b376-83235a04f754,3869552,2022-12-14,771,France,10481,Aurélien Djani Tchouaméni,1,32,23,Open Play,Blocked,Right Foot,0.040336993
+statsbomb,a07f2606-64d3-4c92-b6f4-adf7f1673d18,3869552,2022-12-14,771,France,3604,Olivier Giroud,1,34,5,Open Play,Blocked,Head,0.060999498
+statsbomb,7bae38bb-77db-4a42-af8f-687966177c19,3869552,2022-12-14,771,France,11990,Youssouf Fofana,1,34,7,Open Play,Off T,Left Foot,0.061363008
+statsbomb,dbfeff49-55fe-4d47-aa30-1cb0084570bd,3869552,2022-12-14,771,France,3009,Kylian Mbappé Lottin,1,35,10,Open Play,Blocked,Right Foot,0.15100354
+statsbomb,65cfdd1e-7a29-4830-8194-a0869a13510b,3869552,2022-12-14,771,France,3604,Olivier Giroud,1,35,14,Open Play,Off T,Left Foot,0.2635025
+statsbomb,f2b4da14-ccc5-47a3-b75f-2a3de3acc811,3869552,2022-12-14,771,France,5485,Raphaël Varane,1,39,33,Open Play,Off T,Right Foot,0.07554505
+statsbomb,90d7ee1b-aa71-4292-ba17-0bcd15e6e03a,3869552,2022-12-14,788,Morocco,7459,Jawad El Yamiq,1,43,53,Open Play,Saved to Post,Right Foot,0.06408756
+statsbomb,d6e456e8-96e3-48a2-9ff7-b6ad878a74de,3869552,2022-12-14,788,Morocco,3625,Sofiane Boufal,1,43,59,Open Play,Off T,Right Foot,0.035300843
+statsbomb,da101356-1fad-432f-8d79-c86a952bf48f,3869552,2022-12-14,771,France,4445,Jules Koundé,2,46,56,Open Play,Blocked,Right Foot,0.01766911
+statsbomb,7aaedea3-0cdf-4082-8ea9-efbb40703b91,3869552,2022-12-14,788,Morocco,31295,Yahia Attiyat allah,2,52,40,Open Play,Wayward,Right Foot,0.24936919
+statsbomb,cb9682c8-3388-4616-b615-7568171b4fd3,3869552,2022-12-14,788,Morocco,5234,Sofyan Amrabat,2,53,8,Open Play,Off T,Right Foot,0.020691318
+statsbomb,fab43625-d55e-46b5-b7d6-5fcf6079868f,3869552,2022-12-14,771,France,2972,Marcus Thuram,2,70,57,Open Play,Off T,Head,0.115658596
+statsbomb,49890194-c2bc-4ebc-8448-540dcc8c7427,3869552,2022-12-14,771,France,11990,Youssouf Fofana,2,73,31,Open Play,Off T,Left Foot,0.040043775
+statsbomb,7abc91eb-f3a4-42e0-b49f-70afcab2871c,3869552,2022-12-14,771,France,3009,Kylian Mbappé Lottin,2,78,48,Open Play,Blocked,Right Foot,0.033641826
+statsbomb,0502086f-c98a-47b2-83c0-dfb26991cbb4,3869552,2022-12-14,771,France,22097,Randal Kolo Muani,2,78,49,Open Play,Goal,Right Foot,0.8521293
+statsbomb,9f07925f-2297-4a73-87b4-4f90f4c588fa,3869552,2022-12-14,788,Morocco,21736,Zakaria Aboukhlal,2,85,38,Open Play,Wayward,Head,0.024939176
+statsbomb,13ef0ed6-37e7-4075-8e53-7d3d9df97a65,3869552,2022-12-14,788,Morocco,149714,Abdessamad Ezzalzouli,2,92,42,Open Play,Blocked,Right Foot,0.05950738
+statsbomb,a2444b31-3332-4440-9302-e5a00e0dc734,3869552,2022-12-14,788,Morocco,46258,Azzedine Ounahi,2,92,46,Open Play,Blocked,Right Foot,0.06379096
+statsbomb,90a79133-0c36-4de1-9633-4720d9c723f3,3869552,2022-12-14,788,Morocco,46258,Azzedine Ounahi,2,93,7,Open Play,Blocked,Left Foot,0.03807111
+statsbomb,8a956831-bebc-48e3-b7fc-31f0b0fe2f95,3869552,2022-12-14,788,Morocco,46258,Azzedine Ounahi,2,93,35,Open Play,Blocked,Right Foot,0.067406826
+statsbomb,a7a84a01-7131-47ca-89fa-aa853dc9ce89,3869552,2022-12-14,788,Morocco,59493,Abderrazak Hamdallah,2,93,35,Open Play,Blocked,Other,0.50624365
+statsbomb,49c5d1ba-1fd9-4f18-a682-cbd2c57eb9dc,3869684,2022-12-17,785,Croatia,33018,Joško Gvardiol,1,6,28,Open Play,Goal,Head,0.1243582
+statsbomb,8f0f46ee-6bec-4537-97eb-2b50633dc6ff,3869684,2022-12-17,788,Morocco,139016,Achraf Dari,1,8,17,Open Play,Goal,Head,0.4178385
+statsbomb,94591107-50c8-45bf-a895-3f8d69baf1b9,3869684,2022-12-17,785,Croatia,16527,Mislav Oršić,1,9,35,Open Play,Off T,Right Foot,0.02730659
+statsbomb,b8e38f4b-f179-450e-92af-2425135a5378,3869684,2022-12-17,785,Croatia,49337,Josip Stanišić,1,13,55,Open Play,Off T,Right Foot,0.040524755
+statsbomb,fd59c0c7-4722-4937-ac5b-8f8b70940c8a,3869684,2022-12-17,785,Croatia,16527,Mislav Oršić,1,17,21,Open Play,Blocked,Right Foot,0.11308218
+statsbomb,77d0be28-0294-4153-b921-b5639dde0cda,3869684,2022-12-17,785,Croatia,5460,Andrej Kramarić,1,17,29,Open Play,Saved,Head,0.13429043
+statsbomb,fce15c71-a9fc-4d7e-80ea-a3a56d20cc65,3869684,2022-12-17,785,Croatia,5463,Luka Modrić,1,23,25,Open Play,Saved,Left Foot,0.07012748
+statsbomb,fec7cd9e-c5c4-4285-b789-18e335bfb90b,3869684,2022-12-17,788,Morocco,3625,Sofiane Boufal,1,32,9,Open Play,Off T,Left Foot,0.08611878
+statsbomb,3c475c86-ffd1-4e81-85c6-561f3063fc53,3869684,2022-12-17,788,Morocco,6301,Youssef En-Nesyri,1,36,19,Open Play,Off T,Head,0.04761149
+statsbomb,b6da45bb-12a2-4dd6-bf3f-c6afdb5f6c8b,3869684,2022-12-17,788,Morocco,5237,Hakim Ziyech,1,39,41,Open Play,Off T,Left Foot,0.014617449
+statsbomb,40c60798-23de-4690-ab6b-47b58c1f58c4,3869684,2022-12-17,785,Croatia,16527,Mislav Oršić,1,41,43,Open Play,Goal,Right Foot,0.013095795
+statsbomb,5225c92f-256b-4741-894b-97a118001c70,3869684,2022-12-17,785,Croatia,22041,Marko Livaja,1,46,36,Open Play,Blocked,Right Foot,0.02019975
+statsbomb,0f2f2f1f-544d-4345-9225-558b6735cca7,3869684,2022-12-17,785,Croatia,16527,Mislav Oršić,2,46,22,Open Play,Blocked,Right Foot,0.028195048
+statsbomb,f543d203-8024-4f59-b8f3-d53fe943fd74,3869684,2022-12-17,785,Croatia,16527,Mislav Oršić,2,54,5,Open Play,Off T,Right Foot,0.0065055056
+statsbomb,3d5d5149-d1b3-4625-b191-b66281462965,3869684,2022-12-17,788,Morocco,6301,Youssef En-Nesyri,2,64,57,Open Play,Blocked,Head,0.072652236
+statsbomb,5197fe88-6b78-4d5f-91ef-76263510401f,3869684,2022-12-17,785,Croatia,3441,Nikola Vlašić,2,70,24,Open Play,Off T,Right Foot,0.03597725
+statsbomb,28905c96-a89e-4349-b755-383c251d2c97,3869684,2022-12-17,788,Morocco,6301,Youssef En-Nesyri,2,74,35,Open Play,Saved,Left Foot,0.16040824
+statsbomb,c4745e96-e4dd-4b6f-ad44-3a784219e86c,3869684,2022-12-17,785,Croatia,5456,Mateo Kovačić,2,86,30,Open Play,Off T,Left Foot,0.23560598
+statsbomb,0f4a2320-0810-46f0-b641-84ff2e237335,3869684,2022-12-17,788,Morocco,6301,Youssef En-Nesyri,2,89,48,Open Play,Blocked,Head,0.057190012
+statsbomb,6da1657b-9d5d-495c-8527-6b9c4e4c6004,3869684,2022-12-17,788,Morocco,5237,Hakim Ziyech,2,90,4,Open Play,Off T,Left Foot,0.021768013
+statsbomb,a55f71e0-1590-4c8c-ac83-eca617abc950,3869684,2022-12-17,788,Morocco,6301,Youssef En-Nesyri,2,95,31,Open Play,Off T,Head,0.1132524
+statsbomb,545c2c84-018f-4570-a01c-753823feaeac,3869685,2022-12-18,779,Argentina,27886,Alexis Mac Allister,1,4,40,Open Play,Saved,Right Foot,0.024542088
+statsbomb,4ad26294-8aaf-4d69-83dd-bbf9ef797b32,3869685,2022-12-18,779,Argentina,7797,Rodrigo Javier De Paul,1,7,36,Open Play,Blocked,Right Foot,0.062813334
+statsbomb,6d498191-05f0-432c-8764-03aea4ef9fb8,3869685,2022-12-18,779,Argentina,2995,Ángel Fabián Di María Hernández,1,16,15,Open Play,Off T,Right Foot,0.106800534
+statsbomb,6d527ebc-a948-4cd8-ac82-daced35bb715,3869685,2022-12-18,779,Argentina,5503,Lionel Andrés Messi Cuccittini,1,22,24,Penalty,Goal,Left Foot,0.7835
+statsbomb,f227a92e-d86c-4f3d-aa75-5ccb71adcae6,3869685,2022-12-18,779,Argentina,27886,Alexis Mac Allister,1,31,35,Open Play,Wayward,Right Foot,0.010577817
+statsbomb,ef86f4d9-7acd-4ed0-a5ec-9129079e8fbe,3869685,2022-12-18,779,Argentina,2995,Ángel Fabián Di María Hernández,1,35,22,Open Play,Goal,Left Foot,0.30340916
+statsbomb,13a4889d-ad08-41be-9125-24c4c7d7879a,3869685,2022-12-18,779,Argentina,7797,Rodrigo Javier De Paul,2,48,49,Open Play,Saved,Right Foot,0.040216275
+statsbomb,43691970-1dad-4e11-bd29-48f640c55ea1,3869685,2022-12-18,779,Argentina,29560,Julián Álvarez,2,58,21,Open Play,Saved,Left Foot,0.05953379
+statsbomb,9615ffbc-b513-45e6-9ccc-015234483f95,3869685,2022-12-18,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,59,51,Open Play,Off T,Right Foot,0.11555985
+statsbomb,9f6285ff-9b32-4a46-a4a0-74c1ca89276c,3869685,2022-12-18,771,France,22097,Randal Kolo Muani,2,67,15,Open Play,Off T,Head,0.09618377
+statsbomb,b2d43671-a3e6-4709-9c0c-646442c1074c,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,2,70,9,Open Play,Off T,Right Foot,0.050644457
+statsbomb,43b2d123-6945-4a7c-8292-f7792af341f9,3869685,2022-12-18,779,Argentina,38718,Enzo Fernandez,2,71,31,Open Play,Saved,Right Foot,0.041589838
+statsbomb,6cc0d5e2-6999-4006-8a7a-34de4cbe3ffd,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,2,79,24,Penalty,Goal,Right Foot,0.7835
+statsbomb,03fb2918-e1e7-4ec8-89ff-7bc5531e853d,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,2,80,59,Open Play,Goal,Right Foot,0.1017027
+statsbomb,fe277079-395a-4ff3-bb29-e99d93014014,3869685,2022-12-18,779,Argentina,38718,Enzo Fernandez,2,83,23,Open Play,Blocked,Right Foot,0.030159522
+statsbomb,5dbcde3d-ba75-483d-a65f-72d2b99ff713,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,2,92,57,Open Play,Blocked,Right Foot,0.0324491
+statsbomb,8d2a6599-cc25-41a2-acde-41d10194b5bd,3869685,2022-12-18,771,France,3026,Adrien Rabiot,2,93,45,Open Play,Saved,Left Foot,0.09333491
+statsbomb,867b8791-49c0-4d98-a976-c0b4cfc1cb5a,3869685,2022-12-18,779,Argentina,5503,Lionel Andrés Messi Cuccittini,2,96,37,Open Play,Saved,Left Foot,0.0430315
+statsbomb,d8c05bb0-ddb1-4ff2-9dbf-ba17b00a5359,3869685,2022-12-18,779,Argentina,27886,Alexis Mac Allister,3,92,5,Open Play,Off T,Right Foot,0.019259434
+statsbomb,db8267ad-256a-450d-997f-382a4d545634,3869685,2022-12-18,771,France,11990,Youssouf Fofana,3,99,54,Open Play,Blocked,Right Foot,0.023031652
+statsbomb,d3ba40fa-09d6-4488-b17d-672aaa2928d7,3869685,2022-12-18,779,Argentina,11456,Lautaro Javier Martínez,3,104,28,Open Play,Blocked,Right Foot,0.23260574
+statsbomb,a1654330-3747-4a25-b244-26ba2884c91c,3869685,2022-12-18,779,Argentina,28263,Gonzalo Ariel Montiel,3,104,30,Open Play,Blocked,Right Foot,0.020604363
+statsbomb,5d7d4f2f-62da-4de9-90e3-3660ba17c4f3,3869685,2022-12-18,779,Argentina,11456,Lautaro Javier Martínez,3,105,41,Open Play,Off T,Left Foot,0.14029205
+statsbomb,8bb8c7b5-9c14-4dfa-9279-0548ee8076db,3869685,2022-12-18,779,Argentina,5503,Lionel Andrés Messi Cuccittini,4,106,55,Open Play,Saved,Left Foot,0.024784861
+statsbomb,40cbfd91-87d9-4df8-a575-533b5c26767f,3869685,2022-12-18,779,Argentina,11456,Lautaro Javier Martínez,4,107,57,Open Play,Saved,Right Foot,0.10407211
+statsbomb,54b889ec-6026-49ea-a913-e883dbe6e301,3869685,2022-12-18,779,Argentina,5503,Lionel Andrés Messi Cuccittini,4,107,58,Open Play,Goal,Right Foot,0.48840353
+statsbomb,08f2f203-cdc9-4146-99b6-818c5c32bf70,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,4,115,38,Open Play,Blocked,Right Foot,0.03075741
+statsbomb,d9b92dbd-4fea-4f48-b2fb-d7222eab2dbd,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,4,117,5,Penalty,Goal,Right Foot,0.7835
+statsbomb,959edead-09fb-40b0-b6a3-72e73bd30d5a,3869685,2022-12-18,771,France,22097,Randal Kolo Muani,4,122,44,Open Play,Saved,Right Foot,0.27751395
+statsbomb,449f2702-ad18-4bc8-a9ef-59fb1dc1a707,3869685,2022-12-18,779,Argentina,11456,Lautaro Javier Martínez,4,122,59,Open Play,Off T,Head,0.10655013
+statsbomb,d0f76056-0d67-4aae-b44a-83bef0b1cf27,3869685,2022-12-18,771,France,3009,Kylian Mbappé Lottin,5,120,13,Penalty,Goal,Right Foot,0.7835
+statsbomb,2a15edb5-2a54-41d5-afe9-87e447389b18,3869685,2022-12-18,779,Argentina,5503,Lionel Andrés Messi Cuccittini,5,121,2,Penalty,Goal,Left Foot,0.7835
+statsbomb,97439112-dfb5-4bd5-9967-554095296096,3869685,2022-12-18,771,France,8217,Kingsley Coman,5,121,42,Penalty,Saved,Right Foot,0.7835
+statsbomb,50dcde1a-faa3-4eec-a0cd-3f09a7cf763a,3869685,2022-12-18,779,Argentina,5743,Paulo Bruno Exequiel Dybala,5,122,27,Penalty,Goal,Left Foot,0.7835
+statsbomb,54e27ba9-b9ae-44a3-ac8d-fc91e76a1b91,3869685,2022-12-18,771,France,10481,Aurélien Djani Tchouaméni,5,123,29,Penalty,Off T,Right Foot,0.7835
+statsbomb,bcc6d4ae-f71c-4566-bf2d-c12f910eb526,3869685,2022-12-18,779,Argentina,16308,Leandro Daniel Paredes,5,124,16,Penalty,Goal,Right Foot,0.7835
+statsbomb,59ebe83e-616a-4288-89fd-a0246b53d48f,3869685,2022-12-18,771,France,22097,Randal Kolo Muani,5,125,9,Penalty,Goal,Right Foot,0.7835
+statsbomb,66eaf262-999f-4953-a924-f1b596de4dbf,3869685,2022-12-18,779,Argentina,28263,Gonzalo Ariel Montiel,5,125,57,Penalty,Goal,Right Foot,0.7835
+statsbomb,684147f8-8ceb-4297-a918-06079c987c1e,3940878,2024-06-29,773,Switzerland,45190,Dan Ndoye,1,11,0,Open Play,Wayward,Right Foot,0.04959083
+statsbomb,a0170cae-732a-49c9-9bfa-59943b9ae2f0,3940878,2024-06-29,773,Switzerland,5545,Breel-Donald Embolo,1,23,27,Open Play,Saved,Right Foot,0.19980636
+statsbomb,d1ad705d-6975-4da8-86ed-ac06c9a4d311,3940878,2024-06-29,773,Switzerland,45190,Dan Ndoye,1,23,32,Open Play,Blocked,Left Foot,0.037947614
+statsbomb,ffa30644-1c37-4620-b6e4-39e50c6b25bd,3940878,2024-06-29,773,Switzerland,6983,Remo Freuler,1,23,36,Open Play,Blocked,Right Foot,0.029872663
+statsbomb,33554e2f-25fa-4632-9765-b68df0352c67,3940878,2024-06-29,773,Switzerland,5545,Breel-Donald Embolo,1,25,0,Open Play,Blocked,Left Foot,0.028032592
+statsbomb,2157c59a-ce26-42d5-97d6-60eb0b27c90b,3940878,2024-06-29,914,Italy,7156,Federico Chiesa,1,25,29,Open Play,Blocked,Right Foot,0.060102012
+statsbomb,73dc005f-02bd-4a08-9cf7-a88066d3457a,3940878,2024-06-29,773,Switzerland,45190,Dan Ndoye,1,27,17,Open Play,Blocked,Right Foot,0.03514188
+statsbomb,eca93d14-50f3-42e9-8ccb-0257350ab5ea,3940878,2024-06-29,773,Switzerland,5537,Fabian Lukas Schär,1,30,58,Open Play,Blocked,Left Foot,0.017792227
+statsbomb,d5918e6a-50c4-4367-8e12-7fd86860ca6d,3940878,2024-06-29,773,Switzerland,5544,Ricardo Iván Rodríguez Araya,1,31,7,Open Play,Off T,Left Foot,0.014435371
+statsbomb,3f60f7da-f2e4-419e-97bb-9345de9d32ab,3940878,2024-06-29,773,Switzerland,6983,Remo Freuler,1,36,20,Open Play,Goal,Left Foot,0.14406602
+statsbomb,a7b9a684-dc65-4fad-b076-07d54e298e4e,3940878,2024-06-29,773,Switzerland,50436,Fabian Rieder,1,45,12,Free Kick,Saved to Post,Left Foot,0.008087687
+statsbomb,e1ac10e8-cebd-4c9f-b221-22482aeb307f,3940878,2024-06-29,773,Switzerland,30401,Ruben Vargas,2,45,27,Open Play,Goal,Right Foot,0.044832002
+statsbomb,7cd33622-e972-40a9-b645-0721fbd4fd38,3940878,2024-06-29,914,Italy,7156,Federico Chiesa,2,51,6,Open Play,Wayward,Right Foot,0.046473652
+statsbomb,ff4689db-2759-486d-8baf-0f0773544cc3,3940878,2024-06-29,914,Italy,7156,Federico Chiesa,2,52,26,Open Play,Blocked,Left Foot,0.026729954
+statsbomb,637076ad-9e86-40c1-b62d-1af3039c173a,3940878,2024-06-29,773,Switzerland,5544,Ricardo Iván Rodríguez Araya,2,54,19,Open Play,Blocked,Left Foot,0.023338681
+statsbomb,cfb855f8-d04b-423f-8b13-153de1699122,3940878,2024-06-29,914,Italy,6993,Bryan Cristante,2,55,40,Open Play,Blocked,Right Foot,0.021880716
+statsbomb,f226cfe7-8522-4b60-8f22-dcaa51ff8229,3940878,2024-06-29,773,Switzerland,45190,Dan Ndoye,2,58,43,Open Play,Off T,Left Foot,0.026606286
+statsbomb,8c6c9504-ea6c-4dee-9e38-972e141f1f4c,3940878,2024-06-29,773,Switzerland,3500,Granit Xhaka,2,64,12,Open Play,Blocked,Left Foot,0.0407081
+statsbomb,65021380-01c3-4433-be49-bf2ef1c1abb3,3940878,2024-06-29,914,Italy,31093,Mateo Retegui,2,72,20,Open Play,Saved,Left Foot,0.0671122
+statsbomb,e388d557-a792-4f9a-9e11-5d086096c95b,3940878,2024-06-29,914,Italy,8792,Mattia Zaccagni,2,73,33,Open Play,Wayward,Head,0.11148876
+statsbomb,2e366db2-0235-4693-a8a9-489c1f9e4544,3940878,2024-06-29,914,Italy,10992,Gianluca Scamacca,2,73,34,Open Play,Post,Right Foot,0.3101263
+statsbomb,a93859de-d61e-4a29-a991-f10a924609fc,3940878,2024-06-29,914,Italy,38909,Nicolò Fagioli,2,73,48,Open Play,Off T,Right Foot,0.018499942
+statsbomb,349f83ad-256c-460b-9517-1b76a45de0cc,3940878,2024-06-29,914,Italy,10992,Gianluca Scamacca,2,75,48,Open Play,Off T,Right Foot,0.032929283
+statsbomb,8a704c19-19d5-450f-92c4-84130d63ac18,3940878,2024-06-29,773,Switzerland,6983,Remo Freuler,2,78,15,Open Play,Off T,Left Foot,0.037396807
+statsbomb,a650adb0-a28e-413a-98c3-0063eb301af4,3940878,2024-06-29,773,Switzerland,5548,Steven Zuber,2,82,39,Open Play,Wayward,Left Foot,0.044701636
+statsbomb,e8c689b7-36cf-48e0-86e4-9409c90df78c,3940878,2024-06-29,914,Italy,6963,Lorenzo Pellegrini,2,84,37,Open Play,Off T,Right Foot,0.021618782
+statsbomb,7f8aadff-5c10-4514-aa79-01e7223d7dae,3940878,2024-06-29,914,Italy,7156,Federico Chiesa,2,90,47,Open Play,Wayward,Left Foot,0.008696314
+statsbomb,5f36d325-2132-4859-9586-1f12381b1760,3940983,2024-06-29,770,Germany,5579,Joshua Kimmich,1,6,2,Open Play,Saved,Right Foot,0.024539126
+statsbomb,02da99cd-6001-4547-8a0a-de973b029ce7,3940983,2024-06-29,770,Germany,24118,Nico Schlotterbeck,1,6,49,Open Play,Saved,Head,0.029666193
+statsbomb,b3e81dcc-bfe2-4157-b531-e9b00816dae7,3940983,2024-06-29,770,Germany,8966,Kai Havertz,1,9,58,Open Play,Saved,Left Foot,0.07374886
+statsbomb,490fb23e-41e1-4db0-83fd-5d72b60e73d8,3940983,2024-06-29,770,Germany,9195,Robert Andrich,1,10,38,Open Play,Saved,Head,0.054684527
+statsbomb,9a6f2bb6-7ca3-4c60-80fa-64e3076ebb70,3940983,2024-06-29,770,Germany,39565,Jamal Musiala,1,12,21,Open Play,Off T,Right Foot,0.024523731
+statsbomb,dbe19357-cee4-4f65-9d5d-add9d695c6b9,3940983,2024-06-29,770,Germany,5574,Toni Kroos,1,15,51,Free Kick,Blocked,Right Foot,0.056089107
+statsbomb,771bc6d6-5fc7-405f-be90-e38ed54aeeb8,3940983,2024-06-29,776,Denmark,3043,Christian Dannemann Eriksen,1,20,21,Open Play,Blocked,Right Foot,0.12234442
+statsbomb,f69192f3-fe36-4970-98ee-717053152f57,3940983,2024-06-29,776,Denmark,16554,Joakim Mæhle,1,23,35,Open Play,Off T,Left Foot,0.092478566
+statsbomb,75defeb3-5a9b-4c54-8fe4-38a8e7cebd43,3940983,2024-06-29,776,Denmark,3043,Christian Dannemann Eriksen,1,30,46,Free Kick,Blocked,Right Foot,0.08993592
+statsbomb,055f769b-711d-4ec6-9335-8df6d21258d9,3940983,2024-06-29,776,Denmark,51672,Rasmus Winther Højlund,1,32,28,Open Play,Blocked,Left Foot,0.008721689
+statsbomb,25bdc3b8-21f0-4fd3-bf57-cf85e47d3145,3940983,2024-06-29,770,Germany,8966,Kai Havertz,1,41,32,Open Play,Saved,Head,0.13610949
+statsbomb,46432a77-6a9d-4a33-b5a2-e78889f6cab4,3940983,2024-06-29,770,Germany,24118,Nico Schlotterbeck,1,41,42,Open Play,Off T,Head,0.039883997
+statsbomb,0afe3a3c-7071-46c9-9bc1-f7aed247dac8,3940983,2024-06-29,776,Denmark,51672,Rasmus Winther Højlund,1,46,7,Open Play,Off T,Right Foot,0.061353974
+statsbomb,02b6c0c1-4de5-4317-80ec-fefc1f80042b,3940983,2024-06-29,776,Denmark,51672,Rasmus Winther Højlund,1,49,35,Open Play,Saved,Left Foot,0.48120555
+statsbomb,b8618f78-ecfd-479d-8e22-6b10a899a256,3940983,2024-06-29,770,Germany,8966,Kai Havertz,2,52,58,Penalty,Goal,Left Foot,0.7835
+statsbomb,de3c0427-25c8-4586-ab1a-1c370f5769e3,3940983,2024-06-29,770,Germany,8966,Kai Havertz,2,58,24,Open Play,Off T,Left Foot,0.42521873
+statsbomb,0b3fa5e2-37cf-4053-89db-adf2b68a6839,3940983,2024-06-29,776,Denmark,51672,Rasmus Winther Højlund,2,65,39,Open Play,Saved,Left Foot,0.059370115
+statsbomb,fb2a3700-38db-44d9-9c84-b7420fa27075,3940983,2024-06-29,770,Germany,39565,Jamal Musiala,2,67,48,Open Play,Goal,Right Foot,0.25639373
+statsbomb,0f2bf516-f2c9-4e8e-831c-a1c10a60c64b,3940983,2024-06-29,776,Denmark,8247,Joachim Andersen,2,76,5,Open Play,Wayward,Head,0.0607214
+statsbomb,70bc22ca-dd60-4df3-8af4-81570166a488,3940983,2024-06-29,770,Germany,5579,Joshua Kimmich,2,78,35,Open Play,Wayward,Right Foot,0.0027235784
+statsbomb,92065cf6-c561-4d46-ad51-a6fb3f4193e8,3940983,2024-06-29,776,Denmark,3570,Pierre-Emile Højbjerg,2,82,1,Open Play,Blocked,Right Foot,0.03581329
+statsbomb,0036d10c-0d57-49d3-a49c-991714567524,3940983,2024-06-29,770,Germany,8211,Benjamin Henrichs,2,88,37,Open Play,Off T,Right Foot,0.018572439
+statsbomb,6276bb86-77b8-4ddb-9bc3-315181e57859,3940983,2024-06-29,770,Germany,40724,Florian Wirtz,2,89,11,Open Play,Saved,Left Foot,0.11136572
+statsbomb,f276ddc9-e4c7-4c49-870e-3d3613dbd10f,3940983,2024-06-29,776,Denmark,8815,Jannik Vestergaard,2,93,27,Open Play,Blocked,Right Foot,0.061550424
+statsbomb,188b572e-f4c3-4353-a3c1-e4d713a95d10,3940983,2024-06-29,770,Germany,8966,Kai Havertz,2,94,4,Open Play,Saved,Left Foot,0.18960205
+statsbomb,ee4c09f4-720a-4cff-a041-77509a98e718,3941017,2024-06-30,908,Slovakia,43976,David Strelec,1,3,48,Open Play,Wayward,Right Foot,0.092393875
+statsbomb,7dbf02cb-4b83-4b3d-8177-0ff9a0c596e0,3941017,2024-06-30,908,Slovakia,7975,Lukáš Haraslín,1,7,28,Open Play,Blocked,Right Foot,0.053368397
+statsbomb,96d70e17-d542-4b5c-a65c-60e274cda10b,3941017,2024-06-30,768,England,3308,Kieran Trippier,1,8,50,Open Play,Off T,Right Foot,0.08902558
+statsbomb,9362eb41-828a-4607-b3bb-60164f0c1e7b,3941017,2024-06-30,908,Slovakia,7975,Lukáš Haraslín,1,11,21,Open Play,Blocked,Right Foot,0.079396516
+statsbomb,df60c14d-e74e-4662-8bfb-eab4b0c3b373,3941017,2024-06-30,768,England,10955,Harry Kane,1,22,13,Open Play,Blocked,Head,0.051736627
+statsbomb,691500f6-3789-499d-a960-e25e00b38368,3941017,2024-06-30,768,England,99174,Kobbie Mainoo,1,23,9,Open Play,Off T,Right Foot,0.030446114
+statsbomb,7ba2b321-b31e-420e-a0ae-58032ca2781d,3941017,2024-06-30,908,Slovakia,28032,Ivan Schranz,1,24,23,Open Play,Goal,Right Foot,0.52801526
+statsbomb,a309e006-1fd8-4ba1-a304-0e03d3011bca,3941017,2024-06-30,768,England,3943,Declan Rice,1,38,23,Open Play,Blocked,Head,0.04069054
+statsbomb,81268b8a-36b4-41ed-b0b2-65cd6e05aedf,3941017,2024-06-30,768,England,99174,Kobbie Mainoo,1,47,16,Open Play,Blocked,Right Foot,0.043453604
+statsbomb,e2c0e379-d94a-4574-adb0-1fa5e07f8095,3941017,2024-06-30,768,England,22084,Bukayo Saka,1,47,52,Open Play,Blocked,Left Foot,0.026043994
+statsbomb,54589b68-72e2-497d-a2ae-4edca839b47b,3941017,2024-06-30,768,England,10955,Harry Kane,2,51,2,Open Play,Blocked,Right Foot,0.10859543
+statsbomb,758308bf-f083-4a6a-adfb-c2805dc7c856,3941017,2024-06-30,908,Slovakia,43976,David Strelec,2,53,56,Open Play,Off T,Left Foot,0.028537394
+statsbomb,4f06d689-a830-4b96-820e-87f33b370fe9,3941017,2024-06-30,768,England,30714,Jude Bellingham,2,58,22,Open Play,Blocked,Head,0.08132238
+statsbomb,41fb1f30-2d10-480d-8518-9e58cd205648,3941017,2024-06-30,768,England,4354,Phil Foden,2,60,1,Free Kick,Blocked,Left Foot,0.054180622
+statsbomb,cddde99c-0109-4b34-9eb7-cf9fe120c876,3941017,2024-06-30,768,England,10955,Harry Kane,2,77,11,Open Play,Off T,Head,0.16138653
+statsbomb,f7e678ee-6677-4dfb-a191-1204fb04884b,3941017,2024-06-30,768,England,3943,Declan Rice,2,80,11,Open Play,Post,Right Foot,0.026050739
+statsbomb,3a83a69a-98db-41c5-8912-34437d370442,3941017,2024-06-30,768,England,10955,Harry Kane,2,80,13,Open Play,Off T,Right Foot,0.12184181
+statsbomb,3c2b38f0-e729-40b3-b07c-2eb8c7873694,3941017,2024-06-30,908,Slovakia,6798,Stanislav Lobotka,2,86,44,Open Play,Saved,Right Foot,0.021908578
+statsbomb,c71a4f0a-5d51-45d0-88ad-261e32e3f7c0,3941017,2024-06-30,768,England,30714,Jude Bellingham,2,94,33,Open Play,Goal,Right Foot,0.103242844
+statsbomb,327fee61-fc5d-4084-b7f2-d1b27e1632a6,3941017,2024-06-30,768,England,9000,Eberechi Eze,3,90,49,Open Play,Wayward,Right Foot,0.028122703
+statsbomb,7d959296-6408-44f2-b7cb-9105cd55a19d,3941017,2024-06-30,768,England,10955,Harry Kane,3,90,51,Open Play,Goal,Head,0.49724415
+statsbomb,9d84be59-728b-4170-8a3f-f2295b48642f,3941017,2024-06-30,908,Slovakia,9722,Peter Pekarík,3,104,43,Open Play,Off T,Other,0.5063636
+statsbomb,b354ad51-8857-489a-8d9e-eefc24d4a79a,3941017,2024-06-30,908,Slovakia,15546,Matúš Bero,4,106,12,Open Play,Wayward,Right Foot,0.014195163
+statsbomb,51fe2fcd-6c63-4495-8dcf-b1c230d87714,3941017,2024-06-30,908,Slovakia,8422,Ľubomír Tupta,4,110,6,Free Kick,Off T,Right Foot,0.02863606
+statsbomb,64f975df-f0ec-434f-b772-04f22ffcd21a,3941017,2024-06-30,908,Slovakia,34904,Róbert Boženík,4,116,49,Open Play,Off T,Right Foot,0.008433037
+statsbomb,7f996334-c7e6-4d92-b982-d34acfb733ed,3941017,2024-06-30,908,Slovakia,16879,Dávid Hancko,4,118,38,Open Play,Off T,Head,0.0678651
+statsbomb,845bc032-f4dc-4763-9dc0-ddb6bd338a43,3941017,2024-06-30,908,Slovakia,6990,Milan Škriniar,4,119,48,Open Play,Blocked,Head,0.07292546
+statsbomb,7a4e6398-aff4-482d-b926-4b9886b5b4b6,3941017,2024-06-30,768,England,3834,Ivan Toney,4,120,8,Open Play,Off T,Right Foot,0.123356834
+statsbomb,27696fd3-2973-44dd-9315-ad3e98e662c3,3941017,2024-06-30,908,Slovakia,16879,Dávid Hancko,4,120,54,Open Play,Saved,Head,0.045808684
+statsbomb,27153523-a1a0-4c75-b58c-8651f6f452f3,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,1,1,49,Open Play,Blocked,Left Foot,0.03403919
+statsbomb,17aff85e-40ff-44f0-98c2-9f00242d0531,3941018,2024-06-30,772,Spain,30486,Pedro González López,1,4,4,Open Play,Saved,Left Foot,0.2088165
+statsbomb,0ce6ea73-e365-4cbc-b76c-8e0899115dea,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,1,5,21,Open Play,Blocked,Head,0.0355224
+statsbomb,43382a10-eaf3-40cd-82e0-46b577ce1279,3941018,2024-06-30,772,Spain,5721,Daniel Carvajal Ramos,1,9,57,Open Play,Saved,Head,0.047663942
+statsbomb,1505a5e5-9d85-4d1d-a99b-35af1de39ed8,3941018,2024-06-30,772,Spain,68574,Nicholas Williams Arthuer,1,10,59,Open Play,Blocked,Right Foot,0.04628006
+statsbomb,d8534362-0aff-46f7-8457-9f26684b2154,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,1,12,40,Open Play,Blocked,Left Foot,0.068191275
+statsbomb,72d27965-5bdd-4fdd-9fd7-cad21102d6a6,3941018,2024-06-30,772,Spain,68574,Nicholas Williams Arthuer,1,12,48,Open Play,Blocked,Right Foot,0.02863869
+statsbomb,7c5aa174-fcd2-4928-a71c-ec9190f0f579,3941018,2024-06-30,772,Spain,4353,Aymeric Laporte,1,15,41,Open Play,Blocked,Head,0.05098217
+statsbomb,c5528ca1-98b2-4e8d-9585-d28a86ed629f,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,1,21,16,Open Play,Saved,Left Foot,0.030612372
+statsbomb,ef3e4452-4bb2-429f-af6b-b23062a81eca,3941018,2024-06-30,772,Spain,6765,Rodrigo Hernández Cascante,1,25,15,Open Play,Blocked,Right Foot,0.016834991
+statsbomb,2ac3ee72-001f-4e85-918f-4120251609b4,3941018,2024-06-30,772,Spain,30486,Pedro González López,1,26,37,Open Play,Off T,Left Foot,0.06233343
+statsbomb,d6bfbd9a-f4a7-45e5-9b1a-ecf1a5d8177f,3941018,2024-06-30,772,Spain,4353,Aymeric Laporte,1,28,38,Open Play,Off T,Left Foot,0.006787614
+statsbomb,18acc67d-810a-45f2-bbd1-c5a0258745d8,3941018,2024-06-30,2138,Georgia,41202,Giorgi Kochorashvili,1,29,33,Open Play,Blocked,Right Foot,0.050696027
+statsbomb,a9d83f04-32cb-46f2-94a1-57de6c92e1e1,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,1,30,19,Open Play,Blocked,Left Foot,0.031005034
+statsbomb,e62d27cb-f9cc-4def-b0ba-47d283555329,3941018,2024-06-30,772,Spain,17620,Marc Cucurella Saseta,1,34,36,Open Play,Saved,Left Foot,0.015615603
+statsbomb,4647b5f4-4233-4525-acaf-80c5c30507f3,3941018,2024-06-30,772,Spain,68574,Nicholas Williams Arthuer,1,37,48,Open Play,Saved,Right Foot,0.042119805
+statsbomb,c34c87b2-0e8e-443c-81fa-6b9c03317ead,3941018,2024-06-30,772,Spain,6765,Rodrigo Hernández Cascante,1,38,10,Open Play,Goal,Left Foot,0.06652527
+statsbomb,85e75e6f-0232-40ed-a78a-ab76a5169f72,3941018,2024-06-30,2138,Georgia,41202,Giorgi Kochorashvili,1,40,45,Open Play,Off T,Right Foot,0.0040819473
+statsbomb,ac42904e-cbc7-405a-9bc3-f4ab7e866bd0,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,1,46,7,Open Play,Blocked,Left Foot,0.015696
+statsbomb,eb4a30e9-fbfb-46b7-82dc-f85f0f7252b3,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,2,45,21,Open Play,Off T,Right Foot,0.059734892
+statsbomb,2621a029-e169-4c7f-a1e6-5b2c143799aa,3941018,2024-06-30,2138,Georgia,38229,Khvicha Kvaratskhelia,2,47,55,Open Play,Off T,Left Foot,0.0055915527
+statsbomb,943b532b-efdf-4b62-b9d5-6955a6b18af9,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,50,25,Free Kick,Saved,Left Foot,0.08360341
+statsbomb,26d7f7c4-0b06-4166-81f1-2727e479afd6,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,2,50,40,Open Play,Goal,Head,0.29910773
+statsbomb,b17e4cac-6947-4c7f-bf90-2a3cc69a57d6,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,52,13,Open Play,Off T,Left Foot,0.07618404
+statsbomb,9edfe8c2-11e6-4d59-9745-b4b7178acc90,3941018,2024-06-30,772,Spain,3477,Álvaro Borja Morata Martín,2,54,38,Open Play,Off T,Right Foot,0.046154205
+statsbomb,0d20ad03-f607-4006-bcbe-7d7b676f94d4,3941018,2024-06-30,772,Spain,16532,Daniel Olmo Carvajal,2,59,3,Open Play,Blocked,Right Foot,0.030945767
+statsbomb,2dc89a7c-0ff9-4bfd-8273-a36e369964e0,3941018,2024-06-30,772,Spain,16532,Daniel Olmo Carvajal,2,60,53,Open Play,Wayward,Right Foot,0.071499854
+statsbomb,34bb51ad-6878-4a87-af9e-1708b3d47fdb,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,62,19,Open Play,Off T,Left Foot,0.075688556
+statsbomb,5132b85f-bf88-48cd-a51b-947fe416cb22,3941018,2024-06-30,2138,Georgia,22242,Heorhii Tsitaishvili,2,67,48,Open Play,Off T,Left Foot,0.052708115
+statsbomb,57d79215-0712-45aa-8ee4-2c6479e4ca1c,3941018,2024-06-30,772,Spain,6655,Fabián Ruiz Peña,2,69,9,Open Play,Off T,Left Foot,0.024543561
+statsbomb,4153fd8f-c75c-486c-93e3-61e57ffd3963,3941018,2024-06-30,772,Spain,68574,Nicholas Williams Arthuer,2,74,40,Open Play,Goal,Right Foot,0.21495746
+statsbomb,db71abfb-6c85-4305-bb70-cfced354c106,3941018,2024-06-30,772,Spain,16532,Daniel Olmo Carvajal,2,76,59,Open Play,Saved,Right Foot,0.26680577
+statsbomb,44aea7a6-3f8a-478a-8cf0-437a5d227e86,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,79,58,Open Play,Saved,Left Foot,0.2859731
+statsbomb,5ccdde88-509c-41b8-8b65-42e827875325,3941018,2024-06-30,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,81,57,Open Play,Off T,Left Foot,0.08169625
+statsbomb,f37aabea-1292-401e-8818-483cdcb1b534,3941018,2024-06-30,772,Spain,16532,Daniel Olmo Carvajal,2,82,35,Open Play,Goal,Left Foot,0.1281342
+statsbomb,78e201b0-7167-441d-8853-c4c8a8868741,3941018,2024-06-30,772,Spain,68574,Nicholas Williams Arthuer,2,89,17,Open Play,Blocked,Right Foot,0.06438794
+statsbomb,f113fbfe-1e4c-4023-81c9-e31106d1425e,3941018,2024-06-30,772,Spain,16532,Daniel Olmo Carvajal,2,89,38,Open Play,Saved,Right Foot,0.053031437
+statsbomb,9aae1b6f-64b4-4912-81bc-3563177609b1,3941018,2024-06-30,772,Spain,16532,Daniel Olmo Carvajal,2,91,20,Open Play,Blocked,Right Foot,0.061232504
+statsbomb,ffce9770-d81d-4846-bf77-6d77f1400c3d,3941018,2024-06-30,772,Spain,6765,Rodrigo Hernández Cascante,2,92,19,Open Play,Off T,Head,0.033381354
+statsbomb,a26ce14c-79fc-4c34-9a0d-56ac0d3ab4ef,3941019,2024-07-01,771,France,3026,Adrien Rabiot,1,1,5,Open Play,Off T,Left Foot,0.049315576
+statsbomb,0e2bd611-5123-4a6e-8864-468933a43f5d,3941019,2024-07-01,771,France,5487,Antoine Griezmann,1,9,12,Open Play,Saved,Left Foot,0.026957866
+statsbomb,92636795-4d37-46f6-b22f-c1fb5e045fba,3941019,2024-07-01,771,France,3009,Kylian Mbappé Lottin,1,13,52,Open Play,Off T,Right Foot,0.06710457
+statsbomb,0f3c5d33-c6f9-4a0c-a82a-f3d5b42bd9e2,3941019,2024-07-01,771,France,2972,Marcus Thuram,1,17,3,Open Play,Off T,Head,0.02893819
+statsbomb,6fe38e2a-0ee5-4d64-a9ea-aacecdcec810,3941019,2024-07-01,771,France,3026,Adrien Rabiot,1,19,8,Open Play,Off T,Left Foot,0.021996574
+statsbomb,53efb504-af14-403f-961a-70bdf4c940be,3941019,2024-07-01,782,Belgium,5633,Yannick Ferreira Carrasco,1,26,11,Open Play,Blocked,Left Foot,0.105909355
+statsbomb,5a5b17af-9f4a-4886-a238-94fd746f1329,3941019,2024-07-01,771,France,2972,Marcus Thuram,1,33,27,Open Play,Off T,Head,0.094443604
+statsbomb,dbbb63ff-32b3-4655-937b-ba77bfa36bd9,3941019,2024-07-01,771,France,10481,Aurélien Djani Tchouaméni,1,38,51,Open Play,Off T,Right Foot,0.022445312
+statsbomb,eae7986c-ec00-490c-b8fb-90cbcb83fbe8,3941019,2024-07-01,771,France,2972,Marcus Thuram,1,40,21,Open Play,Wayward,Right Foot,0.16247946
+statsbomb,c94ca9fb-fc9d-4ce5-98f1-0aa99e5038cf,3941019,2024-07-01,771,France,10481,Aurélien Djani Tchouaméni,1,45,13,Open Play,Off T,Right Foot,0.055180438
+statsbomb,4abc5973-bede-48c1-8e60-6cd89273ef9a,3941019,2024-07-01,771,France,10481,Aurélien Djani Tchouaméni,2,48,23,Open Play,Saved,Right Foot,0.027458923
+statsbomb,da638f0c-1456-431a-9ccd-3466c6508d3c,3941019,2024-07-01,771,France,3009,Kylian Mbappé Lottin,2,49,4,Open Play,Blocked,Right Foot,0.023882177
+statsbomb,4dabc141-ab4d-4fbf-8662-30a44d363220,3941019,2024-07-01,771,France,2972,Marcus Thuram,2,49,59,Open Play,Off T,Head,0.14512838
+statsbomb,5f28ec0c-2187-4149-8e2d-d58a30a890e6,3941019,2024-07-01,771,France,3009,Kylian Mbappé Lottin,2,53,4,Open Play,Off T,Right Foot,0.037212588
+statsbomb,d60f607c-f3f8-47dd-8993-c768f92edb96,3941019,2024-07-01,771,France,3009,Kylian Mbappé Lottin,2,55,15,Open Play,Wayward,Right Foot,0.18814844
+statsbomb,f9721732-6dfa-4497-a3f5-e28c6df567a0,3941019,2024-07-01,782,Belgium,5633,Yannick Ferreira Carrasco,2,60,23,Open Play,Blocked,Right Foot,0.13074823
+statsbomb,ae5b54b4-0a61-4ebb-bc6f-05c7d8560165,3941019,2024-07-01,771,France,5487,Antoine Griezmann,2,64,24,Open Play,Off T,Right Foot,0.05479053
+statsbomb,bd526b4b-3397-4bca-97bf-345081e16d2f,3941019,2024-07-01,771,France,10481,Aurélien Djani Tchouaméni,2,68,14,Open Play,Off T,Right Foot,0.030925188
+statsbomb,52e87adf-51ae-4ffc-98bc-70d539925dc0,3941019,2024-07-01,782,Belgium,3289,Romelu Lukaku Menama,2,70,2,Open Play,Saved,Left Foot,0.0381186
+statsbomb,2b8267da-1e0e-4d81-97e0-d403e9567d9d,3941019,2024-07-01,771,France,17592,William Saliba,2,73,42,Open Play,Off T,Left Foot,0.06782964
+statsbomb,3a9df91e-bc40-4a22-b63c-6704f25c6b27,3941019,2024-07-01,771,France,3009,Kylian Mbappé Lottin,2,77,51,Open Play,Off T,Right Foot,0.09472088
+statsbomb,a3928078-6c73-41ce-96ea-1797fdd11752,3941019,2024-07-01,782,Belgium,3089,Kevin De Bruyne,2,82,9,Open Play,Saved,Right Foot,0.082713604
+statsbomb,39768d80-d83c-48b0-ac81-ce6cfd67badd,3941019,2024-07-01,771,France,22097,Randal Kolo Muani,2,84,28,Open Play,Wayward,Right Foot,0.06305356
+statsbomb,a3bd5122-8a10-4c89-b347-c525353081bc,3941019,2024-07-01,782,Belgium,43913,Arthur Theate,2,89,40,Open Play,Wayward,Left Foot,0.005724137
+statsbomb,9561734f-0b86-4a2d-bef9-1618e95001a2,3941020,2024-07-01,780,Portugal,5206,Rúben Santos Gato Alves Dias,1,4,7,Open Play,Off T,Left Foot,0.048859816
+statsbomb,93209986-88e7-4aee-9d40-d6f72bd6e676,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,1,30,42,Open Play,Saved,Head,0.07103491
+statsbomb,823447a2-111e-47a3-97e8-82b8b92e98c9,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,1,33,32,Free Kick,Off T,Right Foot,0.08345447
+statsbomb,227fb697-c29b-4e84-900e-afcd72afbe95,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,1,38,0,Free Kick,Off T,Right Foot,0.0067048697
+statsbomb,5b5edf78-d14f-42cf-99ec-2be2e8723360,3941020,2024-07-01,944,Slovenia,38759,Benjamin Šeško,1,43,36,Open Play,Saved,Right Foot,0.03214056
+statsbomb,e3024b3a-8a29-4edc-b54b-4bda16d97543,3941020,2024-07-01,944,Slovenia,16047,Jaka Bijol,1,44,57,Open Play,Off T,Head,0.036003575
+statsbomb,ac80d7b4-08a7-454f-abdd-477f853645ed,3941020,2024-07-01,780,Portugal,12169,João Maria Lobo Alves Palhinha Gonçalves,1,47,6,Open Play,Off T,Right Foot,0.06763536
+statsbomb,f0b47587-7fa7-4a99-8829-98b5e9749609,3941020,2024-07-01,780,Portugal,3193,Bernardo Mota Veiga de Carvalho e Silva,2,46,43,Open Play,Off T,Left Foot,0.061536763
+statsbomb,273200a3-b495-4014-a017-e1da3e9c0fd1,3941020,2024-07-01,944,Slovenia,15896,Timi Elšnik,2,48,3,Open Play,Saved Off Target,Left Foot,0.030757122
+statsbomb,ab32a3ed-a4a8-4b42-8c19-1f23d47976bf,3941020,2024-07-01,780,Portugal,34639,Vitor Machado Ferreira,2,51,37,Open Play,Blocked,Right Foot,0.00635036
+statsbomb,bb26cda4-d53a-4f9a-b0cf-c39ab66e0de8,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,54,47,Free Kick,Saved,Right Foot,0.07588849
+statsbomb,5d7db4ec-497d-430f-ae3c-87e23495da83,3941020,2024-07-01,780,Portugal,34639,Vitor Machado Ferreira,2,56,10,Open Play,Blocked,Right Foot,0.0891514
+statsbomb,2366d02a-b380-4269-a3c9-64a954b8f406,3941020,2024-07-01,780,Portugal,34639,Vitor Machado Ferreira,2,57,57,Open Play,Blocked,Left Foot,0.052142147
+statsbomb,6693c48e-f38e-4748-a34f-d9207cc12e6e,3941020,2024-07-01,780,Portugal,12169,João Maria Lobo Alves Palhinha Gonçalves,2,58,3,Open Play,Wayward,Head,0.037417345
+statsbomb,81480b18-b90b-45cd-8567-302e9469bd4e,3941020,2024-07-01,944,Slovenia,31968,Adam Gnezda Čerin,2,58,55,Open Play,Off T,Right Foot,0.020967843
+statsbomb,49c9f59f-275d-4115-89b9-4fb2475e3929,3941020,2024-07-01,944,Slovenia,38759,Benjamin Šeško,2,60,59,Open Play,Off T,Left Foot,0.25142625
+statsbomb,a6574a7b-c875-4a92-8326-7e13f66c6496,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,71,10,Free Kick,Off T,Right Foot,0.029365536
+statsbomb,6cab299c-d0c3-49ab-b2cb-67298793a575,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,88,53,Open Play,Saved,Left Foot,0.093401864
+statsbomb,4d991b49-1b75-46f7-bed5-31365ba12e47,3941020,2024-07-01,780,Portugal,5204,Bruno Miguel Borges Fernandes,3,91,34,Open Play,Blocked,Right Foot,0.0052186823
+statsbomb,dd25e476-e6f8-433c-9dfe-11c85a119b69,3941020,2024-07-01,944,Slovenia,16510,Benjamin Verbič,3,94,29,Open Play,Blocked,Right Foot,0.04497154
+statsbomb,230a638e-c70d-4b34-9ea1-9b6b7d40b4b9,3941020,2024-07-01,944,Slovenia,11416,Jon Gorenc Stankovič,3,95,20,Open Play,Off T,Left Foot,0.039114628
+statsbomb,2d0a15a1-2523-411b-b40f-cec3346c13d7,3941020,2024-07-01,780,Portugal,9929,Diogo José Teixeira da Silva,3,99,28,Open Play,Saved,Head,0.07446987
+statsbomb,c313018b-a497-4500-96f7-984c20d7a63d,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,3,104,50,Penalty,Saved to Post,Right Foot,0.7835
+statsbomb,e527f18e-094b-4263-adbf-dae2e43f389a,3941020,2024-07-01,780,Portugal,12169,João Maria Lobo Alves Palhinha Gonçalves,4,107,27,Open Play,Saved,Head,0.050350625
+statsbomb,e16062d6-1368-4438-8a01-f990bc99163b,3941020,2024-07-01,780,Portugal,20016,Kléper Laveran Lima Ferreira,4,107,57,Open Play,Blocked,Head,0.050621446
+statsbomb,f30f0302-70a1-4480-9031-816556f808d8,3941020,2024-07-01,944,Slovenia,7139,Josip Iličić,4,111,49,Free Kick,Blocked,Left Foot,0.045270752
+statsbomb,f954ee1a-7e08-4600-a1b0-35df1d844cf0,3941020,2024-07-01,944,Slovenia,38759,Benjamin Šeško,4,114,28,Open Play,Saved,Right Foot,0.17587057
+statsbomb,1a12e1f0-3bf2-4bc5-aec0-53a6a845201e,3941020,2024-07-01,944,Slovenia,24109,Žan Celar,4,114,30,Open Play,Wayward,Right Foot,0.039013498
+statsbomb,41e05da3-18aa-4cb9-a778-b9ac3c46a377,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,4,119,40,Open Play,Blocked,Head,0.022550302
+statsbomb,d232da3f-3eaf-4737-b5e9-e86a44008932,3941020,2024-07-01,780,Portugal,9927,Rúben Diogo Da Silva Neves,4,119,43,Open Play,Off T,Right Foot,0.01152262
+statsbomb,bbe31e7f-0253-4740-9cdb-d5b06ae1a620,3941020,2024-07-01,944,Slovenia,7139,Josip Iličić,5,120,8,Penalty,Saved,Left Foot,0.7835
+statsbomb,174dda5d-71f1-4499-abae-196b6bdae6d5,3941020,2024-07-01,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,5,120,58,Penalty,Goal,Right Foot,0.7835
+statsbomb,49b881fc-e466-4b09-884f-72f61d770028,3941020,2024-07-01,944,Slovenia,30940,Jure Balkovec,5,121,40,Penalty,Saved,Left Foot,0.7835
+statsbomb,7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75,3941020,2024-07-01,780,Portugal,5204,Bruno Miguel Borges Fernandes,5,122,34,Penalty,Goal,Right Foot,0.7835
+statsbomb,e1ffef52-4950-4046-a08f-cf4b0d1a0963,3941020,2024-07-01,944,Slovenia,16510,Benjamin Verbič,5,123,21,Penalty,Saved,Right Foot,0.7835
+statsbomb,09b3ee41-99d7-4162-8477-f486dd28c59d,3941020,2024-07-01,780,Portugal,3193,Bernardo Mota Veiga de Carvalho e Silva,5,124,13,Penalty,Goal,Left Foot,0.7835
+statsbomb,2f32b13b-fd12-4bbf-9d9d-81960c8d35d6,3941021,2024-07-02,941,Netherlands,39167,Xavi Simons,1,5,32,Open Play,Saved,Right Foot,0.008267852
+statsbomb,979775f1-fa7a-47ed-b984-4dc58aebe4a8,3941021,2024-07-02,905,Romania,56905,Dennis Man,1,13,52,Open Play,Off T,Left Foot,0.03920482
+statsbomb,47a39155-d551-491d-9dfe-95fab49f13c2,3941021,2024-07-02,941,Netherlands,7787,Stefan de Vrij,1,16,45,Open Play,Blocked,Head,0.07967252
+statsbomb,7370c563-0312-4d8d-be56-530334449a11,3941021,2024-07-02,941,Netherlands,3306,Nathan Aké,1,17,4,Open Play,Wayward,Head,0.033201255
+statsbomb,68407818-ca45-41b2-a6c6-5470a655f811,3941021,2024-07-02,941,Netherlands,20750,Cody Mathès Gakpo,1,19,7,Open Play,Goal,Right Foot,0.046985872
+statsbomb,50183da3-6d0e-48af-b586-b82ffd8f07c7,3941021,2024-07-02,905,Romania,28565,Ianis Hagi,1,20,17,Open Play,Off T,Right Foot,0.007178938
+statsbomb,a7f44508-badf-42e1-82e9-b5e87724e47d,3941021,2024-07-02,905,Romania,56905,Dennis Man,1,23,20,Open Play,Off T,Left Foot,0.10886951
+statsbomb,f5920204-604b-457b-ae9e-569e70fca550,3941021,2024-07-02,941,Netherlands,21582,Tijjani Reijnders,1,25,13,Open Play,Blocked,Right Foot,0.052920066
+statsbomb,5a7753f8-e0a6-4c62-91ce-c5d43bcd6a08,3941021,2024-07-02,941,Netherlands,7787,Stefan de Vrij,1,25,46,Open Play,Off T,Head,0.0656883
+statsbomb,20812483-194b-4e0f-bbcf-6a602dac60a4,3941021,2024-07-02,941,Netherlands,2988,Memphis Depay,1,42,2,Corner,Off T,Right Foot,0.00018
+statsbomb,08e21b88-b7ad-4488-9eea-beb578a7d19c,3941021,2024-07-02,941,Netherlands,39167,Xavi Simons,1,43,24,Open Play,Off T,Right Foot,0.14239058
+statsbomb,edf9052a-c020-4235-95b4-7eec53dbb2ae,3941021,2024-07-02,905,Romania,31193,Denis Mihai Drăguş,1,46,6,Open Play,Saved,Right Foot,0.056796633
+statsbomb,d5b70b4d-4b94-4d9a-8c81-20d8b9c18187,3941021,2024-07-02,941,Netherlands,21582,Tijjani Reijnders,2,49,24,Open Play,Blocked,Right Foot,0.09582185
+statsbomb,72fe63a5-f960-409a-8c65-b5e8539dce22,3941021,2024-07-02,941,Netherlands,15582,Donyell Malen,2,49,43,Open Play,Off T,Head,0.14581987
+statsbomb,401104c2-6639-4ce4-b799-d322bb7b83da,3941021,2024-07-02,941,Netherlands,15582,Donyell Malen,2,53,16,Open Play,Wayward,Right Foot,0.22304013
+statsbomb,44be83e5-83b8-479c-a7c9-5bae196ef974,3941021,2024-07-02,941,Netherlands,2988,Memphis Depay,2,53,18,Open Play,Blocked,Right Foot,0.3079616
+statsbomb,2162d091-db19-4864-bb9f-e2810e19041b,3941021,2024-07-02,941,Netherlands,21582,Tijjani Reijnders,2,56,22,Open Play,Off T,Right Foot,0.03629456
+statsbomb,ec0d998e-070e-4197-ad38-11e18dfb81cc,3941021,2024-07-02,941,Netherlands,3669,Virgil van Dijk,2,57,47,Open Play,Post,Head,0.06589584
+statsbomb,2460969f-3773-4950-904d-257f42a1b2d0,3941021,2024-07-02,941,Netherlands,20750,Cody Mathès Gakpo,2,58,42,Open Play,Saved,Right Foot,0.11165685
+statsbomb,f1d29168-90ba-4ce9-a9f4-e1def126538c,3941021,2024-07-02,905,Romania,31193,Denis Mihai Drăguş,2,59,8,Open Play,Blocked,Right Foot,0.05565119
+statsbomb,1c57c9bd-13c7-4f8f-b70c-98a4c0c72c8a,3941021,2024-07-02,941,Netherlands,20750,Cody Mathès Gakpo,2,61,45,Open Play,Saved,Right Foot,0.0472151
+statsbomb,ffbff034-2134-4d7c-a0e5-486320d56be1,3941021,2024-07-02,941,Netherlands,3306,Nathan Aké,2,62,29,Open Play,Wayward,Head,0.07373578
+statsbomb,6f3b3d49-4c84-4974-ac8d-5bad7bf793af,3941021,2024-07-02,941,Netherlands,2988,Memphis Depay,2,67,42,Free Kick,Off T,Right Foot,0.061553013
+statsbomb,35d313a7-96a0-456c-9eb3-56fd3e2c5ff5,3941021,2024-07-02,941,Netherlands,21633,Joey Veerman,2,72,30,Open Play,Off T,Right Foot,0.11710371
+statsbomb,9f6f3d86-8d6d-4a71-b38f-827d770f9585,3941021,2024-07-02,941,Netherlands,2988,Memphis Depay,2,78,8,Open Play,Blocked,Right Foot,0.028539894
+statsbomb,9e62fdd3-1034-4a2c-b7ef-70d83df86e97,3941021,2024-07-02,941,Netherlands,20750,Cody Mathès Gakpo,2,79,49,Open Play,Blocked,Right Foot,0.062258154
+statsbomb,95438759-00a4-49c4-9c40-85cbfe4e6fd8,3941021,2024-07-02,941,Netherlands,15582,Donyell Malen,2,82,23,Open Play,Goal,Right Foot,0.39829126
+statsbomb,56a47e80-a0fd-4e5f-aab9-f64936736fbb,3941021,2024-07-02,941,Netherlands,2988,Memphis Depay,2,84,23,Open Play,Off T,Right Foot,0.070296794
+statsbomb,e396a17d-ab0e-4f33-8fc8-9cf1b4fa5294,3941021,2024-07-02,941,Netherlands,15582,Donyell Malen,2,92,42,Open Play,Goal,Right Foot,0.35144565
+statsbomb,72dc211e-9b90-4575-8968-b2c1a3b5bf2b,3941022,2024-07-02,909,Turkey,23558,Merih Demiral,1,0,58,Open Play,Goal,Left Foot,0.4581151
+statsbomb,f1ed793c-ea50-4527-a324-b4c6a58e40f4,3941022,2024-07-02,915,Austria,24977,Christoph Baumgartner,1,2,10,Open Play,Off T,Right Foot,0.043312646
+statsbomb,b9df87d2-fcae-4fda-8a00-f51c390e880c,3941022,2024-07-02,915,Austria,8931,Philipp Lienhart,1,6,40,Open Play,Off T,Head,0.12085788
+statsbomb,15680173-4afe-471a-a258-59f525c6d3f1,3941022,2024-07-02,915,Austria,8518,Marcel Sabitzer,1,11,13,Free Kick,Blocked,Right Foot,0.042849332
+statsbomb,82a32482-6f8d-4b0a-bbaf-05a91d87f814,3941022,2024-07-02,915,Austria,8931,Philipp Lienhart,1,11,51,Open Play,Blocked,Right Foot,0.060313236
+statsbomb,ad8ca32c-76a9-4ad5-96ec-bca8f85885b1,3941022,2024-07-02,909,Turkey,116587,Arda Güler,1,18,37,Open Play,Off T,Left Foot,0.0070581385
+statsbomb,6e89138e-50b2-4bf9-8c31-855862f51c5c,3941022,2024-07-02,909,Turkey,23558,Merih Demiral,1,24,3,Open Play,Off T,Other,0.10399367
+statsbomb,0252f102-b78d-4312-8f85-f22687c01ad6,3941022,2024-07-02,915,Austria,8518,Marcel Sabitzer,1,32,40,Open Play,Blocked,Right Foot,0.00823542
+statsbomb,c1a980c5-d572-4ad6-a8ad-a7cb9b9433cf,3941022,2024-07-02,915,Austria,24977,Christoph Baumgartner,1,45,57,Open Play,Off T,Left Foot,0.16866307
+statsbomb,5a019209-e3ce-4977-ac84-90224c85fb4b,3941022,2024-07-02,915,Austria,8309,Michael Gregoritsch,2,49,32,Open Play,Off T,Head,0.0427339
+statsbomb,06370dcd-c41c-43eb-bfc8-e000655bbf39,3941022,2024-07-02,915,Austria,3325,Marko Arnautović,2,50,32,Open Play,Saved,Right Foot,0.29855767
+statsbomb,681fffac-e335-4bef-bbc9-2aea55f0237f,3941022,2024-07-02,915,Austria,8506,Konrad Laimer,2,52,24,Open Play,Off T,Left Foot,0.10591905
+statsbomb,7727dc0d-c6e9-4520-a466-60a953ef8f1a,3941022,2024-07-02,915,Austria,11821,Stefan Posch,2,53,39,Open Play,Blocked,Right Foot,0.06528039
+statsbomb,0e40b416-cfc5-4ec1-a5c8-987be9a8df7f,3941022,2024-07-02,909,Turkey,30438,Ferdi Erenay Kadıoğlu,2,56,14,Open Play,Blocked,Right Foot,0.050657645
+statsbomb,e5d34fc9-1f3c-471d-95a8-50888dece857,3941022,2024-07-02,909,Turkey,23558,Merih Demiral,2,58,51,Open Play,Goal,Head,0.1547648
+statsbomb,8c1419a2-d06e-491c-bd02-e690fd948851,3941022,2024-07-02,915,Austria,11821,Stefan Posch,2,65,52,Open Play,Wayward,Head,0.11622289
+statsbomb,a5c81c5a-c8a3-4525-8ca7-a16e4fd48269,3941022,2024-07-02,915,Austria,8309,Michael Gregoritsch,2,65,53,Open Play,Goal,Left Foot,0.5777065
+statsbomb,126fc445-bc57-43fa-81bd-d5224e2531ba,3941022,2024-07-02,915,Austria,8309,Michael Gregoritsch,2,68,2,Open Play,Saved,Head,0.098569036
+statsbomb,cd591d61-ab37-437d-99c0-1864fbec542f,3941022,2024-07-02,915,Austria,11396,Florian Grillitsch,2,73,2,Open Play,Blocked,Right Foot,0.024146283
+statsbomb,4434e6c0-a9f2-47a0-bcf1-30973265283d,3941022,2024-07-02,915,Austria,11396,Florian Grillitsch,2,74,21,Open Play,Saved,Right Foot,0.024710217
+statsbomb,bade961b-3b16-4141-8465-5dd489b1adf0,3941022,2024-07-02,915,Austria,3325,Marko Arnautović,2,74,50,Open Play,Blocked,Right Foot,0.030356593
+statsbomb,16b19843-d9fd-4cd6-aba8-2946d5acd7e9,3941022,2024-07-02,915,Austria,8518,Marcel Sabitzer,2,83,34,Open Play,Wayward,Left Foot,0.02972567
+statsbomb,0fbeaf51-34e8-456e-a8b5-f1df9e15653a,3941022,2024-07-02,915,Austria,24977,Christoph Baumgartner,2,83,41,Open Play,Off T,Head,0.24289556
+statsbomb,ae4cdf64-e487-4253-a486-be805fd8217d,3941022,2024-07-02,915,Austria,24977,Christoph Baumgartner,2,85,44,Open Play,Off T,Head,0.0522076
+statsbomb,1e645eee-f4f3-4fa6-a531-c3df56a4a071,3941022,2024-07-02,915,Austria,8309,Michael Gregoritsch,2,90,41,Open Play,Blocked,Head,0.101370536
+statsbomb,2dc0a9c4-8d27-4c02-a6cc-46e1564cba6b,3941022,2024-07-02,909,Turkey,134209,Barış Alper Yılmaz,2,93,13,Open Play,Saved,Right Foot,0.10791902
+statsbomb,9f56de67-01c9-4053-b1ed-c4c13cec31a6,3941022,2024-07-02,915,Austria,24977,Christoph Baumgartner,2,94,0,Open Play,Saved,Head,0.23239474
+statsbomb,bb0e147f-7c20-4c0f-815c-dc358ec22f8e,3942226,2024-07-05,772,Spain,30486,Pedro González López,1,0,52,Open Play,Saved,Left Foot,0.11743693
+statsbomb,c375914d-8e05-440c-802b-bbb58faa3f6b,3942226,2024-07-05,772,Spain,68574,Nicholas Williams Arthuer,1,11,45,Open Play,Off T,Right Foot,0.021921165
+statsbomb,7afc1acf-7961-4e74-b65e-573cedf504e4,3942226,2024-07-05,772,Spain,316046,Lamine Yamal Nasraoui Ebana,1,14,5,Free Kick,Off T,Left Foot,0.084460065
+statsbomb,dcc0412a-a1f9-4fca-8c23-ed64ad7636d2,3942226,2024-07-05,772,Spain,3477,Álvaro Borja Morata Martín,1,15,2,Open Play,Blocked,Right Foot,0.013587153
+statsbomb,e387a758-13ab-40cc-8403-68f3bad68aff,3942226,2024-07-05,772,Spain,6655,Fabián Ruiz Peña,1,16,8,Open Play,Off T,Left Foot,0.06860946
+statsbomb,9a348960-e921-4cae-ac06-4a10eb2dbbb4,3942226,2024-07-05,770,Germany,8966,Kai Havertz,1,20,10,Open Play,Saved,Head,0.07551446
+statsbomb,4978701e-8278-4b3e-bd67-6df49c2fec04,3942226,2024-07-05,772,Spain,4353,Aymeric Laporte,1,22,9,Open Play,Saved,Left Foot,0.020855846
+statsbomb,761f3907-5632-4bd7-8aa6-e5dc2ebb2532,3942226,2024-07-05,770,Germany,8221,Jonathan Tah,1,24,39,Open Play,Blocked,Head,0.021546038
+statsbomb,1eb558d5-e60c-4ebd-8350-736ccf77dc06,3942226,2024-07-05,770,Germany,8966,Kai Havertz,1,34,13,Open Play,Saved,Right Foot,0.154297
+statsbomb,cbf90a05-e0db-471c-a681-152edeb3d531,3942226,2024-07-05,772,Spain,16532,Daniel Olmo Carvajal,1,38,47,Open Play,Saved,Right Foot,0.029002221
+statsbomb,11329016-b81c-4199-b5b9-64d685e98ebc,3942226,2024-07-05,772,Spain,316046,Lamine Yamal Nasraoui Ebana,1,44,51,Open Play,Saved,Left Foot,0.027097616
+statsbomb,4691db74-4de9-449e-9c56-2638dbf628f4,3942226,2024-07-05,772,Spain,3477,Álvaro Borja Morata Martín,2,46,48,Open Play,Off T,Right Foot,0.15766257
+statsbomb,3ea40171-6699-4515-803e-228962af47ef,3942226,2024-07-05,770,Germany,9195,Robert Andrich,2,47,51,Open Play,Off T,Right Foot,0.020109814
+statsbomb,cc32f902-7e4b-4df8-981b-0c7fbe4b7681,3942226,2024-07-05,772,Spain,16532,Daniel Olmo Carvajal,2,51,0,Open Play,Goal,Right Foot,0.16316466
+statsbomb,87c6b30a-9b8e-4eee-8868-8a6ece9a157d,3942226,2024-07-05,770,Germany,39565,Jamal Musiala,2,54,23,Open Play,Blocked,Right Foot,0.040737197
+statsbomb,f7d3e548-6fd7-4a6f-9438-daa8def7398a,3942226,2024-07-05,772,Spain,68574,Nicholas Williams Arthuer,2,54,53,Open Play,Wayward,Left Foot,0.12471274
+statsbomb,31676cab-bd6f-4280-a61c-eee281586e77,3942226,2024-07-05,770,Germany,40724,Florian Wirtz,2,59,43,Open Play,Blocked,Right Foot,0.028129423
+statsbomb,80d48fcc-b712-42ea-9d8a-c50107d2752c,3942226,2024-07-05,770,Germany,8546,Niclas Füllkrug,2,63,7,Open Play,Off T,Head,0.046607595
+statsbomb,2b4d3944-6b4d-42b3-8cf2-e8f9a86b1eb9,3942226,2024-07-05,770,Germany,9195,Robert Andrich,2,69,1,Open Play,Saved,Right Foot,0.06904092
+statsbomb,fde071c3-a35c-40b2-8711-b51d8860ca79,3942226,2024-07-05,770,Germany,8966,Kai Havertz,2,71,2,Open Play,Blocked,Left Foot,0.08557191
+statsbomb,9f7063a2-6e9f-441c-b7fd-6c7bd74430a3,3942226,2024-07-05,770,Germany,8546,Niclas Füllkrug,2,71,41,Open Play,Off T,Head,0.078394026
+statsbomb,c1987ed8-342b-4a48-86f5-806ad934ecb3,3942226,2024-07-05,770,Germany,8546,Niclas Füllkrug,2,76,15,Open Play,Post,Right Foot,0.10089645
+statsbomb,fef68890-bfa6-422e-9b7f-4161c99250ed,3942226,2024-07-05,770,Germany,39565,Jamal Musiala,2,80,43,Open Play,Off T,Left Foot,0.06056656
+statsbomb,23a4f45d-5b43-45a9-8708-8dffc7f56c5c,3942226,2024-07-05,770,Germany,8966,Kai Havertz,2,81,51,Open Play,Off T,Left Foot,0.037947286
+statsbomb,44b40351-f854-4cb0-891e-d01219c87656,3942226,2024-07-05,772,Spain,6655,Fabián Ruiz Peña,2,83,31,Open Play,Off T,Left Foot,0.04979181
+statsbomb,19153452-87eb-4c7c-9b77-d8d4d29c6060,3942226,2024-07-05,770,Germany,12407,Maximilian Mittelstädt,2,87,8,Open Play,Blocked,Left Foot,0.040309463
+statsbomb,316e5d5c-eb20-40cc-b9b8-898dd288dc78,3942226,2024-07-05,770,Germany,40724,Florian Wirtz,2,88,21,Open Play,Goal,Right Foot,0.119556814
+statsbomb,10b069be-9f8c-44cd-a1b3-b9d5988cd685,3942226,2024-07-05,770,Germany,5562,Thomas Müller,2,93,48,Open Play,Off T,Right Foot,0.23735376
+statsbomb,0400f5b8-8ca5-4313-a276-4dfa703c4214,3942226,2024-07-05,772,Spain,6748,Ferrán Torres García,3,90,24,Open Play,Wayward,Head,0.051860645
+statsbomb,aba3c838-6e40-4681-8b4b-9d92ddbb4863,3942226,2024-07-05,772,Spain,6685,Mikel Oyarzabal Ugarte,3,94,31,Open Play,Blocked,Left Foot,0.026732832
+statsbomb,3649f497-d5d3-42db-bfb0-c3fe093b9774,3942226,2024-07-05,772,Spain,16532,Daniel Olmo Carvajal,3,96,8,Open Play,Blocked,Right Foot,0.018918002
+statsbomb,079477be-b722-4555-813c-b7d725cb1182,3942226,2024-07-05,770,Germany,9195,Robert Andrich,3,100,26,Open Play,Off T,Right Foot,0.0269288
+statsbomb,bfd9f072-8e41-4360-adc2-751dac5de557,3942226,2024-07-05,772,Spain,6685,Mikel Oyarzabal Ugarte,3,103,7,Open Play,Off T,Left Foot,0.022105819
+statsbomb,aa255d93-7b41-4d4d-8778-3231391a0cf6,3942226,2024-07-05,770,Germany,40724,Florian Wirtz,3,105,3,Open Play,Off T,Left Foot,0.1075199
+statsbomb,47855492-fcc0-41f5-9694-1ab1c3df2dbb,3942226,2024-07-05,770,Germany,39565,Jamal Musiala,4,105,34,Open Play,Blocked,Right Foot,0.0490711
+statsbomb,2c4a5fa2-16a8-4af5-aaf0-d2e2ff51a087,3942226,2024-07-05,770,Germany,8546,Niclas Füllkrug,4,108,4,Open Play,Off T,Left Foot,0.045802347
+statsbomb,773495e4-9379-4d15-a918-b6a03a85678f,3942226,2024-07-05,772,Spain,6685,Mikel Oyarzabal Ugarte,4,111,50,Open Play,Off T,Left Foot,0.04228213
+statsbomb,b22feaaf-8288-4c98-8da3-82c2e8e5f831,3942226,2024-07-05,770,Germany,8546,Niclas Füllkrug,4,116,19,Open Play,Saved,Head,0.052276906
+statsbomb,f3b86342-f07d-4c2a-a293-262587ed15fd,3942226,2024-07-05,772,Spain,3042,Mikel Merino Zazón,4,118,53,Open Play,Goal,Head,0.20066643
+statsbomb,4b2b1252-31e6-4552-8dc6-aaa8eacb67f5,3942226,2024-07-05,770,Germany,5579,Joshua Kimmich,4,121,38,Open Play,Blocked,Right Foot,0.044950247
+statsbomb,74ebd401-c469-4b61-8183-6bba3c1d1761,3942226,2024-07-05,772,Spain,6748,Ferrán Torres García,4,121,55,Open Play,Wayward,Right Foot,0.29318613
+statsbomb,e9415102-55e5-49b5-a0c4-698430635de9,3942226,2024-07-05,770,Germany,8546,Niclas Füllkrug,4,122,55,Open Play,Off T,Head,0.08594657
+statsbomb,64241711-4e5c-43c3-a993-2ca464e9dbc7,3942227,2024-07-06,773,Switzerland,5545,Breel-Donald Embolo,1,9,58,Open Play,Off T,Right Foot,0.008929583
+statsbomb,4b47d17b-7d2d-447f-a5a8-c70ae5a01e1e,3942227,2024-07-06,768,England,3943,Declan Rice,1,13,7,Open Play,Blocked,Right Foot,0.03981024
+statsbomb,5dc7bbc0-2045-42d6-9a95-2b6f14a6b643,3942227,2024-07-06,768,England,99174,Kobbie Mainoo,1,15,18,Open Play,Blocked,Right Foot,0.041179437
+statsbomb,5c8d4f24-e19a-4565-a1e7-60553c011407,3942227,2024-07-06,768,England,10955,Harry Kane,1,21,4,Open Play,Wayward,Head,0.024830516
+statsbomb,a5b16bd8-68a9-48cb-bf32-c573bc06c9ad,3942227,2024-07-06,773,Switzerland,5545,Breel-Donald Embolo,1,24,8,Open Play,Blocked,Left Foot,0.050617944
+statsbomb,f63d0bdc-7b03-4aab-b7e9-445459d29c8d,3942227,2024-07-06,768,England,22084,Bukayo Saka,1,42,19,Open Play,Blocked,Left Foot,0.022693586
+statsbomb,1857fdfc-26ba-408c-81c8-4202a8f49eb8,3942227,2024-07-06,768,England,99174,Kobbie Mainoo,1,44,7,Open Play,Blocked,Right Foot,0.105490096
+statsbomb,91fffc20-f841-4a96-9206-1368b593625b,3942227,2024-07-06,768,England,22084,Bukayo Saka,2,46,33,Open Play,Blocked,Left Foot,0.043717798
+statsbomb,8a47e296-91b5-4dae-b91a-bff7c24c0001,3942227,2024-07-06,773,Switzerland,5545,Breel-Donald Embolo,2,50,42,Open Play,Saved,Right Foot,0.052396607
+statsbomb,30a91b99-fca1-4233-9fa2-9ebd40f95f71,3942227,2024-07-06,773,Switzerland,5545,Breel-Donald Embolo,2,56,3,Open Play,Blocked,Head,0.113653235
+statsbomb,ebf8ac14-d3f2-4620-a30b-6efe03098379,3942227,2024-07-06,773,Switzerland,16016,Michel Aebischer,2,65,46,Open Play,Off T,Right Foot,0.054864526
+statsbomb,3cc0520d-338c-48b1-8e46-237e81965d70,3942227,2024-07-06,773,Switzerland,5545,Breel-Donald Embolo,2,74,14,Open Play,Goal,Right Foot,0.673555
+statsbomb,f49ffee0-1a8a-4d16-b892-78c20e740cf1,3942227,2024-07-06,768,England,22084,Bukayo Saka,2,79,46,Open Play,Goal,Left Foot,0.027096223
+statsbomb,bb2cc906-2d2c-47a4-8106-c11e66f4c936,3942227,2024-07-06,768,England,10955,Harry Kane,2,82,43,Open Play,Blocked,Right Foot,0.043730237
+statsbomb,ec8a20e8-dead-4b00-adec-696f75161dd5,3942227,2024-07-06,768,England,9000,Eberechi Eze,2,87,54,Open Play,Off T,Right Foot,0.012332749
+statsbomb,68dda545-c50d-4c6f-a3c8-2414305dd0cb,3942227,2024-07-06,773,Switzerland,45190,Dan Ndoye,2,89,35,Open Play,Off T,Right Foot,0.02836855
+statsbomb,3bfdcf00-a663-4a29-8b7a-61e7e5b7b545,3942227,2024-07-06,773,Switzerland,5548,Steven Zuber,2,92,5,Open Play,Off T,Right Foot,0.049106847
+statsbomb,205c8e05-3e2d-4774-87c7-8c801dab8fa7,3942227,2024-07-06,768,England,3943,Declan Rice,3,94,28,Open Play,Saved,Right Foot,0.017482303
+statsbomb,cb60e195-2f36-4f9d-8d12-12f3032379cc,3942227,2024-07-06,768,England,4354,Phil Foden,3,100,49,Open Play,Blocked,Left Foot,0.02448303
+statsbomb,f398ea83-2bed-4dca-b7b0-a441de62658c,3942227,2024-07-06,768,England,30714,Jude Bellingham,3,101,4,Open Play,Blocked,Right Foot,0.06517577
+statsbomb,8e2e735f-26ce-4a75-86f7-7dab6858b59f,3942227,2024-07-06,768,England,30714,Jude Bellingham,3,101,6,Open Play,Saved,Left Foot,0.06901925
+statsbomb,96e6f91a-22e3-41d9-9b44-1f6b190c4b62,3942227,2024-07-06,773,Switzerland,5537,Fabian Lukas Schär,4,112,53,Open Play,Off T,Right Foot,0.012323262
+statsbomb,cc7696c3-c5e2-4524-a065-7dd1accebed4,3942227,2024-07-06,773,Switzerland,3533,Xherdan Shaqiri,4,116,40,Corner,Post,Left Foot,0.00018
+statsbomb,38915bff-1be9-422a-8369-9597b3a3f217,3942227,2024-07-06,773,Switzerland,48335,Mohamed Zeki Amdouni,4,118,39,Open Play,Saved,Left Foot,0.039720625
+statsbomb,8538a591-bcfa-48fd-b043-fbccb1bc9dd8,3942227,2024-07-06,773,Switzerland,7796,Silvan Widmer,4,118,51,Open Play,Off T,Right Foot,0.11769032
+statsbomb,f0980e44-8548-468a-a8f2-30140609027c,3942227,2024-07-06,768,England,39461,Cole Palmer,5,120,1,Penalty,Goal,Left Foot,0.7835
+statsbomb,edadf78d-e171-4c65-bc61-4c3397947131,3942227,2024-07-06,773,Switzerland,5549,Manuel Obafemi Akanji,5,121,3,Penalty,Saved,Right Foot,0.7835
+statsbomb,ccf36164-cc53-44a5-bfac-a9aec09b285f,3942227,2024-07-06,768,England,30714,Jude Bellingham,5,121,59,Penalty,Goal,Right Foot,0.7835
+statsbomb,b0f972bd-11cb-4049-b77e-17e3efad438f,3942227,2024-07-06,773,Switzerland,5537,Fabian Lukas Schär,5,122,52,Penalty,Goal,Right Foot,0.7835
+statsbomb,b6321c10-e88e-46fd-9ba9-d1533ce165fb,3942227,2024-07-06,768,England,22084,Bukayo Saka,5,123,53,Penalty,Goal,Left Foot,0.7835
+statsbomb,dc843aa4-7eeb-43ca-acc9-27a108a20028,3942227,2024-07-06,773,Switzerland,3533,Xherdan Shaqiri,5,124,38,Penalty,Goal,Left Foot,0.7835
+statsbomb,cd47aff6-eaf3-4c00-aa07-3cc4a93343fc,3942227,2024-07-06,768,England,3834,Ivan Toney,5,125,30,Penalty,Goal,Right Foot,0.7835
+statsbomb,ffb782cd-891c-4b04-b15c-9fc9eaf43ac0,3942227,2024-07-06,773,Switzerland,48335,Mohamed Zeki Amdouni,5,126,25,Penalty,Goal,Right Foot,0.7835
+statsbomb,48bad4bc-a8f9-4138-bbc6-15dceb3e55df,3942227,2024-07-06,768,England,3664,Trent Alexander-Arnold,5,127,21,Penalty,Goal,Right Foot,0.7835
+statsbomb,b763a8c3-821c-4729-ba62-fc749e5a54ee,3942349,2024-07-05,780,Portugal,5204,Bruno Miguel Borges Fernandes,1,15,51,Open Play,Blocked,Right Foot,0.02740746
+statsbomb,6f1f0275-31db-43c9-8f6f-49c1d707dbba,3942349,2024-07-05,771,France,6704,Theo Bernard François Hernández,1,19,32,Open Play,Saved,Left Foot,0.017666074
+statsbomb,91f10b47-e91c-401d-b348-65bce92dc974,3942349,2024-07-05,771,France,5487,Antoine Griezmann,1,27,33,Open Play,Blocked,Left Foot,0.009978434
+statsbomb,dbe8f8f0-ef11-439b-ba57-3c85f1ade93f,3942349,2024-07-05,771,France,24778,Eduardo Camavinga,1,27,41,Open Play,Off T,Left Foot,0.021160081
+statsbomb,86b7e8c2-da3b-41fb-b2e6-b03b9c90469f,3942349,2024-07-05,780,Portugal,5204,Bruno Miguel Borges Fernandes,1,41,32,Free Kick,Off T,Right Foot,0.03952836
+statsbomb,50783f1e-3baa-4871-92bb-16bdc4e4e65a,3942349,2024-07-05,771,France,3009,Kylian Mbappé Lottin,2,49,6,Open Play,Saved,Right Foot,0.033553086
+statsbomb,891dba98-fe8b-46b5-927a-b38435197ba0,3942349,2024-07-05,771,France,10481,Aurélien Djani Tchouaméni,2,50,29,Open Play,Blocked,Right Foot,0.019283272
+statsbomb,c6aab686-fd54-4ac0-9833-bdd1139b90a5,3942349,2024-07-05,780,Portugal,3193,Bernardo Mota Veiga de Carvalho e Silva,2,53,53,Open Play,Blocked,Head,0.04770692
+statsbomb,f0812c28-09e0-41a1-a098-a31cf41bae9e,3942349,2024-07-05,780,Portugal,5204,Bruno Miguel Borges Fernandes,2,60,25,Open Play,Saved,Right Foot,0.13447225
+statsbomb,c6ef5e64-8985-48a1-bfb6-d48f68b37f83,3942349,2024-07-05,780,Portugal,7005,João Pedro Cavaco Cancelo,2,60,36,Open Play,Off T,Left Foot,0.052601743
+statsbomb,c18f4aa3-8565-49e7-9f52-381553e8a0f9,3942349,2024-07-05,771,France,10481,Aurélien Djani Tchouaméni,2,62,2,Open Play,Wayward,Right Foot,0.006239464
+statsbomb,0b09c39b-d564-43a5-a141-63d5f365fd49,3942349,2024-07-05,780,Portugal,34639,Vitor Machado Ferreira,2,62,36,Open Play,Saved,Right Foot,0.264942
+statsbomb,e0340c74-4ac1-47b5-9754-3779a33c8763,3942349,2024-07-05,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,62,39,Open Play,Saved,Right Foot,0.1352057
+statsbomb,2453f372-9206-457d-9c09-751060756e56,3942349,2024-07-05,771,France,22097,Randal Kolo Muani,2,65,33,Open Play,Blocked,Right Foot,0.116558924
+statsbomb,e9d5a319-59e1-4c67-bf40-8fe081d8f0f5,3942349,2024-07-05,771,France,3009,Kylian Mbappé Lottin,2,66,54,Open Play,Blocked,Right Foot,0.022234876
+statsbomb,6763a086-a864-4174-beac-e32eda9c90cb,3942349,2024-07-05,771,France,5477,Ousmane Dembélé,2,69,47,Open Play,Blocked,Right Foot,0.010713111
+statsbomb,42507307-4ee5-464a-b9b3-4f2822f1303d,3942349,2024-07-05,771,France,24778,Eduardo Camavinga,2,69,49,Open Play,Post,Right Foot,0.23683809
+statsbomb,342d5e0a-b57f-47b3-a1b5-67c23ff875df,3942349,2024-07-05,771,France,5477,Ousmane Dembélé,2,73,16,Open Play,Post,Left Foot,0.02501046
+statsbomb,48095704-d68a-4886-8374-d026f98dc8a6,3942349,2024-07-05,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,2,84,57,Free Kick,Blocked,Right Foot,0.010742701
+statsbomb,8d99b6ac-67d3-44fc-96cd-adff82579f85,3942349,2024-07-05,780,Portugal,34639,Vitor Machado Ferreira,2,85,7,Open Play,Blocked,Right Foot,0.00655848
+statsbomb,7269ffad-cbb8-45ab-b26c-c879877e45eb,3942349,2024-07-05,771,France,3961,N'Golo Kanté,2,87,22,Open Play,Saved,Right Foot,0.02393025
+statsbomb,9cc7b83e-4b52-4411-a6d5-f6c31ce5bc5d,3942349,2024-07-05,771,France,3961,N'Golo Kanté,2,88,44,Open Play,Saved,Right Foot,0.052443802
+statsbomb,002f3baf-e461-4f46-a2c4-81cfb0d22900,3942349,2024-07-05,780,Portugal,3193,Bernardo Mota Veiga de Carvalho e Silva,2,89,58,Open Play,Blocked,Left Foot,0.050959174
+statsbomb,acaab1b9-2913-4263-ae7f-d80ff94a8c7e,3942349,2024-07-05,771,France,3009,Kylian Mbappé Lottin,2,91,2,Open Play,Off T,Right Foot,0.019525701
+statsbomb,96d47603-6517-4606-b97a-ddb74df88ccc,3942349,2024-07-05,771,France,3009,Kylian Mbappé Lottin,2,92,45,Open Play,Saved,Right Foot,0.04812045
+statsbomb,9ec51995-d0a3-4cf0-8f64-de4b53950c43,3942349,2024-07-05,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,3,92,41,Open Play,Off T,Right Foot,0.2695404
+statsbomb,cd781172-c455-4e18-bc49-7cd6e49206de,3942349,2024-07-05,771,France,3009,Kylian Mbappé Lottin,3,96,29,Open Play,Blocked,Right Foot,0.06612929
+statsbomb,e55d4e3b-765b-47c6-accc-09430d2fb183,3942349,2024-07-05,771,France,2972,Marcus Thuram,3,96,57,Open Play,Off T,Left Foot,0.18562049
+statsbomb,9c8347f5-c9c0-4240-afe5-8f92881c92fd,3942349,2024-07-05,780,Portugal,18360,Rafael Alexandre Conceição Leão,3,101,34,Open Play,Blocked,Right Foot,0.13186198
+statsbomb,8b239762-0f8b-44cc-827f-97c052c69f56,3942349,2024-07-05,780,Portugal,39624,Francisco Fernandes Conceição,3,104,31,Open Play,Off T,Left Foot,0.021586083
+statsbomb,e8514df3-8b36-42c3-a164-bf12f86faa8e,3942349,2024-07-05,780,Portugal,12041,João Félix Sequeira,4,107,25,Open Play,Off T,Head,0.08330991
+statsbomb,c5e9735d-95c8-42ca-a3b9-9187a17a5349,3942349,2024-07-05,771,France,5477,Ousmane Dembélé,4,111,30,Open Play,Off T,Left Foot,0.0539449
+statsbomb,b403d4d2-c690-4072-b55d-ac48664d3791,3942349,2024-07-05,771,France,39420,Bradley Barcola,4,113,59,Open Play,Off T,Left Foot,0.059450485
+statsbomb,ad1ecf69-594b-4046-b4db-a105edf81867,3942349,2024-07-05,771,France,8519,Dayotchanculle Upamecano,4,117,43,Open Play,Wayward,Head,0.039004326
+statsbomb,e06c3354-b3b8-4f1f-b96e-cf01bbe0fbda,3942349,2024-07-05,780,Portugal,41092,Nuno Mendes,4,119,53,Open Play,Saved,Right Foot,0.1323755
+statsbomb,9b29987f-991b-409f-9142-318360943a5a,3942349,2024-07-05,771,France,5477,Ousmane Dembélé,5,120,3,Penalty,Goal,Right Foot,0.7835
+statsbomb,9cb95307-d717-4140-b45a-14df42aae61b,3942349,2024-07-05,780,Portugal,5207,Cristiano Ronaldo dos Santos Aveiro,5,120,59,Penalty,Goal,Right Foot,0.7835
+statsbomb,4fcbe32a-de66-432b-935b-f6232e8d81c9,3942349,2024-07-05,771,France,11990,Youssouf Fofana,5,121,51,Penalty,Goal,Right Foot,0.7835
+statsbomb,dfa5e01b-f1d9-45ae-af53-23775440153d,3942349,2024-07-05,780,Portugal,3193,Bernardo Mota Veiga de Carvalho e Silva,5,122,34,Penalty,Goal,Left Foot,0.7835
+statsbomb,e90b5fab-cb19-4d4a-a33b-80a164f3a8a0,3942349,2024-07-05,771,France,4445,Jules Koundé,5,123,25,Penalty,Goal,Right Foot,0.7835
+statsbomb,9175410d-95be-4236-8ef8-8b29d97e5231,3942349,2024-07-05,780,Portugal,12041,João Félix Sequeira,5,124,20,Penalty,Post,Right Foot,0.7835
+statsbomb,9ce1b13a-9b06-4f3a-aa93-fe78c7b59523,3942349,2024-07-05,771,France,39420,Bradley Barcola,5,125,22,Penalty,Goal,Right Foot,0.7835
+statsbomb,e3175343-0ed2-49a2-9883-08bf3a46b645,3942349,2024-07-05,780,Portugal,41092,Nuno Mendes,5,126,22,Penalty,Goal,Left Foot,0.7835
+statsbomb,751d8406-ba21-462c-8557-efd4bb403b76,3942349,2024-07-05,771,France,6704,Theo Bernard François Hernández,5,127,16,Penalty,Goal,Left Foot,0.7835
+statsbomb,ab65d71a-61c3-4ac7-bec0-aec4aafe33ab,3942382,2024-07-06,941,Netherlands,2988,Memphis Depay,1,0,59,Open Play,Off T,Right Foot,0.1305271
+statsbomb,314737e9-1412-4723-b55b-e15eb1ce2deb,3942382,2024-07-06,941,Netherlands,2988,Memphis Depay,1,6,0,Open Play,Blocked,Left Foot,0.064000264
+statsbomb,076c2b59-b25f-445c-9e72-170a367a41ab,3942382,2024-07-06,909,Turkey,9085,Salih Özcan,1,10,4,Open Play,Off T,Right Foot,0.025876114
+statsbomb,911a00cb-144b-4e6e-a22e-3acafcdb566c,3942382,2024-07-06,941,Netherlands,39167,Xavi Simons,1,11,35,Open Play,Off T,Right Foot,0.03922345
+statsbomb,9d704db4-c1ad-4aaa-95d0-d91b15b43961,3942382,2024-07-06,909,Turkey,7039,Hakan Çalhanoğlu,1,20,28,Open Play,Blocked,Right Foot,0.018811692
+statsbomb,db039992-7e6d-46ab-9f0b-7f30a32f88fc,3942382,2024-07-06,909,Turkey,48383,Abdülkerim Bardakcı,1,28,8,Open Play,Off T,Right Foot,0.103276074
+statsbomb,b7661411-42e7-4fc2-86a2-ba9534867d6b,3942382,2024-07-06,909,Turkey,116587,Arda Güler,1,31,48,Open Play,Off T,Left Foot,0.006275559
+statsbomb,aab54e8c-824c-4ee0-96f3-c8083909e643,3942382,2024-07-06,909,Turkey,151813,Kenan Yildiz,1,33,11,Open Play,Off T,Right Foot,0.019850902
+statsbomb,a7cb804f-25ac-47f8-9feb-95332e946561,3942382,2024-07-06,909,Turkey,133305,Samet Akaydin,1,34,47,Open Play,Goal,Head,0.24565445
+statsbomb,bbcca5ab-e7a6-466a-9218-5a5b2c7b3cb9,3942382,2024-07-06,941,Netherlands,8259,Steven Bergwijn,1,41,40,Open Play,Off T,Right Foot,0.025480429
+statsbomb,944a6552-a11c-4616-8d76-ceb3dbbf333b,3942382,2024-07-06,909,Turkey,116587,Arda Güler,2,55,15,Free Kick,Saved to Post,Left Foot,0.042380717
+statsbomb,09352e53-f95a-4cee-9ba9-5f475962945c,3942382,2024-07-06,941,Netherlands,2988,Memphis Depay,2,56,39,Open Play,Saved,Right Foot,0.02907499
+statsbomb,6e769e0c-e7af-4e9c-b14b-b3a8894cbc94,3942382,2024-07-06,941,Netherlands,2988,Memphis Depay,2,62,24,Open Play,Blocked,Right Foot,0.03874837
+statsbomb,170a1f9b-108f-41df-9958-ddc49e1a741e,3942382,2024-07-06,909,Turkey,151813,Kenan Yildiz,2,64,26,Open Play,Saved,Right Foot,0.038447194
+statsbomb,15d47c95-497c-46b9-ada0-51d3b4c5b5fd,3942382,2024-07-06,941,Netherlands,20750,Cody Mathès Gakpo,2,69,9,Open Play,Blocked,Right Foot,0.07885103
+statsbomb,940a3325-0c77-4511-ba05-c7f4fb12a885,3942382,2024-07-06,941,Netherlands,7829,Wout Weghorst,2,69,20,Open Play,Saved,Right Foot,0.15561853
+statsbomb,962246b0-535e-4819-a7a5-18613a717d6e,3942382,2024-07-06,941,Netherlands,7787,Stefan de Vrij,2,69,54,Open Play,Goal,Head,0.061265625
+statsbomb,1cd28d9f-31aa-4158-9438-1d6308999199,3942382,2024-07-06,941,Netherlands,21633,Joey Veerman,2,74,41,Open Play,Blocked,Right Foot,0.024245147
+statsbomb,9e6152be-5fca-4121-a7b7-9c73457c845d,3942382,2024-07-06,909,Turkey,3648,Cenk Tosun,2,83,24,Open Play,Off T,Head,0.041926187
+statsbomb,3ed27002-41cf-400f-8286-40627e2e5efe,3942382,2024-07-06,909,Turkey,10349,Mehmet Zeki Çelik,2,84,29,Open Play,Blocked,Right Foot,0.24236712
+statsbomb,b0d4a53f-769b-4f2c-9c13-712af8b63e03,3942382,2024-07-06,909,Turkey,49689,Muhammed Kerem Aktürkoğlu,2,84,38,Open Play,Blocked,Right Foot,0.08011716
+statsbomb,0d5c4d79-27b7-4b7c-80a6-b75b10db55ad,3942382,2024-07-06,909,Turkey,3648,Cenk Tosun,2,87,59,Open Play,Off T,Head,0.07797563
+statsbomb,2da799d8-f90f-4724-b1f2-5c21399704f4,3942382,2024-07-06,941,Netherlands,20750,Cody Mathès Gakpo,2,88,48,Open Play,Saved,Left Foot,0.07189418
+statsbomb,8f99613d-39d8-4aa3-8bc6-5cc0f3954219,3942382,2024-07-06,909,Turkey,49689,Muhammed Kerem Aktürkoğlu,2,89,49,Open Play,Off T,Head,0.095398486
+statsbomb,bf58e6a5-0026-48ca-a09e-0b6c5e4ad5a7,3942382,2024-07-06,909,Turkey,149576,Semih Kılıçsoy,2,91,0,Open Play,Saved,Other,0.113987
+statsbomb,82750583-014e-4746-81b2-10c71eb5c979,3942382,2024-07-06,909,Turkey,7039,Hakan Çalhanoğlu,2,92,42,Open Play,Blocked,Left Foot,0.030088589
+statsbomb,45aee027-8c56-4ae1-9180-1e1efdecdb9a,3942752,2024-07-09,772,Spain,6655,Fabián Ruiz Peña,1,4,49,Open Play,Off T,Head,0.19328672
+statsbomb,d43cc345-870d-4089-862d-e4cca8ae9702,3942752,2024-07-09,771,France,22097,Randal Kolo Muani,1,8,1,Open Play,Goal,Head,0.27131972
+statsbomb,3bb91870-c024-4483-adaf-b19df457bc06,3942752,2024-07-09,771,France,3009,Kylian Mbappé Lottin,1,15,43,Free Kick,Blocked,Right Foot,0.030292137
+statsbomb,40b29bc8-8ca9-4fdc-be95-c9197e42b8fc,3942752,2024-07-09,771,France,3009,Kylian Mbappé Lottin,1,18,16,Open Play,Blocked,Right Foot,0.08122322
+statsbomb,fedfb68d-1107-4594-984e-6761d6ccb9b2,3942752,2024-07-09,772,Spain,316046,Lamine Yamal Nasraoui Ebana,1,20,15,Open Play,Goal,Left Foot,0.02681241
+statsbomb,e6efc8f2-04ee-4e4a-8b34-e40166ad550d,3942752,2024-07-09,772,Spain,16532,Daniel Olmo Carvajal,1,24,23,Open Play,Goal,Right Foot,0.07387237
+statsbomb,2818d5ee-514d-41f9-b03b-05a9c0109b17,3942752,2024-07-09,772,Spain,6655,Fabián Ruiz Peña,1,35,35,Open Play,Blocked,Left Foot,0.04887295
+statsbomb,fdfcd213-c371-4c1b-8c3e-50859701d64c,3942752,2024-07-09,772,Spain,316046,Lamine Yamal Nasraoui Ebana,1,39,59,Open Play,Blocked,Left Foot,0.024287114
+statsbomb,6a4a7af6-93d3-427a-ba0a-f5bc59329246,3942752,2024-07-09,771,France,10481,Aurélien Djani Tchouaméni,2,52,45,Open Play,Saved,Head,0.08108944
+statsbomb,790e18c0-a87c-4c90-bc67-610e5bfdf5a0,3942752,2024-07-09,771,France,3009,Kylian Mbappé Lottin,2,55,59,Open Play,Saved,Right Foot,0.037130367
+statsbomb,a9137c46-91dd-429f-83bf-8f61b49dad9f,3942752,2024-07-09,771,France,8519,Dayotchanculle Upamecano,2,62,25,Open Play,Off T,Head,0.09654521
+statsbomb,7445baaf-9b18-4280-93d0-9945f8b66037,3942752,2024-07-09,771,France,6704,Theo Bernard François Hernández,2,75,6,Open Play,Off T,Right Foot,0.12171783
+statsbomb,95fbf2a0-29b3-4bb8-b276-56198d80e5aa,3942752,2024-07-09,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,80,56,Open Play,Off T,Left Foot,0.05438437
+statsbomb,cad3e317-fe85-41bb-8cef-ebddd73c1e0f,3942752,2024-07-09,771,France,3009,Kylian Mbappé Lottin,2,85,23,Open Play,Off T,Right Foot,0.09963949
+statsbomb,965b39a3-f35e-437e-9ac7-7073806a7453,3942752,2024-07-09,771,France,5487,Antoine Griezmann,2,94,39,Open Play,Blocked,Head,0.03180728
+statsbomb,32cac30e-8e80-477d-a1ea-e0b77d95e54b,3942819,2024-07-10,941,Netherlands,39167,Xavi Simons,1,6,41,Open Play,Goal,Right Foot,0.04893475
+statsbomb,69286b28-e517-40e0-9837-b42a6c4b98dc,3942819,2024-07-10,768,England,10955,Harry Kane,1,12,39,Open Play,Saved,Right Foot,0.028932061
+statsbomb,7d97a51d-00ba-4d25-9932-f8a886bb6bfa,3942819,2024-07-10,768,England,22084,Bukayo Saka,1,13,41,Open Play,Blocked,Left Foot,0.07174964
+statsbomb,53d019c8-0b54-4e54-a4f7-48a15b6a50ce,3942819,2024-07-10,768,England,10955,Harry Kane,1,17,34,Penalty,Goal,Right Foot,0.7835
+statsbomb,367baff5-8bd3-4e0a-9e9c-2a2a60592d4c,3942819,2024-07-10,768,England,4354,Phil Foden,1,22,28,Open Play,Saved,Right Foot,0.17228934
+statsbomb,4e491901-dc43-4426-b65f-4535c96ec95b,3942819,2024-07-10,941,Netherlands,15582,Donyell Malen,1,28,15,Open Play,Blocked,Left Foot,0.039829366
+statsbomb,92445b44-1622-4d7d-bdf1-ad35c7410f52,3942819,2024-07-10,941,Netherlands,8125,Denzel Dumfries,1,29,8,Open Play,Post,Head,0.0631593
+statsbomb,4d7adad8-b7d7-4cef-892e-6ff632b93eac,3942819,2024-07-10,768,England,4354,Phil Foden,1,31,21,Open Play,Post,Left Foot,0.028710563
+statsbomb,435955d3-98f0-41cd-9e2b-a0e4cea1c47e,3942819,2024-07-10,768,England,4354,Phil Foden,1,38,41,Open Play,Saved,Left Foot,0.03463848
+statsbomb,cd4e2c9d-9dfe-48d0-8e34-843457dbc83e,3942819,2024-07-10,768,England,99174,Kobbie Mainoo,1,40,27,Open Play,Blocked,Right Foot,0.029809527
+statsbomb,991ed1ff-7799-4041-80a2-2e1d0dd5cd08,3942819,2024-07-10,941,Netherlands,3669,Virgil van Dijk,2,64,20,Open Play,Saved,Left Foot,0.08157874
+statsbomb,ecc29dd2-500f-4f1f-bf88-5c666b61104d,3942819,2024-07-10,941,Netherlands,8125,Denzel Dumfries,2,64,53,Open Play,Off T,Head,0.058512155
+statsbomb,2e1c2d14-b3d7-4b6a-baa0-79b5f725031a,3942819,2024-07-10,941,Netherlands,7829,Wout Weghorst,2,76,57,Open Play,Blocked,Head,0.057835978
+statsbomb,0087b586-e914-4284-a0db-db888fbc9732,3942819,2024-07-10,941,Netherlands,39167,Xavi Simons,2,76,58,Open Play,Saved,Right Foot,0.06232192
+statsbomb,c12608dd-c9bd-47ae-81eb-913fb1ae6966,3942819,2024-07-10,768,England,39461,Cole Palmer,2,87,48,Open Play,Off T,Left Foot,0.051446717
+statsbomb,dc16ea8a-eab7-403d-ad54-778ba19a16b5,3942819,2024-07-10,768,England,4760,Ollie Watkins,2,90,0,Open Play,Goal,Right Foot,0.035494413
+statsbomb,ed5aa53b-8d52-4c98-9288-f296490ed018,3943043,2024-07-14,772,Spain,68574,Nicholas Williams Arthuer,1,11,13,Open Play,Blocked,Left Foot,0.06802966
+statsbomb,65b2d9a9-ccf3-41ce-a022-d93f3cc12fe2,3943043,2024-07-14,772,Spain,22128,Robin Aime Robert Le Normand,1,12,21,Open Play,Off T,Right Foot,0.11746518
+statsbomb,740b5405-0da9-445a-b637-23bd367b1ec9,3943043,2024-07-14,768,England,3943,Declan Rice,1,16,20,Open Play,Blocked,Right Foot,0.0489952
+statsbomb,62221e64-f893-42d5-ad39-6f537c52749e,3943043,2024-07-14,772,Spain,6655,Fabián Ruiz Peña,1,27,27,Open Play,Saved,Right Foot,0.048117142
+statsbomb,f00f0c30-9b2c-4e6f-b806-d3e08d0fc476,3943043,2024-07-14,772,Spain,16532,Daniel Olmo Carvajal,1,34,58,Open Play,Blocked,Right Foot,0.02654902
+statsbomb,697a6965-fa21-43ab-a3b0-918a60b808fe,3943043,2024-07-14,772,Spain,3477,Álvaro Borja Morata Martín,1,42,24,Open Play,Blocked,Right Foot,0.07835983
+statsbomb,51c2632d-268c-4868-a59e-21913e72f24d,3943043,2024-07-14,768,England,10955,Harry Kane,1,44,5,Open Play,Blocked,Right Foot,0.048372418
+statsbomb,e38b5cea-bb67-4a27-9922-0aa27dca12bf,3943043,2024-07-14,768,England,4354,Phil Foden,1,45,41,Open Play,Saved,Left Foot,0.1796937
+statsbomb,bf03dfcf-f281-4646-98de-620649a1308b,3943043,2024-07-14,772,Spain,68574,Nicholas Williams Arthuer,2,46,9,Open Play,Goal,Left Foot,0.1124816
+statsbomb,eb224ecc-5bda-4d48-9175-d8820cfaff6b,3943043,2024-07-14,772,Spain,16532,Daniel Olmo Carvajal,2,48,19,Open Play,Off T,Left Foot,0.2455793
+statsbomb,2244d0af-309c-4d05-bcf4-e0b23e261631,3943043,2024-07-14,772,Spain,3477,Álvaro Borja Morata Martín,2,54,15,Open Play,Blocked,Left Foot,0.02528921
+statsbomb,2ac8860e-1db7-41c4-94a8-fb6d6db1a759,3943043,2024-07-14,772,Spain,3477,Álvaro Borja Morata Martín,2,54,58,Open Play,Wayward,Right Foot,0.24310583
+statsbomb,cdf58415-0b1c-4423-817f-bffdf3bd5e60,3943043,2024-07-14,772,Spain,68574,Nicholas Williams Arthuer,2,55,23,Open Play,Off T,Right Foot,0.04913289
+statsbomb,edeecb6f-aeb4-48e7-bb14-d604c052697c,3943043,2024-07-14,768,England,30714,Jude Bellingham,2,63,12,Open Play,Off T,Left Foot,0.05628593
+statsbomb,8c7e31e4-cecc-4fdc-9327-71cb93f3d026,3943043,2024-07-14,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,65,45,Open Play,Saved,Left Foot,0.16213313
+statsbomb,a9944860-4153-4dd8-a7c3-3a4c87ea657a,3943043,2024-07-14,772,Spain,4353,Aymeric Laporte,2,66,27,Open Play,Blocked,Head,0.097933225
+statsbomb,d4649b09-c027-4518-bfc5-9f7af39375bb,3943043,2024-07-14,772,Spain,6655,Fabián Ruiz Peña,2,69,7,Open Play,Off T,Left Foot,0.03257165
+statsbomb,95e40e0a-02c0-4458-9168-e6e5ea45ba26,3943043,2024-07-14,768,England,4760,Ollie Watkins,2,69,59,Open Play,Blocked,Right Foot,0.07470869
+statsbomb,9060376b-3695-4d48-877d-87422ff58594,3943043,2024-07-14,772,Spain,6685,Mikel Oyarzabal Ugarte,2,71,50,Open Play,Saved,Left Foot,0.037707567
+statsbomb,b4249c3f-4c32-4d2c-bb40-102b5334b3ad,3943043,2024-07-14,768,England,39461,Cole Palmer,2,72,8,Open Play,Goal,Left Foot,0.03794335
+statsbomb,94d6e684-9fa8-42af-bbdf-64edf630ee97,3943043,2024-07-14,772,Spain,316046,Lamine Yamal Nasraoui Ebana,2,81,13,Open Play,Saved,Left Foot,0.16392969
+statsbomb,19d5c45f-8d91-44dd-823a-18966038e3e4,3943043,2024-07-14,772,Spain,6685,Mikel Oyarzabal Ugarte,2,85,56,Open Play,Goal,Right Foot,0.2833282
+statsbomb,54639572-bd72-4f5b-9197-7a088d6e0b7e,3943043,2024-07-14,768,England,3943,Declan Rice,2,89,14,Open Play,Saved,Head,0.057442125
+statsbomb,6752508a-1f4e-42d4-8ae2-66bdaed4bf8c,3943043,2024-07-14,768,England,34526,Marc Guehi,2,89,15,Open Play,Blocked,Head,0.117154144
+statsbomb,267d2d25-5fe6-4fd2-855d-39ce05650bc4,3943043,2024-07-14,768,England,3943,Declan Rice,2,89,17,Open Play,Off T,Head,0.10578214

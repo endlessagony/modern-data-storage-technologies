@@ -1,0 +1,9 @@
+== random_page_cost = 4 (стенд использует 1.1; 4 это значение PostgreSQL по умолчанию) ==
+   Sort Key: match_date, team_id
+   ->  HashAggregate  (cost=4567.96..4745.11 rows=10123 width=118) (actual rows=5591 loops=1)
+         ->  Seq Scan on fact_shot_idx f  (cost=0.00..3306.47 rows=72085 width=32) (actual rows=71552 loops=1)
+
+== random_page_cost = 1.1 (стенд использует 1.1; 4 это значение PostgreSQL по умолчанию) ==
+ GroupAggregate  (cost=0.29..4522.05 rows=10123 width=118) (actual rows=5591 loops=1)
+   ->  Index Scan using fact_shot_idx_src_date_team on fact_shot_idx f  (cost=0.29..3083.41 rows=72085 width=32) (actual rows=71552 loops=1)
+

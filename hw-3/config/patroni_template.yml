@@ -1,0 +1,60 @@
+# Шаблон конфигурации узла Patroni. Значения в @...@ подставляет cluster_up.sh.
+scope: hw3
+namespace: /hw3/
+name: @NAME@
+
+restapi:
+  listen: 127.0.0.1:@API_PORT@
+  connect_address: 127.0.0.1:@API_PORT@
+
+etcd3:
+  host: 127.0.0.1:@ETCD_PORT@
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    postgresql:
+      use_pg_rewind: true
+      use_slots: true
+      parameters:
+        wal_level: replica
+        hot_standby: "on"
+        max_wal_senders: 10
+        max_replication_slots: 10
+        wal_log_hints: "on"
+  initdb:
+    - encoding: UTF8
+    - locale: C.UTF-8
+    - data-checksums
+  pg_hba:
+    - local all all trust
+    - host replication replicator 127.0.0.1/32 scram-sha-256
+    - host all all 127.0.0.1/32 scram-sha-256
+
+postgresql:
+  listen: 127.0.0.1:@PG_PORT@
+  connect_address: 127.0.0.1:@PG_PORT@
+  data_dir: @DATA_DIR@
+  bin_dir: @PG_BIN@
+  pgpass: @PGPASS@
+  parameters:
+    unix_socket_directories: '@SOCKET_DIR@'
+  authentication:
+    superuser:
+      username: postgres
+      password: postgres
+    replication:
+      username: replicator
+      password: replicator
+    rewind:
+      username: rewind_user
+      password: rewind
+
+tags:
+  nofailover: false
+  noloadbalance: false
+  clonefrom: false
+  nosync: false

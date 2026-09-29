@@ -1,0 +1,70 @@
+==============================================================================
+ОПЫТ 1. READ COMMITTED (уровень по умолчанию): чтение, пока чужая транзакция не завершена
+==============================================================================
+  [сессия 1] show transaction_isolation
+        transaction_isolation=read committed
+  [сессия 2] show transaction_isolation
+        transaction_isolation=read committed
+
+--- сессия 1 меняет строку и НЕ завершает транзакцию
+  [сессия 1] select txid_current() as my_txid
+        my_txid=1209
+  [сессия 1] update demo.team_goals set goals = 4 where team_id = 779
+  [сессия 1] select team_name, goals, xmin, xmax from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=4, xmin=1209, xmax=0
+
+--- сессия 2 читает ту же строку: видит старое значение
+  [сессия 2] select team_name, goals, xmin, xmax from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=3, xmin=1208, xmax=1209
+  (в xmax старой версии стоит номер транзакции сессии 1, но она не завершена, поэтому версия для сессии 2 всё ещё актуальна)
+
+--- сессия 1 завершает транзакцию (COMMIT), сессия 2 повторяет чтение в своей транзакции
+  [сессия 2] select team_name, goals, xmin, xmax from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=4, xmin=1209, xmax=0
+  (READ COMMITTED: снимок берётся на каждый запрос, новое чтение видит зафиксированное значение; xmin новой версии = txid сессии 1)
+
+==============================================================================
+ОПЫТ 2. REPEATABLE READ: снимок фиксируется на всю транзакцию
+==============================================================================
+  [сессия 2] show transaction_isolation
+        transaction_isolation=repeatable read
+  [сессия 2] select team_name, goals from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=4
+
+--- сессия 1 меняет строку и сразу фиксирует
+  [сессия 1] update demo.team_goals set goals = 5 where team_id = 779
+
+--- сессия 2 читает снова в той же транзакции: снимок прежний
+  [сессия 2] select team_name, goals from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=4
+
+--- после завершения транзакции сессии 2 новый снимок видит изменение
+  [сессия 2] select team_name, goals from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=5
+
+==============================================================================
+ОПЫТ 3. Изменение той же строки второй сессией: блокировка и поиск ожидающего
+==============================================================================
+  [сессия 1] update demo.team_goals set goals = 6 where team_id = 779
+  (сессия 1: pid 827, держит блокировку строки и не завершена)
+
+--- сессия 2 (pid 828) пытается изменить ту же строку и повисает
+  через 1,5 с сессия 2 всё ещё ждёт: True
+
+--- наблюдатель (третье соединение) находит ожидающую сессию
+  [наблюдатель] select pid, state, wait_event_type, wait_event, pg_blocking_pids(pid) as blocked_by, left(query, 60) as query from pg_stat_activity where pid = 828
+        pid=828, state=active, wait_event_type=Lock, wait_event=transactionid, blocked_by=[827], query=update demo.team_goals set goals = goals + 100 where team_id
+  [наблюдатель] select l.pid, l.locktype, l.mode, l.granted from pg_locks l where l.pid = 828 and not l.granted
+        pid=828, locktype=transactionid, mode=ShareLock, granted=False
+  [наблюдатель] select b.pid as blocking_pid, b.state as blocking_state, left(b.query, 60) as blocking_last_query from pg_stat_activity b where b.pid = any(pg_blocking_pids(828))
+        blocking_pid=827, blocking_state=idle in transaction, blocking_last_query=update demo.team_goals set goals = 6 where team_id = 779
+
+--- сессия 1 завершает транзакцию, ожидание снимается, сессия 2 завершает свою
+  сессия 2 ждала 1.51 с, потом выполнила свой UPDATE
+  [наблюдатель] select team_name, goals from demo.team_goals where team_id = 779
+        team_name=Argentina, goals=106
+  (6 от сессии 1, затем +100 от сессии 2: изменения применены последовательно, потерянного обновления нет)
+
+--- проверка: открытых транзакций не осталось
+  [наблюдатель] select count(*) as idle_in_transaction from pg_stat_activity where datname = current_database() and state like 'idle in transaction%'
+        idle_in_transaction=0
