@@ -1,0 +1,773 @@
+{
+ "settings": {
+  "server_version": "16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)",
+  "shared_buffers": "256MB",
+  "work_mem": "16MB",
+  "effective_cache_size": "1GB",
+  "random_page_cost": "1.1",
+  "max_parallel_workers_per_gather": "2",
+  "jit": "off",
+  "enable_seqscan": "on",
+  "enable_indexscan": "on",
+  "enable_bitmapscan": "on",
+  "enable_partition_pruning": "on",
+  "default_statistics_target": "100"
+ },
+ "repeats": 9,
+ "filter_shares": {
+  "rows_total": 101227,
+  "date_min": "1958-06-24",
+  "date_max": "2025-07-27",
+  "not_shootout": 100864,
+  "narrow_date_only": 1007,
+  "narrow_all_filters": 1007,
+  "wide_date_only": 71860,
+  "wide_all_filters": 71552
+ },
+ "sizes": {
+  "plain": {
+   "heap_bytes": 12574720,
+   "indexes_bytes": 6373376,
+   "total_bytes": 18989056
+  },
+  "idx": {
+   "heap_bytes": 12574720,
+   "indexes_bytes": 7413760,
+   "total_bytes": 20029440
+  },
+  "part": {
+   "heap_bytes": 12607488,
+   "indexes_bytes": 6545408,
+   "total_bytes": 19652608
+  },
+  "part_idx": {
+   "heap_bytes": 12607488,
+   "indexes_bytes": 7823360,
+   "total_bytes": 20930560
+  },
+  "idx_rev": {
+   "heap_bytes": 12574720,
+   "indexes_bytes": 1040384,
+   "total_bytes": 13656064
+  }
+ },
+ "partitions": [
+  {
+   "partition": "fact_shot_part_2015",
+   "bounds": "FOR VALUES FROM ('2015-01-01') TO ('2016-01-01')",
+   "rows": 18919
+  },
+  {
+   "partition": "fact_shot_part_2016",
+   "bounds": "FOR VALUES FROM ('2016-01-01') TO ('2017-01-01')",
+   "rows": 20751
+  },
+  {
+   "partition": "fact_shot_part_2017",
+   "bounds": "FOR VALUES FROM ('2017-01-01') TO ('2018-01-01')",
+   "rows": 1048
+  },
+  {
+   "partition": "fact_shot_part_2018",
+   "bounds": "FOR VALUES FROM ('2018-01-01') TO ('2019-01-01')",
+   "rows": 5303
+  },
+  {
+   "partition": "fact_shot_part_2019",
+   "bounds": "FOR VALUES FROM ('2019-01-01') TO ('2020-01-01')",
+   "rows": 4837
+  },
+  {
+   "partition": "fact_shot_part_2020",
+   "bounds": "FOR VALUES FROM ('2020-01-01') TO ('2021-01-01')",
+   "rows": 2984
+  },
+  {
+   "partition": "fact_shot_part_2021",
+   "bounds": "FOR VALUES FROM ('2021-01-01') TO ('2022-01-01')",
+   "rows": 4986
+  },
+  {
+   "partition": "fact_shot_part_2022",
+   "bounds": "FOR VALUES FROM ('2022-01-01') TO ('2023-01-01')",
+   "rows": 5078
+  },
+  {
+   "partition": "fact_shot_part_2023",
+   "bounds": "FOR VALUES FROM ('2023-01-01') TO ('2024-01-01')",
+   "rows": 13428
+  },
+  {
+   "partition": "fact_shot_part_2024",
+   "bounds": "FOR VALUES FROM ('2024-01-01') TO ('2025-01-01')",
+   "rows": 13445
+  },
+  {
+   "partition": "fact_shot_part_2025",
+   "bounds": "FOR VALUES FROM ('2025-01-01') TO ('2026-01-01')",
+   "rows": 913
+  },
+  {
+   "partition": "fact_shot_part_2026",
+   "bounds": "FOR VALUES FROM ('2026-01-01') TO ('2027-01-01')",
+   "rows": 0
+  },
+  {
+   "partition": "fact_shot_part_before_2015",
+   "bounds": "FOR VALUES FROM ('1900-01-01') TO ('2015-01-01')",
+   "rows": 9535
+  }
+ ],
+ "runs": {
+  "narrow/plain": {
+   "table": "dds.fact_shot",
+   "title": "исходная таблица (куча + PK)",
+   "result_rows": 78,
+   "execution_ms": [
+    10.071,
+    10.206,
+    13.18,
+    8.608,
+    8.781,
+    8.346,
+    8.705,
+    9.523,
+    9.304
+   ],
+   "execution_median_ms": 9.304,
+   "execution_timing_off_ms": [
+    9.941,
+    14.902,
+    12.288,
+    8.809,
+    9.611,
+    8.339,
+    12.604,
+    9.883,
+    9.267
+   ],
+   "execution_timing_off_median_ms": 9.883,
+   "planning_ms": [
+    0.094,
+    0.079,
+    0.113,
+    0.074,
+    0.085,
+    0.071,
+    0.072,
+    0.088,
+    0.084
+   ],
+   "planning_median_ms": 0.084,
+   "client_ms": [
+    11.793,
+    11.598,
+    9.206,
+    9.36,
+    8.893,
+    8.782,
+    13.832,
+    10.785,
+    9.489
+   ],
+   "client_median_ms": 9.489,
+   "cost_total": 3376.33,
+   "cost_startup": 3374.31,
+   "rows_estimated": 808,
+   "rows_actual": 78,
+   "buffers_hit": 1535,
+   "buffers_read": 0,
+   "scans": [
+    "Seq Scan on fact_shot"
+   ],
+   "relations_scanned": 1
+  },
+  "narrow/idx": {
+   "table": "dds.fact_shot_idx",
+   "title": "таблица + составной B-tree",
+   "result_rows": 78,
+   "execution_ms": [
+    0.514,
+    0.778,
+    0.473,
+    0.463,
+    0.495,
+    0.445,
+    0.922,
+    0.504,
+    0.516
+   ],
+   "execution_median_ms": 0.504,
+   "execution_timing_off_ms": [
+    0.395,
+    0.618,
+    0.383,
+    0.359,
+    0.399,
+    0.342,
+    0.663,
+    0.391,
+    0.355
+   ],
+   "execution_timing_off_median_ms": 0.391,
+   "planning_ms": [
+    0.105,
+    0.195,
+    0.102,
+    0.108,
+    0.101,
+    0.097,
+    0.141,
+    0.111,
+    0.122
+   ],
+   "planning_median_ms": 0.108,
+   "client_ms": [
+    1.172,
+    1.109,
+    0.748,
+    0.81,
+    0.729,
+    0.692,
+    1.258,
+    0.951,
+    0.84
+   ],
+   "client_median_ms": 0.84,
+   "cost_total": 339.8,
+   "cost_startup": 0.29,
+   "rows_estimated": 719,
+   "rows_actual": 78,
+   "buffers_hit": 87,
+   "buffers_read": 0,
+   "scans": [
+    "Index Scan on fact_shot_idx using fact_shot_idx_src_date_team"
+   ],
+   "relations_scanned": 1
+  },
+  "narrow/part": {
+   "table": "dds.fact_shot_part",
+   "title": "секции по году, без доп. индексов",
+   "result_rows": 78,
+   "execution_ms": [
+    1.881,
+    2.689,
+    1.699,
+    1.702,
+    1.683,
+    1.667,
+    1.887,
+    1.738,
+    1.812
+   ],
+   "execution_median_ms": 1.738,
+   "execution_timing_off_ms": [
+    1.518,
+    2.443,
+    1.463,
+    1.482,
+    1.413,
+    1.385,
+    1.492,
+    1.62,
+    1.717
+   ],
+   "execution_timing_off_median_ms": 1.492,
+   "planning_ms": [
+    0.143,
+    0.184,
+    0.127,
+    0.124,
+    0.122,
+    0.116,
+    0.199,
+    0.189,
+    0.166
+   ],
+   "planning_median_ms": 0.143,
+   "client_ms": [
+    2.028,
+    2.923,
+    1.933,
+    2.342,
+    1.849,
+    1.839,
+    1.87,
+    2.228,
+    2.0
+   ],
+   "client_median_ms": 2.0,
+   "cost_total": 490.91,
+   "cost_startup": 453.33,
+   "rows_estimated": 1002,
+   "rows_actual": 78,
+   "buffers_hit": 1064,
+   "buffers_read": 0,
+   "scans": [
+    "Index Scan on fact_shot_part_2024 using fact_shot_part_2024_pkey"
+   ],
+   "relations_scanned": 1
+  },
+  "narrow/part_idx": {
+   "table": "dds.fact_shot_part_idx",
+   "title": "секции + тот же составной B-tree",
+   "result_rows": 78,
+   "execution_ms": [
+    0.536,
+    0.823,
+    0.495,
+    0.49,
+    0.481,
+    0.48,
+    0.492,
+    0.495,
+    0.525
+   ],
+   "execution_median_ms": 0.495,
+   "execution_timing_off_ms": [
+    0.392,
+    0.655,
+    0.413,
+    0.423,
+    0.391,
+    0.373,
+    0.424,
+    0.399,
+    0.421
+   ],
+   "execution_timing_off_median_ms": 0.413,
+   "planning_ms": [
+    0.144,
+    0.212,
+    0.133,
+    0.152,
+    0.129,
+    0.125,
+    0.17,
+    0.161,
+    0.148
+   ],
+   "planning_median_ms": 0.148,
+   "client_ms": [
+    0.914,
+    1.395,
+    0.834,
+    0.794,
+    0.775,
+    0.797,
+    0.842,
+    0.956,
+    0.898
+   ],
+   "client_median_ms": 0.842,
+   "cost_total": 167.53,
+   "cost_startup": 0.29,
+   "rows_estimated": 1002,
+   "rows_actual": 78,
+   "buffers_hit": 92,
+   "buffers_read": 0,
+   "scans": [
+    "Index Scan on fact_shot_part_idx_2024 using fact_shot_part_idx_2024_source_system_match_date_team_id_idx"
+   ],
+   "relations_scanned": 1
+  },
+  "narrow/idx_rev": {
+   "table": "dds.fact_shot_idx_rev",
+   "title": "побочный: индекс с team_id на первом месте",
+   "result_rows": 78,
+   "execution_ms": [
+    1.034,
+    1.699,
+    1.013,
+    1.091,
+    1.004,
+    0.993,
+    1.059,
+    1.327,
+    1.115
+   ],
+   "execution_median_ms": 1.059,
+   "execution_timing_off_ms": [
+    0.87,
+    1.417,
+    0.846,
+    0.86,
+    0.812,
+    0.782,
+    0.827,
+    0.87,
+    0.931
+   ],
+   "execution_timing_off_median_ms": 0.86,
+   "planning_ms": [
+    0.065,
+    0.112,
+    0.067,
+    0.065,
+    0.06,
+    0.058,
+    0.071,
+    0.074,
+    0.076
+   ],
+   "planning_median_ms": 0.067,
+   "client_ms": [
+    1.22,
+    1.773,
+    1.354,
+    1.213,
+    1.12,
+    1.182,
+    1.344,
+    1.41,
+    1.105
+   ],
+   "client_median_ms": 1.22,
+   "cost_total": 1911.47,
+   "cost_startup": 1879.27,
+   "rows_estimated": 841,
+   "rows_actual": 78,
+   "buffers_hit": 224,
+   "buffers_read": 0,
+   "scans": [
+    "Index Scan on fact_shot_idx_rev using fact_shot_idx_rev_team_date_src"
+   ],
+   "relations_scanned": 1
+  },
+  "wide/plain": {
+   "table": "dds.fact_shot",
+   "title": "исходная таблица (куча + PK)",
+   "result_rows": 5591,
+   "execution_ms": [
+    39.204,
+    39.399,
+    47.038,
+    54.729,
+    52.254,
+    43.167,
+    41.393,
+    39.901,
+    37.867
+   ],
+   "execution_median_ms": 41.393,
+   "execution_timing_off_ms": [
+    32.566,
+    41.982,
+    37.315,
+    32.83,
+    31.58,
+    32.103,
+    36.224,
+    51.951,
+    30.964
+   ],
+   "execution_timing_off_median_ms": 32.83,
+   "planning_ms": [
+    0.194,
+    0.157,
+    0.233,
+    0.174,
+    0.203,
+    0.194,
+    0.155,
+    0.165,
+    0.16
+   ],
+   "planning_median_ms": 0.174,
+   "client_ms": [
+    48.923,
+    69.891,
+    42.942,
+    42.747,
+    40.762,
+    50.604,
+    41.995,
+    41.988,
+    45.915
+   ],
+   "client_median_ms": 42.942,
+   "cost_total": 5437.17,
+   "cost_startup": 5411.86,
+   "rows_estimated": 10123,
+   "rows_actual": 5591,
+   "buffers_hit": 1535,
+   "buffers_read": 0,
+   "scans": [
+    "Seq Scan on fact_shot"
+   ],
+   "relations_scanned": 1
+  },
+  "wide/idx": {
+   "table": "dds.fact_shot_idx",
+   "title": "таблица + составной B-tree",
+   "result_rows": 5591,
+   "execution_ms": [
+    34.461,
+    31.794,
+    34.849,
+    32.981,
+    34.512,
+    31.738,
+    36.549,
+    32.119,
+    31.4
+   ],
+   "execution_median_ms": 32.981,
+   "execution_timing_off_ms": [
+    29.854,
+    28.959,
+    28.187,
+    27.548,
+    34.353,
+    44.517,
+    30.844,
+    25.361,
+    25.139
+   ],
+   "execution_timing_off_median_ms": 28.959,
+   "planning_ms": [
+    0.171,
+    0.164,
+    0.183,
+    0.167,
+    0.166,
+    0.178,
+    0.458,
+    0.163,
+    0.163
+   ],
+   "planning_median_ms": 0.167,
+   "client_ms": [
+    48.202,
+    46.256,
+    57.758,
+    45.621,
+    43.504,
+    56.966,
+    39.683,
+    37.127,
+    42.086
+   ],
+   "client_median_ms": 45.621,
+   "cost_total": 4522.05,
+   "cost_startup": 0.29,
+   "rows_estimated": 10123,
+   "rows_actual": 5591,
+   "buffers_hit": 5876,
+   "buffers_read": 0,
+   "scans": [
+    "Index Scan on fact_shot_idx using fact_shot_idx_src_date_team"
+   ],
+   "relations_scanned": 1
+  },
+  "wide/part": {
+   "table": "dds.fact_shot_part",
+   "title": "секции по году, без доп. индексов",
+   "result_rows": 5591,
+   "execution_ms": [
+    56.409,
+    44.467,
+    68.295,
+    45.824,
+    51.695,
+    76.198,
+    46.321,
+    42.73,
+    45.312
+   ],
+   "execution_median_ms": 46.321,
+   "execution_timing_off_ms": [
+    44.259,
+    34.218,
+    42.974,
+    39.973,
+    38.367,
+    59.548,
+    33.777,
+    34.201,
+    32.552
+   ],
+   "execution_timing_off_median_ms": 38.367,
+   "planning_ms": [
+    0.536,
+    0.558,
+    0.826,
+    0.54,
+    0.645,
+    0.835,
+    0.689,
+    0.611,
+    0.544
+   ],
+   "planning_median_ms": 0.611,
+   "client_ms": [
+    47.259,
+    44.74,
+    48.099,
+    46.592,
+    42.841,
+    68.934,
+    46.943,
+    52.756,
+    43.658
+   ],
+   "client_median_ms": 46.943,
+   "cost_total": 4561.66,
+   "cost_startup": 4543.77,
+   "rows_estimated": 7155,
+   "rows_actual": 5591,
+   "buffers_hit": 1093,
+   "buffers_read": 0,
+   "scans": [
+    "Seq Scan on fact_shot_part_2016",
+    "Seq Scan on fact_shot_part_2017",
+    "Seq Scan on fact_shot_part_2018",
+    "Seq Scan on fact_shot_part_2019",
+    "Seq Scan on fact_shot_part_2020",
+    "Seq Scan on fact_shot_part_2021",
+    "Seq Scan on fact_shot_part_2022",
+    "Seq Scan on fact_shot_part_2023",
+    "Seq Scan on fact_shot_part_2024"
+   ],
+   "relations_scanned": 9
+  },
+  "wide/part_idx": {
+   "table": "dds.fact_shot_part_idx",
+   "title": "секции + тот же составной B-tree",
+   "result_rows": 5591,
+   "execution_ms": [
+    42.126,
+    44.572,
+    48.749,
+    49.094,
+    50.211,
+    51.727,
+    50.493,
+    42.122,
+    44.537
+   ],
+   "execution_median_ms": 48.749,
+   "execution_timing_off_ms": [
+    33.858,
+    37.986,
+    34.189,
+    31.946,
+    34.108,
+    48.977,
+    39.509,
+    31.274,
+    31.72
+   ],
+   "execution_timing_off_median_ms": 34.108,
+   "planning_ms": [
+    0.617,
+    0.63,
+    0.606,
+    0.585,
+    0.624,
+    0.921,
+    0.662,
+    0.615,
+    0.569
+   ],
+   "planning_median_ms": 0.617,
+   "client_ms": [
+    43.278,
+    44.601,
+    57.849,
+    50.113,
+    43.034,
+    48.409,
+    43.545,
+    40.405,
+    44.546
+   ],
+   "client_median_ms": 44.546,
+   "cost_total": 4561.66,
+   "cost_startup": 4543.77,
+   "rows_estimated": 7155,
+   "rows_actual": 5591,
+   "buffers_hit": 1093,
+   "buffers_read": 0,
+   "scans": [
+    "Seq Scan on fact_shot_part_idx_2016",
+    "Seq Scan on fact_shot_part_idx_2017",
+    "Seq Scan on fact_shot_part_idx_2018",
+    "Seq Scan on fact_shot_part_idx_2019",
+    "Seq Scan on fact_shot_part_idx_2020",
+    "Seq Scan on fact_shot_part_idx_2021",
+    "Seq Scan on fact_shot_part_idx_2022",
+    "Seq Scan on fact_shot_part_idx_2023",
+    "Seq Scan on fact_shot_part_idx_2024"
+   ],
+   "relations_scanned": 9
+  },
+  "wide/idx_rev": {
+   "table": "dds.fact_shot_idx_rev",
+   "title": "побочный: индекс с team_id на первом месте",
+   "result_rows": 5591,
+   "execution_ms": [
+    38.052,
+    40.763,
+    39.675,
+    52.196,
+    40.219,
+    45.913,
+    51.591,
+    37.457,
+    40.14
+   ],
+   "execution_median_ms": 40.219,
+   "execution_timing_off_ms": [
+    31.53,
+    43.542,
+    34.663,
+    42.664,
+    33.438,
+    40.255,
+    34.757,
+    32.005,
+    39.836
+   ],
+   "execution_timing_off_median_ms": 34.757,
+   "planning_ms": [
+    0.168,
+    0.147,
+    0.229,
+    0.219,
+    0.16,
+    0.179,
+    0.334,
+    0.145,
+    0.147
+   ],
+   "planning_median_ms": 0.168,
+   "client_ms": [
+    43.887,
+    65.385,
+    53.933,
+    55.09,
+    52.197,
+    46.787,
+    45.532,
+    46.861,
+    43.051
+   ],
+   "client_median_ms": 46.861,
+   "cost_total": 5440.04,
+   "cost_startup": 5414.73,
+   "rows_estimated": 10123,
+   "rows_actual": 5591,
+   "buffers_hit": 1535,
+   "buffers_read": 0,
+   "scans": [
+    "Seq Scan on fact_shot_idx_rev"
+   ],
+   "relations_scanned": 1
+  }
+ },
+ "match_date_stats": {
+  "correlation": 0.7342653,
+  "n_distinct": 1362.0
+ }
+}

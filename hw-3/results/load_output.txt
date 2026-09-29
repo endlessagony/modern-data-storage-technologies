@@ -1,0 +1,18 @@
+Timing is on.
+COPY 3961
+Time: 170.002 ms
+Timing is on.
+COPY 101227
+Time: 885.046 ms
+Timing is on.
+INSERT 0 3961
+Time: 17.204 ms
+INSERT 0 101227
+Time: 1119.756 ms (00:01.120)
+VACUUM
+Time: 19.754 ms
+VACUUM
+Time: 158.751 ms
+dds.match: 3961
+dds.fact_shot: 101227
+stage.shots: 101227

@@ -1,0 +1,412 @@
+===== narrow / plain: исходная таблица (куча + PK) =====
+-- Запрос 1 (узкий): витрина «команда x день» за 10 дней группового этапа Евро-2024, [2024-06-14; 2024-06-24).
+-- Начало интервала входит, конец не входит. Удары серии пенальти не учитываются (как в ДЗ-2).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2024-06-14'
+  and f.match_date <  date '2024-06-24'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+Sort  (cost=3374.31..3376.33 rows=808 width=118) (actual time=9.273..9.277 rows=78 loops=1)
+  Sort Key: match_date, team_id
+  Sort Method: quicksort  Memory: 33kB
+  Buffers: shared hit=1535
+  ->  HashAggregate  (cost=3321.16..3335.30 rows=808 width=118) (actual time=9.209..9.243 rows=78 loops=1)
+        Group Key: match_date, team_id
+        Batches: 1  Memory Usage: 105kB
+        Buffers: shared hit=1535
+        ->  Seq Scan on fact_shot f  (cost=0.00..3306.47 rows=839 width=32) (actual time=6.390..8.886 rows=1007 loops=1)
+              Filter: ((NOT is_shootout) AND (match_date >= '2024-06-14'::date) AND (match_date < '2024-06-24'::date) AND (source_system = 'statsbomb'::text))
+              Rows Removed by Filter: 100220
+              Buffers: shared hit=1535
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.084 ms
+Execution Time: 9.304 ms
+
+===== narrow / idx: таблица + составной B-tree =====
+-- Запрос 1 (узкий): витрина «команда x день» за 10 дней группового этапа Евро-2024, [2024-06-14; 2024-06-24).
+-- Начало интервала входит, конец не входит. Удары серии пенальти не учитываются (как в ДЗ-2).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_idx f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2024-06-14'
+  and f.match_date <  date '2024-06-24'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+GroupAggregate  (cost=0.29..339.80 rows=719 width=118) (actual time=0.035..0.492 rows=78 loops=1)
+  Group Key: match_date, team_id
+  Buffers: shared hit=87
+  ->  Index Scan using fact_shot_idx_src_date_team on fact_shot_idx f  (cost=0.29..314.22 rows=743 width=32) (actual time=0.018..0.223 rows=1007 loops=1)
+        Index Cond: ((source_system = 'statsbomb'::text) AND (match_date >= '2024-06-14'::date) AND (match_date < '2024-06-24'::date))
+        Filter: (NOT is_shootout)
+        Buffers: shared hit=87
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.122 ms
+Execution Time: 0.516 ms
+
+===== narrow / part: секции по году, без доп. индексов =====
+-- Запрос 1 (узкий): витрина «команда x день» за 10 дней группового этапа Евро-2024, [2024-06-14; 2024-06-24).
+-- Начало интервала входит, конец не входит. Удары серии пенальти не учитываются (как в ДЗ-2).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_part f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2024-06-14'
+  and f.match_date <  date '2024-06-24'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+GroupAggregate  (cost=453.33..490.91 rows=1002 width=118) (actual time=1.466..1.790 rows=78 loops=1)
+  Group Key: f.match_date, f.team_id
+  Buffers: shared hit=1064
+  ->  Sort  (cost=453.33..455.84 rows=1002 width=32) (actual time=1.452..1.505 rows=1007 loops=1)
+        Sort Key: f.match_date, f.team_id
+        Sort Method: quicksort  Memory: 83kB
+        Buffers: shared hit=1064
+        ->  Index Scan using fact_shot_part_2024_pkey on fact_shot_part_2024 f  (cost=0.29..403.39 rows=1002 width=32) (actual time=0.011..1.149 rows=1007 loops=1)
+              Index Cond: ((source_system = 'statsbomb'::text) AND (match_date >= '2024-06-14'::date) AND (match_date < '2024-06-24'::date))
+              Filter: (NOT is_shootout)
+              Buffers: shared hit=1064
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.166 ms
+Execution Time: 1.812 ms
+
+===== narrow / part_idx: секции + тот же составной B-tree =====
+-- Запрос 1 (узкий): витрина «команда x день» за 10 дней группового этапа Евро-2024, [2024-06-14; 2024-06-24).
+-- Начало интервала входит, конец не входит. Удары серии пенальти не учитываются (как в ДЗ-2).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_part_idx f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2024-06-14'
+  and f.match_date <  date '2024-06-24'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+GroupAggregate  (cost=0.29..167.53 rows=1002 width=118) (actual time=0.028..0.505 rows=78 loops=1)
+  Group Key: f.match_date, f.team_id
+  Buffers: shared hit=92
+  ->  Index Scan using fact_shot_part_idx_2024_source_system_match_date_team_id_idx on fact_shot_part_idx_2024 f  (cost=0.29..132.46 rows=1002 width=32) (actual time=0.012..0.234 rows=1007 loops=1)
+        Index Cond: ((source_system = 'statsbomb'::text) AND (match_date >= '2024-06-14'::date) AND (match_date < '2024-06-24'::date))
+        Filter: (NOT is_shootout)
+        Buffers: shared hit=92
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.148 ms
+Execution Time: 0.525 ms
+
+===== narrow / idx_rev: побочный: индекс с team_id на первом месте =====
+-- Запрос 1 (узкий): витрина «команда x день» за 10 дней группового этапа Евро-2024, [2024-06-14; 2024-06-24).
+-- Начало интервала входит, конец не входит. Удары серии пенальти не учитываются (как в ДЗ-2).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_idx_rev f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2024-06-14'
+  and f.match_date <  date '2024-06-24'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+GroupAggregate  (cost=1879.27..1911.47 rows=841 width=118) (actual time=0.802..1.094 rows=78 loops=1)
+  Group Key: match_date, team_id
+  Buffers: shared hit=224
+  ->  Sort  (cost=1879.27..1881.46 rows=874 width=32) (actual time=0.789..0.835 rows=1007 loops=1)
+        Sort Key: match_date, team_id
+        Sort Method: quicksort  Memory: 83kB
+        Buffers: shared hit=224
+        ->  Index Scan using fact_shot_idx_rev_team_date_src on fact_shot_idx_rev f  (cost=0.29..1836.57 rows=874 width=32) (actual time=0.120..0.492 rows=1007 loops=1)
+              Index Cond: ((match_date >= '2024-06-14'::date) AND (match_date < '2024-06-24'::date) AND (source_system = 'statsbomb'::text))
+              Filter: (NOT is_shootout)
+              Buffers: shared hit=224
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.076 ms
+Execution Time: 1.115 ms
+
+===== wide / plain: исходная таблица (куча + PK) =====
+-- Запрос 2 (широкий): та же витрина «команда x день» за девять лет, [2016-01-01; 2025-01-01).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2016-01-01'
+  and f.match_date <  date '2025-01-01'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+Sort  (cost=5411.86..5437.17 rows=10123 width=118) (actual time=37.208..37.498 rows=5591 loops=1)
+  Sort Key: match_date, team_id
+  Sort Method: quicksort  Memory: 801kB
+  Buffers: shared hit=1535
+  ->  HashAggregate  (cost=4561.26..4738.41 rows=10123 width=118) (actual time=31.649..34.931 rows=5591 loops=1)
+        Group Key: match_date, team_id
+        Batches: 1  Memory Usage: 3473kB
+        Buffers: shared hit=1535
+        ->  Seq Scan on fact_shot f  (cost=0.00..3306.47 rows=71702 width=32) (actual time=0.011..13.487 rows=71552 loops=1)
+              Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+              Rows Removed by Filter: 29675
+              Buffers: shared hit=1535
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.160 ms
+Execution Time: 37.867 ms
+
+===== wide / idx: таблица + составной B-tree =====
+-- Запрос 2 (широкий): та же витрина «команда x день» за девять лет, [2016-01-01; 2025-01-01).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_idx f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2016-01-01'
+  and f.match_date <  date '2025-01-01'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+GroupAggregate  (cost=0.29..4522.05 rows=10123 width=118) (actual time=0.036..31.119 rows=5591 loops=1)
+  Group Key: match_date, team_id
+  Buffers: shared hit=5876
+  ->  Index Scan using fact_shot_idx_src_date_team on fact_shot_idx f  (cost=0.29..3083.41 rows=72085 width=32) (actual time=0.020..14.369 rows=71552 loops=1)
+        Index Cond: ((source_system = 'statsbomb'::text) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date))
+        Filter: (NOT is_shootout)
+        Rows Removed by Filter: 308
+        Buffers: shared hit=5876
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.163 ms
+Execution Time: 31.400 ms
+
+===== wide / part: секции по году, без доп. индексов =====
+-- Запрос 2 (широкий): та же витрина «команда x день» за девять лет, [2016-01-01; 2025-01-01).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_part f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2016-01-01'
+  and f.match_date <  date '2025-01-01'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+Sort  (cost=4543.77..4561.66 rows=7155 width=118) (actual time=44.702..44.997 rows=5591 loops=1)
+  Sort Key: f.match_date, f.team_id
+  Sort Method: quicksort  Memory: 801kB
+  Buffers: shared hit=1093
+  ->  HashAggregate  (cost=3960.47..4085.68 rows=7155 width=118) (actual time=38.991..42.370 rows=5591 loops=1)
+        Group Key: f.match_date, f.team_id
+        Batches: 1  Memory Usage: 3281kB
+        Buffers: shared hit=1093
+        ->  Append  (cost=0.00..2708.31 rows=71552 width=32) (actual time=0.009..20.238 rows=71552 loops=1)
+              Buffers: shared hit=1093
+              ->  Seq Scan on fact_shot_part_2016 f_1  (cost=0.00..678.14 rows=20742 width=32) (actual time=0.008..4.586 rows=20742 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 9
+                    Buffers: shared hit=315
+              ->  Seq Scan on fact_shot_part_2017 f_2  (cost=0.00..34.34 rows=1048 width=32) (actual time=0.011..0.209 rows=1048 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Buffers: shared hit=16
+              ->  Seq Scan on fact_shot_part_2018 f_3  (cost=0.00..173.80 rows=5264 width=32) (actual time=0.004..1.058 rows=5264 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 39
+                    Buffers: shared hit=81
+              ->  Seq Scan on fact_shot_part_2019 f_4  (cost=0.00..158.65 rows=4830 width=32) (actual time=0.007..1.005 rows=4830 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 7
+                    Buffers: shared hit=74
+              ->  Seq Scan on fact_shot_part_2020 f_5  (cost=0.00..98.22 rows=2984 width=32) (actual time=0.008..0.590 rows=2984 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Buffers: shared hit=46
+              ->  Seq Scan on fact_shot_part_2021 f_6  (cost=0.00..163.25 rows=4948 width=32) (actual time=0.009..0.961 rows=4948 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 38
+                    Buffers: shared hit=76
+              ->  Seq Scan on fact_shot_part_2022 f_7  (cost=0.00..165.87 rows=5029 width=32) (actual time=0.005..0.963 rows=5029 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 49
+                    Buffers: shared hit=77
+              ->  Seq Scan on fact_shot_part_2023 f_8  (cost=0.00..438.99 rows=13385 width=32) (actual time=0.006..2.477 rows=13385 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 43
+                    Buffers: shared hit=204
+              ->  Seq Scan on fact_shot_part_2024 f_9  (cost=0.00..439.29 rows=13322 width=32) (actual time=0.005..2.503 rows=13322 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 123
+                    Buffers: shared hit=204
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.544 ms
+Execution Time: 45.312 ms
+
+===== wide / part_idx: секции + тот же составной B-tree =====
+-- Запрос 2 (широкий): та же витрина «команда x день» за девять лет, [2016-01-01; 2025-01-01).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_part_idx f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2016-01-01'
+  and f.match_date <  date '2025-01-01'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+Sort  (cost=4543.77..4561.66 rows=7155 width=118) (actual time=43.949..44.241 rows=5591 loops=1)
+  Sort Key: f.match_date, f.team_id
+  Sort Method: quicksort  Memory: 801kB
+  Buffers: shared hit=1093
+  ->  HashAggregate  (cost=3960.47..4085.68 rows=7155 width=118) (actual time=38.709..41.606 rows=5591 loops=1)
+        Group Key: f.match_date, f.team_id
+        Batches: 1  Memory Usage: 3281kB
+        Buffers: shared hit=1093
+        ->  Append  (cost=0.00..2708.31 rows=71552 width=32) (actual time=0.006..20.388 rows=71552 loops=1)
+              Buffers: shared hit=1093
+              ->  Seq Scan on fact_shot_part_idx_2016 f_1  (cost=0.00..678.14 rows=20742 width=32) (actual time=0.006..3.951 rows=20742 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 9
+                    Buffers: shared hit=315
+              ->  Seq Scan on fact_shot_part_idx_2017 f_2  (cost=0.00..34.34 rows=1048 width=32) (actual time=0.005..0.200 rows=1048 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Buffers: shared hit=16
+              ->  Seq Scan on fact_shot_part_idx_2018 f_3  (cost=0.00..173.80 rows=5264 width=32) (actual time=0.004..0.946 rows=5264 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 39
+                    Buffers: shared hit=81
+              ->  Seq Scan on fact_shot_part_idx_2019 f_4  (cost=0.00..158.65 rows=4830 width=32) (actual time=0.003..0.865 rows=4830 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 7
+                    Buffers: shared hit=74
+              ->  Seq Scan on fact_shot_part_idx_2020 f_5  (cost=0.00..98.22 rows=2984 width=32) (actual time=0.004..0.870 rows=2984 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Buffers: shared hit=46
+              ->  Seq Scan on fact_shot_part_idx_2021 f_6  (cost=0.00..163.25 rows=4948 width=32) (actual time=0.005..0.926 rows=4948 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 38
+                    Buffers: shared hit=76
+              ->  Seq Scan on fact_shot_part_idx_2022 f_7  (cost=0.00..165.87 rows=5029 width=32) (actual time=0.006..1.004 rows=5029 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 49
+                    Buffers: shared hit=77
+              ->  Seq Scan on fact_shot_part_idx_2023 f_8  (cost=0.00..438.99 rows=13385 width=32) (actual time=0.006..2.500 rows=13385 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 43
+                    Buffers: shared hit=204
+              ->  Seq Scan on fact_shot_part_idx_2024 f_9  (cost=0.00..439.29 rows=13322 width=32) (actual time=0.005..2.688 rows=13322 loops=1)
+                    Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+                    Rows Removed by Filter: 123
+                    Buffers: shared hit=204
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.569 ms
+Execution Time: 44.537 ms
+
+===== wide / idx_rev: побочный: индекс с team_id на первом месте =====
+-- Запрос 2 (широкий): та же витрина «команда x день» за девять лет, [2016-01-01; 2025-01-01).
+select f.source_system,
+       f.team_id,
+       f.match_date,
+       count(*)                                          as shots,
+       count(*) filter (where f.is_on_target)            as shots_on_target,
+       count(*) filter (where f.is_goal)                 as goals,
+       count(*) filter (where f.is_goal and f.is_penalty) as penalty_goals,
+       sum(f.xg)                                         as xg,
+       count(*) filter (where f.is_goal) - sum(f.xg)     as goals_minus_xg
+from dds.fact_shot_idx_rev f
+where f.source_system = 'statsbomb'
+  and not f.is_shootout
+  and f.match_date >= date '2016-01-01'
+  and f.match_date <  date '2025-01-01'
+group by f.source_system, f.team_id, f.match_date
+order by f.match_date, f.team_id;
+
+Sort  (cost=5414.73..5440.04 rows=10123 width=118) (actual time=39.388..39.796 rows=5591 loops=1)
+  Sort Key: match_date, team_id
+  Sort Method: quicksort  Memory: 801kB
+  Buffers: shared hit=1535
+  ->  HashAggregate  (cost=4564.13..4741.28 rows=10123 width=118) (actual time=33.468..36.877 rows=5591 loops=1)
+        Group Key: match_date, team_id
+        Batches: 1  Memory Usage: 3473kB
+        Buffers: shared hit=1535
+        ->  Seq Scan on fact_shot_idx_rev f  (cost=0.00..3306.47 rows=71866 width=32) (actual time=0.008..14.118 rows=71552 loops=1)
+              Filter: ((NOT is_shootout) AND (match_date >= '2016-01-01'::date) AND (match_date < '2025-01-01'::date) AND (source_system = 'statsbomb'::text))
+              Rows Removed by Filter: 29675
+              Buffers: shared hit=1535
+Planning:
+  Buffers: shared hit=3
+Planning Time: 0.147 ms
+Execution Time: 40.140 ms

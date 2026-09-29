@@ -1,0 +1,111 @@
+Pager usage is off.
+== секции и границы ==
+         partition          |                      bounds                      
+----------------------------+--------------------------------------------------
+ fact_shot_part_2015        | FOR VALUES FROM ('2015-01-01') TO ('2016-01-01')
+ fact_shot_part_2016        | FOR VALUES FROM ('2016-01-01') TO ('2017-01-01')
+ fact_shot_part_2017        | FOR VALUES FROM ('2017-01-01') TO ('2018-01-01')
+ fact_shot_part_2018        | FOR VALUES FROM ('2018-01-01') TO ('2019-01-01')
+ fact_shot_part_2019        | FOR VALUES FROM ('2019-01-01') TO ('2020-01-01')
+ fact_shot_part_2020        | FOR VALUES FROM ('2020-01-01') TO ('2021-01-01')
+ fact_shot_part_2021        | FOR VALUES FROM ('2021-01-01') TO ('2022-01-01')
+ fact_shot_part_2022        | FOR VALUES FROM ('2022-01-01') TO ('2023-01-01')
+ fact_shot_part_2023        | FOR VALUES FROM ('2023-01-01') TO ('2024-01-01')
+ fact_shot_part_2024        | FOR VALUES FROM ('2024-01-01') TO ('2025-01-01')
+ fact_shot_part_2025        | FOR VALUES FROM ('2025-01-01') TO ('2026-01-01')
+ fact_shot_part_2026        | FOR VALUES FROM ('2026-01-01') TO ('2027-01-01')
+ fact_shot_part_before_2015 | FOR VALUES FROM ('1900-01-01') TO ('2015-01-01')
+(13 rows)
+
+
+== сколько строк в каждой секции (пустые тоже есть: 2026 создана заранее) ==
+         partition          | rows  | first_day  |  last_day  
+----------------------------+-------+------------+------------
+ fact_shot_part_2015        | 18919 | 2015-01-04 | 2015-12-31
+ fact_shot_part_2016        | 20751 | 2016-01-02 | 2016-12-18
+ fact_shot_part_2017        |  1048 | 2017-01-08 | 2017-12-23
+ fact_shot_part_2018        |  5303 | 2018-01-07 | 2018-12-22
+ fact_shot_part_2019        |  4837 | 2019-01-06 | 2019-12-21
+ fact_shot_part_2020        |  2984 | 2020-01-04 | 2020-12-22
+ fact_shot_part_2021        |  4986 | 2021-01-03 | 2021-12-30
+ fact_shot_part_2022        |  5078 | 2022-01-02 | 2022-12-18
+ fact_shot_part_2023        | 13428 | 2023-01-11 | 2023-12-20
+ fact_shot_part_2024        | 13445 | 2024-01-06 | 2024-07-15
+ fact_shot_part_2025        |   913 | 2025-07-02 | 2025-07-27
+ fact_shot_part_2026        |     0 |            | 
+ fact_shot_part_before_2015 |  9535 | 1958-06-24 | 2014-12-20
+(13 rows)
+
+
+== края интервала: 2023-12-31 уходит в секцию 2023, 2024-01-01 - в секцию 2024 (вставки откатываются) ==
+BEGIN
+INSERT 0 2
+        partition        | match_date 
+-------------------------+------------
+ dds.fact_shot_part_2023 | 2023-12-31
+ dds.fact_shot_part_2024 | 2024-01-01
+(2 rows)
+
+ROLLBACK
+
+== дата за пределами всех секций отклоняется ==
+psql:/home/claude/hw-3/sql/partitions_check.sql:39: ERROR:  no partition of relation "fact_shot_part" found for row
+DETAIL:  Partition key of the failing row contains (match_date) = (2027-01-01).
+ rows_left_from_tests 
+----------------------
+                    0
+(1 row)
+
+
+== индексы в страницах по 8 КБ и страницы кучи, где лежат строки узкого интервала ==
+                           relname                            | pages 
+--------------------------------------------------------------+-------
+ fact_shot                                                    |  1535
+ fact_shot_idx                                                |  1535
+ fact_shot_idx_src_date_team                                  |   127
+ fact_shot_part_2024                                          |   204
+ fact_shot_part_2024_pkey                                     |   107
+ fact_shot_part_idx_2024_source_system_match_date_team_id_idx |    19
+ fact_shot_pkey                                               |   778
+(7 rows)
+
+        tbl         | heap_pages_with_narrow_rows 
+--------------------+-----------------------------
+ dds.fact_shot_idx  |                          18
+ dds.fact_shot_part |                          20
+(2 rows)
+
+
+== план без стоимости: запрос narrow, таблица dds.fact_shot_part ==
+         ->  Index Scan using fact_shot_part_2024_pkey on fact_shot_part_2024 f
+секций в плане: 1 из 13
+
+== план без стоимости: запрос wide, таблица dds.fact_shot_part ==
+         ->  Append
+               ->  Seq Scan on fact_shot_part_2016 f_1
+               ->  Seq Scan on fact_shot_part_2017 f_2
+               ->  Seq Scan on fact_shot_part_2018 f_3
+               ->  Seq Scan on fact_shot_part_2019 f_4
+               ->  Seq Scan on fact_shot_part_2020 f_5
+               ->  Seq Scan on fact_shot_part_2021 f_6
+               ->  Seq Scan on fact_shot_part_2022 f_7
+               ->  Seq Scan on fact_shot_part_2023 f_8
+               ->  Seq Scan on fact_shot_part_2024 f_9
+секций в плане: 9 из 13
+
+== план без стоимости: запрос narrow, таблица dds.fact_shot_part_idx ==
+   ->  Index Scan using fact_shot_part_idx_2024_source_system_match_date_team_id_idx on fact_shot_part_idx_2024 f
+секций в плане: 1 из 13
+
+== план без стоимости: запрос wide, таблица dds.fact_shot_part_idx ==
+         ->  Append
+               ->  Seq Scan on fact_shot_part_idx_2016 f_1
+               ->  Seq Scan on fact_shot_part_idx_2017 f_2
+               ->  Seq Scan on fact_shot_part_idx_2018 f_3
+               ->  Seq Scan on fact_shot_part_idx_2019 f_4
+               ->  Seq Scan on fact_shot_part_idx_2020 f_5
+               ->  Seq Scan on fact_shot_part_idx_2021 f_6
+               ->  Seq Scan on fact_shot_part_idx_2022 f_7
+               ->  Seq Scan on fact_shot_part_idx_2023 f_8
+               ->  Seq Scan on fact_shot_part_idx_2024 f_9
+секций в плане: 9 из 13

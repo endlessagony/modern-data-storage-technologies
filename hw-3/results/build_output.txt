@@ -1,0 +1,52 @@
+Timing is on.
+CREATE TABLE
+Time: 3.812 ms
+ALTER TABLE
+Time: 1.716 ms
+ALTER TABLE
+Time: 2.304 ms
+CREATE INDEX
+Time: 1.449 ms
+-- вставка 101 тыс. строк в таблицу, где индекс уже есть (поддержка индекса при записи)
+INSERT 0 101227
+Time: 1249.190 ms (00:01.249)
+-- построение того же индекса с нуля на заполненной таблице
+DROP INDEX
+Time: 2.109 ms
+CREATE INDEX
+Time: 96.594 ms
+CREATE TABLE
+Time: 1.465 ms
+CREATE TABLE
+Time: 0.923 ms
+DO
+Time: 30.542 ms
+ALTER TABLE
+Time: 12.646 ms
+ALTER TABLE
+Time: 6.672 ms
+ALTER TABLE
+Time: 9.586 ms
+ALTER TABLE
+Time: 4.684 ms
+INSERT 0 101227
+Time: 1206.676 ms (00:01.207)
+INSERT 0 101227
+Time: 1152.081 ms (00:01.152)
+-- индекс на секционированной таблице (строится по каждой секции)
+CREATE INDEX
+Time: 151.194 ms
+CREATE TABLE
+Time: 1.691 ms
+INSERT 0 101227
+Time: 169.784 ms
+CREATE INDEX
+Time: 66.190 ms
+VACUUM
+Time: 169.558 ms
+VACUUM
+Time: 604.257 ms
+VACUUM
+Time: 506.787 ms
+VACUUM
+Time: 148.388 ms
